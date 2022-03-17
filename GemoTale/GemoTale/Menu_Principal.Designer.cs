@@ -140,8 +140,9 @@ namespace GemoTale
             this.Controls.Add(this.btnCargar);
             this.Controls.Add(this.btnNueva);
             this.Controls.Add(this.gameLogo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Menu_Principal";
-            this.Text = "Form1";
+            this.Text = "Gemo";
             this.Load += new System.EventHandler(this.Menu_Principal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gameLogo)).EndInit();
             this.ResumeLayout(false);
