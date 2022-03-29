@@ -18,7 +18,7 @@ namespace GemoTale
         {
             InitializeComponent();
             gameLogo.Image = Image.FromFile("../../Images/UI/game_logo.png");
-            this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/background.gif");
+            this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/mainmenu.png");
         }
 
         private void Menu_Principal_Load(object sender, EventArgs e)
