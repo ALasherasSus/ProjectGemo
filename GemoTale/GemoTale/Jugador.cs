@@ -68,9 +68,10 @@ namespace GemoTale
             this.vida = this.vida - atkEnemigo;
         }
 
-        public void generarAtaque()
+        public int generarAtaque()
         {
-
+            //ramdom entre atk y atk - 10
+            return atk;
         }
     }
 
