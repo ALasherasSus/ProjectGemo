@@ -82,6 +82,7 @@
   <ItemGroup>
     <Folder Include="Images\Backgrounds\" />
     <Folder Include="Images\Characters\" />
+    <Folder Include="Images\ConceptArt\" />
     <Folder Include="Images\UI\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
