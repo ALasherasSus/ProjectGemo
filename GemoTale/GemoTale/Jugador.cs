@@ -71,8 +71,8 @@ namespace GemoTale
         public int generarAtaque()
         {
             //ramdom entre atk y atk - 10
-            Random rnd = new Randon();
-            int atkgenerado = rnd.nextInt(this.atk-10, this.atk);
+            Random rnd = new Random();
+            int atkgenerado = rnd.Next(this.atk-10, this.atk);
 
             return atkgenerado;
         }
