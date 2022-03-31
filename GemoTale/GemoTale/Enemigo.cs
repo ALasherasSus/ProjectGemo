@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GemoTale
 {
-    internal class Enemigo
+    public class Enemigo
     {
 
         String nombre;

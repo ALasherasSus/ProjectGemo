@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GemoTale
 {
-    internal class Jugador
+    public class Jugador
     {
         String nombre;
         Double vida;
