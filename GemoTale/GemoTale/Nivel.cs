@@ -8,6 +8,7 @@ namespace GemoTale
 {
     public class Nivel
     {
+        String nombre;
         String imagenFondo;
         Boolean flechaArriba;
         Boolean flechaAbajo;
@@ -27,6 +28,7 @@ namespace GemoTale
 
         }
 
+        public string Nombre { get => nombre; set => nombre = value; }
         public string ImagenFondo { get => imagenFondo; set => imagenFondo = value; }
         public bool FlechaArriba { get => flechaArriba; set => flechaArriba = value; }
         public bool FlechaAbajo { get => flechaAbajo; set => flechaAbajo = value; }

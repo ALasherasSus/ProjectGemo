@@ -11,17 +11,17 @@ namespace GemoTale
 
         String nombre;
         Double vida;
-        int atk;
+        int ataque;
         String foto;
 
         public Enemigo()
         {
         }
-        public Enemigo(String nombre, Double vida, int atk, String foto)
+        public Enemigo(String nombre, Double vida, int ataque, String foto)
         {
             this.nombre = nombre;
             this.vida = vida;
-            this.atk = atk;
+            this.ataque = ataque;
             this.foto = foto;
         }
 
@@ -33,9 +33,9 @@ namespace GemoTale
         {
             return this.vida;
         }
-        public int getAtk()
+        public int getataque()
         {
-            return this.atk;
+            return this.ataque;
         }
         public String getFoto()
         {
@@ -49,9 +49,9 @@ namespace GemoTale
         {
             this.vida = vida;
         }
-        public void setAtk(int Atk)
+        public void setataque(int ataque)
         {
-            this.atk = Atk;
+            this.ataque = ataque;
         }
 
         public void setFoto(String foto) {
@@ -61,15 +61,15 @@ namespace GemoTale
 
         public int generarAtaque()
         {
-            //ramdom entre atk y atk - 10
+            //ramdom entre ataque y ataque - 10
             Random rnd = new Random();
-            int atkgenerado = rnd.Next(this.atk - 10, this.atk);
+            int ataquegenerado = rnd.Next(this.ataque - 10, this.ataque);
 
-            return atkgenerado;
+            return ataquegenerado;
         }
-        public void recibirAtaque(int atkEnemigo)
+        public void recibirAtaque(int ataqueEnemigo)
         {
-            this.vida = this.vida - atkEnemigo;
+            this.vida = this.vida - ataqueEnemigo;
         }
 
 

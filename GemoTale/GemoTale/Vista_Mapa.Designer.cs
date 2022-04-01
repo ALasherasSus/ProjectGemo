@@ -49,17 +49,21 @@ namespace GemoTale
             // player
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Cursor = System.Windows.Forms.Cursors.Hand;
             this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
+            this.player.ImageLocation = "";
             this.player.Location = new System.Drawing.Point(250, 158);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(125, 125);
             this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.player.TabIndex = 0;
             this.player.TabStop = false;
+            this.player.Click += new System.EventHandler(this.player_Click);
             // 
             // arrow_top
             // 
             this.arrow_top.BackColor = System.Drawing.Color.Transparent;
+            this.arrow_top.Cursor = System.Windows.Forms.Cursors.PanNorth;
             this.arrow_top.Image = ((System.Drawing.Image)(resources.GetObject("arrow_top.Image")));
             this.arrow_top.Location = new System.Drawing.Point(262, 12);
             this.arrow_top.Name = "arrow_top";
@@ -72,6 +76,7 @@ namespace GemoTale
             // arrow_bottom
             // 
             this.arrow_bottom.BackColor = System.Drawing.Color.Transparent;
+            this.arrow_bottom.Cursor = System.Windows.Forms.Cursors.PanSouth;
             this.arrow_bottom.Image = ((System.Drawing.Image)(resources.GetObject("arrow_bottom.Image")));
             this.arrow_bottom.Location = new System.Drawing.Point(262, 349);
             this.arrow_bottom.Name = "arrow_bottom";
@@ -79,10 +84,12 @@ namespace GemoTale
             this.arrow_bottom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.arrow_bottom.TabIndex = 2;
             this.arrow_bottom.TabStop = false;
+            this.arrow_bottom.Click += new System.EventHandler(this.arrow_bottom_Click);
             // 
             // arrow_left
             // 
             this.arrow_left.BackColor = System.Drawing.Color.Transparent;
+            this.arrow_left.Cursor = System.Windows.Forms.Cursors.PanWest;
             this.arrow_left.Image = ((System.Drawing.Image)(resources.GetObject("arrow_left.Image")));
             this.arrow_left.Location = new System.Drawing.Point(12, 170);
             this.arrow_left.Name = "arrow_left";
@@ -90,10 +97,12 @@ namespace GemoTale
             this.arrow_left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.arrow_left.TabIndex = 3;
             this.arrow_left.TabStop = false;
+            this.arrow_left.Click += new System.EventHandler(this.arrow_left_Click);
             // 
             // arrow_right
             // 
             this.arrow_right.BackColor = System.Drawing.Color.Transparent;
+            this.arrow_right.Cursor = System.Windows.Forms.Cursors.PanEast;
             this.arrow_right.Image = ((System.Drawing.Image)(resources.GetObject("arrow_right.Image")));
             this.arrow_right.Location = new System.Drawing.Point(532, 170);
             this.arrow_right.Name = "arrow_right";
@@ -101,6 +110,7 @@ namespace GemoTale
             this.arrow_right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.arrow_right.TabIndex = 4;
             this.arrow_right.TabStop = false;
+            this.arrow_right.Click += new System.EventHandler(this.arrow_right_Click);
             // 
             // shop_right
             // 
@@ -112,6 +122,7 @@ namespace GemoTale
             this.shop_right.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.shop_right.TabIndex = 5;
             this.shop_right.TabStop = false;
+            this.shop_right.Click += new System.EventHandler(this.shop_right_Click);
             // 
             // shop_left
             // 
@@ -123,6 +134,7 @@ namespace GemoTale
             this.shop_left.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.shop_left.TabIndex = 6;
             this.shop_left.TabStop = false;
+            this.shop_left.Click += new System.EventHandler(this.shop_left_Click);
             // 
             // Vista_Mapa
             // 
@@ -131,13 +143,13 @@ namespace GemoTale
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
-            this.Controls.Add(this.shop_left);
-            this.Controls.Add(this.shop_right);
             this.Controls.Add(this.arrow_right);
             this.Controls.Add(this.arrow_left);
             this.Controls.Add(this.arrow_bottom);
             this.Controls.Add(this.arrow_top);
             this.Controls.Add(this.player);
+            this.Controls.Add(this.shop_left);
+            this.Controls.Add(this.shop_right);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Vista_Mapa";
             this.Text = "Gemo\'s Tale";

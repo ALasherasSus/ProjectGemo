@@ -96,6 +96,7 @@ namespace GemoTale
             this.btnRanura1.TabIndex = 3;
             this.btnRanura1.Text = "0%";
             this.btnRanura1.UseVisualStyleBackColor = false;
+            this.btnRanura1.Click += new System.EventHandler(this.btnRanura1_Click);
             // 
             // btnRanura2
             // 
@@ -111,6 +112,7 @@ namespace GemoTale
             this.btnRanura2.TabIndex = 4;
             this.btnRanura2.Text = "0%";
             this.btnRanura2.UseVisualStyleBackColor = false;
+            this.btnRanura2.Click += new System.EventHandler(this.btnRanura2_Click);
             // 
             // btnRanura3
             // 
@@ -126,6 +128,7 @@ namespace GemoTale
             this.btnRanura3.TabIndex = 5;
             this.btnRanura3.Text = "0%";
             this.btnRanura3.UseVisualStyleBackColor = false;
+            this.btnRanura3.Click += new System.EventHandler(this.btnRanura3_Click);
             // 
             // Menu_Principal
             // 

@@ -18,3 +18,4 @@ C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.G
 C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.exe
 C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.pdb
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Mapa.resources
