@@ -144,6 +144,7 @@ namespace GemoTale
             this.Controls.Add(this.btnNueva);
             this.Controls.Add(this.gameLogo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Menu_Principal";
             this.Text = "Gemo\'s Tale";
             this.Load += new System.EventHandler(this.Menu_Principal_Load);

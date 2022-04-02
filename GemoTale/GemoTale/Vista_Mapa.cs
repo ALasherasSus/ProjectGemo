@@ -20,6 +20,7 @@ namespace GemoTale
         public Vista_Mapa(Boolean cargar, int ranura)
         {
             InitializeComponent();
+            this.CenterToScreen(); // Centrar la ventana en la pantalla
             player.Image = Image.FromFile("../../Images/Characters/player_map.png");
             niveles = new List<Nivel>();
             generarMapas();
@@ -151,18 +152,35 @@ namespace GemoTale
 
         private void shop_left_Click(object sender, EventArgs e)
         {
-
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/door_open.wav");
+            player.Play();
+            this.Hide();
+            Vista_Tienda vistaTienda = new Vista_Tienda("izquierda");
+            vistaTienda.Closed += (s, args) => this.Show(); this.CenterToScreen();
+            vistaTienda.Show();
         }
 
         private void shop_right_Click(object sender, EventArgs e)
         {
-
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/door_open.wav");
+            player.Play();
+            this.Hide();
+            Vista_Tienda vistaTienda = new Vista_Tienda("derecha");
+            vistaTienda.Closed += (s, args) => this.Show(); this.CenterToScreen();
+            vistaTienda.Show();
         }
 
         private void player_Click(object sender, EventArgs e)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
             player.Play();
+        }
+
+        private void checkpoint_Click(object sender, EventArgs e)
+        {
+            // IMPLEMENTAR GUARDAR PARTIDA (!)
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/checkpoint.wav");
+            player.PlaySync();
         }
     }
 }

@@ -37,6 +37,7 @@ namespace GemoTale
             this.arrow_right = new System.Windows.Forms.PictureBox();
             this.shop_right = new System.Windows.Forms.PictureBox();
             this.shop_left = new System.Windows.Forms.PictureBox();
+            this.checkpoint = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_top)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_bottom)).BeginInit();
@@ -44,6 +45,7 @@ namespace GemoTale
             ((System.ComponentModel.ISupportInitialize)(this.arrow_right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shop_right)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shop_left)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkpoint)).BeginInit();
             this.SuspendLayout();
             // 
             // player
@@ -115,6 +117,7 @@ namespace GemoTale
             // shop_right
             // 
             this.shop_right.BackColor = System.Drawing.Color.Transparent;
+            this.shop_right.Cursor = System.Windows.Forms.Cursors.PanEast;
             this.shop_right.Image = ((System.Drawing.Image)(resources.GetObject("shop_right.Image")));
             this.shop_right.Location = new System.Drawing.Point(532, 170);
             this.shop_right.Name = "shop_right";
@@ -127,6 +130,7 @@ namespace GemoTale
             // shop_left
             // 
             this.shop_left.BackColor = System.Drawing.Color.Transparent;
+            this.shop_left.Cursor = System.Windows.Forms.Cursors.PanWest;
             this.shop_left.Image = ((System.Drawing.Image)(resources.GetObject("shop_left.Image")));
             this.shop_left.Location = new System.Drawing.Point(12, 170);
             this.shop_left.Name = "shop_left";
@@ -136,6 +140,19 @@ namespace GemoTale
             this.shop_left.TabStop = false;
             this.shop_left.Click += new System.EventHandler(this.shop_left_Click);
             // 
+            // checkpoint
+            // 
+            this.checkpoint.BackColor = System.Drawing.Color.Transparent;
+            this.checkpoint.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.checkpoint.Image = ((System.Drawing.Image)(resources.GetObject("checkpoint.Image")));
+            this.checkpoint.Location = new System.Drawing.Point(515, 349);
+            this.checkpoint.Name = "checkpoint";
+            this.checkpoint.Size = new System.Drawing.Size(97, 80);
+            this.checkpoint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.checkpoint.TabIndex = 7;
+            this.checkpoint.TabStop = false;
+            this.checkpoint.Click += new System.EventHandler(this.checkpoint_Click);
+            // 
             // Vista_Mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -143,16 +160,18 @@ namespace GemoTale
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
-            this.Controls.Add(this.arrow_right);
-            this.Controls.Add(this.arrow_left);
+            this.Controls.Add(this.checkpoint);
             this.Controls.Add(this.arrow_bottom);
             this.Controls.Add(this.arrow_top);
             this.Controls.Add(this.player);
             this.Controls.Add(this.shop_left);
             this.Controls.Add(this.shop_right);
+            this.Controls.Add(this.arrow_right);
+            this.Controls.Add(this.arrow_left);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "Vista_Mapa";
-            this.Text = "Gemo\'s Tale";
+            this.Text = "Gemo\'s Tale - Mapa";
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_top)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_bottom)).EndInit();
@@ -160,6 +179,7 @@ namespace GemoTale
             ((System.ComponentModel.ISupportInitialize)(this.arrow_right)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shop_right)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shop_left)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkpoint)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -173,5 +193,6 @@ namespace GemoTale
         private System.Windows.Forms.PictureBox arrow_right;
         private System.Windows.Forms.PictureBox shop_right;
         private System.Windows.Forms.PictureBox shop_left;
+        private System.Windows.Forms.PictureBox checkpoint;
     }
 }

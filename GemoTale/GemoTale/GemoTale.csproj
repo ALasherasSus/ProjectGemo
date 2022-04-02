@@ -63,6 +63,12 @@
     <Compile Include="Vista_Mapa.Designer.cs">
       <DependentUpon>Vista_Mapa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista_Tienda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Tienda.Designer.cs">
+      <DependentUpon>Vista_Tienda.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Menu_Principal.resx">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -78,7 +84,9 @@
     <EmbeddedResource Include="Vista_Mapa.resx">
       <DependentUpon>Vista_Mapa.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="Images\UI\game_logo.psd" />
+    <EmbeddedResource Include="Vista_Tienda.resx">
+      <DependentUpon>Vista_Tienda.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -100,6 +108,7 @@
     <Content Include="Images\Backgrounds\level1_2.jpg" />
     <Content Include="Images\Backgrounds\mainmenu.png" />
     <Content Include="Images\Backgrounds\shop1.jpg" />
+    <Content Include="Images\Backgrounds\shop2.jpg" />
     <Content Include="Images\Characters\boss1.png" />
     <Content Include="Images\Characters\boss2.png" />
     <Content Include="Images\Characters\boss3.png" />
@@ -115,8 +124,10 @@
     <Content Include="Images\UI\arrow_left.png" />
     <Content Include="Images\UI\arrow_right.png" />
     <Content Include="Images\UI\arrow_up.png" />
+    <Content Include="Images\UI\checkpoint.png" />
     <Content Include="Images\UI\game_logo.png" />
     <Content Include="Images\UI\shop_icon.png" />
+    <Content Include="Images\UI\shop_title.png" />
     <Content Include="Sounds\Music\1_1 Nsanity Island MSTR.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
     <Content Include="Sounds\SFX\change_screen.wav" />

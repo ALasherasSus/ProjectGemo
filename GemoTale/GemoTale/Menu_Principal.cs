@@ -17,6 +17,7 @@ namespace GemoTale
         public Menu_Principal()
         {
             InitializeComponent();
+            this.CenterToScreen(); // Centrar la ventana en la pantalla
             gameLogo.Image = Image.FromFile("../../Images/UI/game_logo.png");
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/mainmenu.png");
         }
@@ -72,7 +73,13 @@ namespace GemoTale
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/click2.wav");
             player.Play();
+
+            // Esto esconde la ventana actual
+            // La prepara para que si se cierra la ventana hija se cierre el programa
+            // Y muestra la nueva ventana
+            this.Hide();
             Vista_Mapa vistaMapa = new Vista_Mapa(load, ranura);
+            vistaMapa.Closed += (s, args) => this.Close();
             vistaMapa.Show();
         }
     }
