@@ -19,7 +19,7 @@ namespace GemoTale
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
             gameLogo.Image = Image.FromFile("../../Images/UI/game_logo.png");
-            this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/mainmenu.png");
+            this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/mainmenu.jpg");
         }
 
         private void Menu_Principal_Load(object sender, EventArgs e)
