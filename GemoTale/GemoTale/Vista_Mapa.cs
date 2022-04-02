@@ -54,6 +54,117 @@ namespace GemoTale
             lvl1_2.TiendaIzquierda = true;
             lvl1_2.ImagenFondo = "../../Images/Backgrounds/level1_2.jpg";
             niveles.Add(lvl1_2);
+
+            Nivel lvl1_3 = new Nivel();
+            lvl1_3.Nombre = "lvl1_3";
+            lvl1_3.FlechaArriba = true;
+            lvl1_3.DireccionArriba = "lvl2_1";
+            lvl1_3.FlechaDerecha = true;
+            lvl1_3.DireccionDerecha = "lvl3_1";
+            lvl1_3.FlechaAbajo = true;
+            lvl1_3.DireccionAbajo = "lvl1_2";
+            lvl1_3.ImagenFondo = "../../Images/Backgrounds/level1_3.jpg";
+            niveles.Add(lvl1_3);
+
+            Nivel lvl2_1 = new Nivel();
+            lvl2_1.Nombre = "lvl2_1";
+            lvl2_1.FlechaArriba = true;
+            lvl2_1.DireccionArriba = "lvl2_2";
+            lvl2_1.FlechaAbajo = true;
+            lvl2_1.DireccionAbajo = "lvl1_3";
+            lvl2_1.ImagenFondo = "../../Images/Backgrounds/level2_1.jpg";
+            niveles.Add(lvl2_1);
+
+            Nivel lvl2_2 = new Nivel();
+            lvl2_2.Nombre = "lvl2_2";
+            lvl2_2.FlechaDerecha = true;
+            lvl2_2.DireccionDerecha = "lvl2_3";
+            lvl2_2.FlechaAbajo = true;
+            lvl2_2.DireccionAbajo = "lvl2_1";
+            lvl2_2.ImagenFondo = "../../Images/Backgrounds/level2_2.jpg";
+            niveles.Add(lvl2_2);
+
+            Nivel lvl2_3 = new Nivel();
+            lvl2_3.Nombre = "lvl2_3";
+            lvl2_3.FlechaDerecha = true;
+            lvl2_3.DireccionDerecha = "lvl5_1";
+            lvl2_3.FlechaIzquierda = true;
+            lvl2_3.DireccionIzquierda = "lvl2_2";
+            lvl2_3.ImagenFondo = "../../Images/Backgrounds/level2_3.jpg";
+            niveles.Add(lvl2_3);
+
+            Nivel lvl3_1 = new Nivel();
+            lvl3_1.Nombre = "lvl3_1";
+            lvl3_1.FlechaDerecha = true;
+            lvl3_1.DireccionDerecha = "lvl3_2";
+            lvl3_1.FlechaIzquierda = true;
+            lvl3_1.DireccionIzquierda = "lvl1_3";
+            lvl3_1.ImagenFondo = "../../Images/Backgrounds/level3_1.jpg";
+            niveles.Add(lvl3_1);
+
+            Nivel lvl3_2 = new Nivel();
+            lvl3_2.Nombre = "lvl3_2";
+            lvl3_2.FlechaDerecha = true;
+            lvl3_2.DireccionDerecha = "lvl3_3";
+            lvl3_2.FlechaIzquierda = true;
+            lvl3_2.DireccionIzquierda = "lvl3_1";
+            lvl3_2.ImagenFondo = "../../Images/Backgrounds/level3_2.jpg";
+            niveles.Add(lvl3_2);
+
+            Nivel lvl3_3 = new Nivel();
+            lvl3_3.Nombre = "lvl3_3";
+            lvl3_3.FlechaArriba = true;
+            lvl3_3.DireccionArriba = "lvl4_1";
+            lvl3_3.FlechaIzquierda = true;
+            lvl3_3.DireccionIzquierda = "lvl3_2";
+            lvl3_3.ImagenFondo = "../../Images/Backgrounds/level3_3.jpg";
+            niveles.Add(lvl3_3);
+
+            Nivel lvl4_1 = new Nivel();
+            lvl4_1.Nombre = "lvl4_1";
+            lvl4_1.FlechaArriba = true;
+            lvl4_1.DireccionArriba = "lvl4_2";
+            lvl4_1.FlechaAbajo = true;
+            lvl4_1.DireccionAbajo = "lvl3_3";
+            lvl4_1.TiendaDerecha = true;
+            lvl4_1.ImagenFondo = "../../Images/Backgrounds/level4_1.jpg";
+            niveles.Add(lvl4_1);
+
+            Nivel lvl4_2 = new Nivel();
+            lvl4_2.Nombre = "lvl4_2";
+            lvl4_2.FlechaIzquierda = true;
+            lvl4_2.DireccionIzquierda = "lvl5_1";
+            lvl4_2.FlechaAbajo = true;
+            lvl4_2.DireccionAbajo = "lvl4_1";
+            lvl4_2.ImagenFondo = "../../Images/Backgrounds/level4_2.jpg";
+            niveles.Add(lvl4_2);
+
+            Nivel lvl5_1 = new Nivel();
+            lvl5_1.Nombre = "lvl5_1";
+            lvl5_1.FlechaArriba = true;
+            lvl5_1.DireccionArriba = "lvl5_2";
+            lvl5_1.FlechaIzquierda = true;
+            lvl5_1.DireccionIzquierda = "lvl2_3";
+            lvl5_1.FlechaDerecha = true;
+            lvl5_1.DireccionDerecha = "lvl4_2";
+            lvl5_1.ImagenFondo = "../../Images/Backgrounds/level5_1.jpg";
+            niveles.Add(lvl5_1);
+
+            Nivel lvl5_2 = new Nivel();
+            lvl5_2.Nombre = "lvl5_2";
+            lvl5_2.FlechaArriba = true;
+            lvl5_2.DireccionArriba = "lvl5_3";
+            lvl5_2.FlechaAbajo = true;
+            lvl5_2.DireccionAbajo = "lvl5_1";
+            lvl5_2.ImagenFondo = "../../Images/Backgrounds/level5_2.jpg";
+            niveles.Add(lvl5_2);
+
+            Nivel lvl5_3 = new Nivel();
+            lvl5_3.Nombre = "lvl5_3";
+            lvl5_3.FlechaAbajo = true;
+            lvl5_3.DireccionAbajo = "lvl5_2";
+            lvl5_3.ImagenFondo = "../../Images/Backgrounds/level5_3.jpg";
+            niveles.Add(lvl5_3);
         }
 
         private void cargarNivel(Nivel lvl)
