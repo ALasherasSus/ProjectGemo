@@ -57,7 +57,7 @@ namespace GemoTale
             this.shopper.Image = ((System.Drawing.Image)(resources.GetObject("shopper.Image")));
             this.shopper.Location = new System.Drawing.Point(12, 96);
             this.shopper.Name = "shopper";
-            this.shopper.Size = new System.Drawing.Size(293, 462);
+            this.shopper.Size = new System.Drawing.Size(280, 462);
             this.shopper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.shopper.TabIndex = 6;
             this.shopper.TabStop = false;
