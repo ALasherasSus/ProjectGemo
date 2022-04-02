@@ -61,6 +61,8 @@ namespace GemoTale
             this.player.TabIndex = 0;
             this.player.TabStop = false;
             this.player.Click += new System.EventHandler(this.player_Click);
+            this.player.MouseLeave += new System.EventHandler(this.player_MouseLeave);
+            this.player.MouseHover += new System.EventHandler(this.player_MouseHover);
             // 
             // arrow_top
             // 
@@ -74,6 +76,8 @@ namespace GemoTale
             this.arrow_top.TabIndex = 1;
             this.arrow_top.TabStop = false;
             this.arrow_top.Click += new System.EventHandler(this.arrow_top_Click);
+            this.arrow_top.MouseLeave += new System.EventHandler(this.arrow_top_MouseLeave);
+            this.arrow_top.MouseHover += new System.EventHandler(this.arrow_top_MouseHover);
             // 
             // arrow_bottom
             // 
@@ -87,6 +91,8 @@ namespace GemoTale
             this.arrow_bottom.TabIndex = 2;
             this.arrow_bottom.TabStop = false;
             this.arrow_bottom.Click += new System.EventHandler(this.arrow_bottom_Click);
+            this.arrow_bottom.MouseLeave += new System.EventHandler(this.arrow_bottom_MouseLeave);
+            this.arrow_bottom.MouseHover += new System.EventHandler(this.arrow_bottom_MouseHover);
             // 
             // arrow_left
             // 
@@ -100,6 +106,8 @@ namespace GemoTale
             this.arrow_left.TabIndex = 3;
             this.arrow_left.TabStop = false;
             this.arrow_left.Click += new System.EventHandler(this.arrow_left_Click);
+            this.arrow_left.MouseLeave += new System.EventHandler(this.arrow_left_MouseLeave);
+            this.arrow_left.MouseHover += new System.EventHandler(this.arrow_left_MouseHover);
             // 
             // arrow_right
             // 
@@ -113,6 +121,8 @@ namespace GemoTale
             this.arrow_right.TabIndex = 4;
             this.arrow_right.TabStop = false;
             this.arrow_right.Click += new System.EventHandler(this.arrow_right_Click);
+            this.arrow_right.MouseLeave += new System.EventHandler(this.arrow_right_MouseLeave);
+            this.arrow_right.MouseHover += new System.EventHandler(this.arrow_right_MouseHover);
             // 
             // shop_right
             // 
@@ -126,6 +136,8 @@ namespace GemoTale
             this.shop_right.TabIndex = 5;
             this.shop_right.TabStop = false;
             this.shop_right.Click += new System.EventHandler(this.shop_right_Click);
+            this.shop_right.MouseLeave += new System.EventHandler(this.shop_MouseLeave);
+            this.shop_right.MouseHover += new System.EventHandler(this.shop_MouseHover);
             // 
             // shop_left
             // 
@@ -139,6 +151,8 @@ namespace GemoTale
             this.shop_left.TabIndex = 6;
             this.shop_left.TabStop = false;
             this.shop_left.Click += new System.EventHandler(this.shop_left_Click);
+            this.shop_left.MouseLeave += new System.EventHandler(this.shop_MouseLeave);
+            this.shop_left.MouseHover += new System.EventHandler(this.shop_MouseHover);
             // 
             // checkpoint
             // 
@@ -164,10 +178,10 @@ namespace GemoTale
             this.Controls.Add(this.arrow_bottom);
             this.Controls.Add(this.arrow_top);
             this.Controls.Add(this.player);
-            this.Controls.Add(this.shop_left);
-            this.Controls.Add(this.shop_right);
             this.Controls.Add(this.arrow_right);
             this.Controls.Add(this.arrow_left);
+            this.Controls.Add(this.shop_left);
+            this.Controls.Add(this.shop_right);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Vista_Mapa";

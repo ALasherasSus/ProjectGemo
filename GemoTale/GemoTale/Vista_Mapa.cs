@@ -240,11 +240,31 @@ namespace GemoTale
             cargarNivel(niveles[extraerNombreNivel(direccionArriba)]);
         }
 
+        private void arrow_top_MouseHover(object sender, EventArgs e)
+        {
+            arrow_top.Image = Image.FromFile("../../Images/UI/arrow_up_on.png");
+        }
+
+        private void arrow_top_MouseLeave(object sender, EventArgs e)
+        {
+            arrow_top.Image = Image.FromFile("../../Images/UI/arrow_up.png");
+        }
+
         private void arrow_bottom_Click(object sender, EventArgs e)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
             cargarNivel(niveles[extraerNombreNivel(direccionAbajo)]);
+        }
+
+        private void arrow_bottom_MouseHover(object sender, EventArgs e)
+        {
+            arrow_bottom.Image = Image.FromFile("../../Images/UI/arrow_down_on.png");
+        }
+
+        private void arrow_bottom_MouseLeave(object sender, EventArgs e)
+        {
+            arrow_bottom.Image = Image.FromFile("../../Images/UI/arrow_down.png");
         }
 
         private void arrow_left_Click(object sender, EventArgs e)
@@ -254,11 +274,31 @@ namespace GemoTale
             cargarNivel(niveles[extraerNombreNivel(direccionIzquierda)]);
         }
 
+        private void arrow_left_MouseHover(object sender, EventArgs e)
+        {
+            arrow_left.Image = Image.FromFile("../../Images/UI/arrow_left_on.png");
+        }
+
+        private void arrow_left_MouseLeave(object sender, EventArgs e)
+        {
+            arrow_left.Image = Image.FromFile("../../Images/UI/arrow_left.png");
+        }
+
         private void arrow_right_Click(object sender, EventArgs e)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
             cargarNivel(niveles[extraerNombreNivel(direccionDerecha)]);
+        }
+
+        private void arrow_right_MouseHover(object sender, EventArgs e)
+        {
+            arrow_right.Image = Image.FromFile("../../Images/UI/arrow_right_on.png");
+        }
+
+        private void arrow_right_MouseLeave(object sender, EventArgs e)
+        {
+            arrow_right.Image = Image.FromFile("../../Images/UI/arrow_right.png");
         }
 
         private void shop_left_Click(object sender, EventArgs e)
@@ -281,10 +321,32 @@ namespace GemoTale
             vistaTienda.Show();
         }
 
+        private void shop_MouseHover(object sender, EventArgs e)
+        {
+            shop_left.Image = Image.FromFile("../../Images/UI/shop_icon_on.png");
+            shop_right.Image = Image.FromFile("../../Images/UI/shop_icon_on.png");
+        }
+
+        private void shop_MouseLeave(object sender, EventArgs e)
+        {
+            shop_left.Image = Image.FromFile("../../Images/UI/shop_icon.png");
+            shop_right.Image = Image.FromFile("../../Images/UI/shop_icon.png");
+        }
+
         private void player_Click(object sender, EventArgs e)
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
             player.Play();
+        }
+
+        private void player_MouseHover(object sender, EventArgs e)
+        {
+            player.Image = Image.FromFile("../../Images/Characters/player_map_on.png");
+        }
+
+        private void player_MouseLeave(object sender, EventArgs e)
+        {
+            player.Image = Image.FromFile("../../Images/Characters/player_map.png");
         }
 
         private void checkpoint_Click(object sender, EventArgs e)

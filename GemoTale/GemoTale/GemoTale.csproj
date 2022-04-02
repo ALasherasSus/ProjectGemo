@@ -106,7 +106,19 @@
     <Content Include="Images\Backgrounds\castle.jpg" />
     <Content Include="Images\Backgrounds\level1_1.jpg" />
     <Content Include="Images\Backgrounds\level1_2.jpg" />
-    <Content Include="Images\Backgrounds\mainmenu.png" />
+    <Content Include="Images\Backgrounds\level1_3.jpg" />
+    <Content Include="Images\Backgrounds\level2_1.jpg" />
+    <Content Include="Images\Backgrounds\level2_2.jpg" />
+    <Content Include="Images\Backgrounds\level2_3.jpg" />
+    <Content Include="Images\Backgrounds\level3_1.jpg" />
+    <Content Include="Images\Backgrounds\level3_2.jpg" />
+    <Content Include="Images\Backgrounds\level3_3.jpg" />
+    <Content Include="Images\Backgrounds\level4_1.jpg" />
+    <Content Include="Images\Backgrounds\level4_2.jpg" />
+    <Content Include="Images\Backgrounds\level5_1.jpg" />
+    <Content Include="Images\Backgrounds\level5_2.jpg" />
+    <Content Include="Images\Backgrounds\level5_3.jpg" />
+    <Content Include="Images\Backgrounds\mainmenu.jpg" />
     <Content Include="Images\Backgrounds\shop1.jpg" />
     <Content Include="Images\Backgrounds\shop2.jpg" />
     <Content Include="Images\Characters\boss1.png" />
@@ -121,18 +133,26 @@
     <Content Include="Images\ConceptArt\Boceto_mapa.jpg" />
     <Content Include="Images\ConceptArt\Mapa.jpg" />
     <Content Include="Images\UI\arrow_down.png" />
+    <Content Include="Images\UI\arrow_down_on.png" />
     <Content Include="Images\UI\arrow_left.png" />
+    <Content Include="Images\UI\arrow_left_on.png" />
     <Content Include="Images\UI\arrow_right.png" />
+    <Content Include="Images\UI\arrow_right_on.png" />
     <Content Include="Images\UI\arrow_up.png" />
+    <Content Include="Images\UI\arrow_up_on.png" />
     <Content Include="Images\UI\checkpoint.png" />
     <Content Include="Images\UI\game_logo.png" />
     <Content Include="Images\UI\shop_icon.png" />
+    <Content Include="Images\UI\shop_icon_on.png" />
     <Content Include="Images\UI\shop_title.png" />
     <Content Include="Sounds\Music\1_1 Nsanity Island MSTR.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
     <Content Include="Sounds\SFX\change_screen.wav" />
+    <Content Include="Sounds\SFX\checkpoint.wav" />
     <Content Include="Sounds\SFX\click1.wav" />
     <Content Include="Sounds\SFX\click2.wav" />
+    <Content Include="Sounds\SFX\door_close.wav" />
+    <Content Include="Sounds\SFX\door_open.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
