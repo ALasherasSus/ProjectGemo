@@ -21,7 +21,6 @@ namespace GemoTale
         {
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
-            player.Image = Image.FromFile("../../Images/Characters/player_map.png");
             niveles = new List<Nivel>();
             generarMapas();
 
@@ -169,6 +168,7 @@ namespace GemoTale
 
         private void cargarNivel(Nivel lvl)
         {
+            player.Image = Image.FromFile("../../Images/Characters/player_map.png");
             arrow_bottom.Visible = false;
             arrow_left.Visible = false;
             arrow_right.Visible = false;
