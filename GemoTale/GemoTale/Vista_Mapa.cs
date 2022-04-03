@@ -17,6 +17,7 @@ namespace GemoTale
         private String direccionAbajo;
         private String direccionIzquierda;
         private String direccionDerecha;
+        private Boolean enemigoVisible;
         public Vista_Mapa(Boolean cargar, int ranura)
         {
             InitializeComponent();
@@ -52,6 +53,9 @@ namespace GemoTale
             lvl1_2.DireccionAbajo = "lvl1_1";
             lvl1_2.TiendaIzquierda = true;
             lvl1_2.ImagenFondo = "../../Images/Backgrounds/level1_2.jpg";
+            lvl1_2.EnemigoAcechante = true;
+            Enemigo enemigo1 = new Enemigo("Cangrejo", 100, 20, "../../Images/Characters/enemy1.png");
+            lvl1_2.Enemigo = enemigo1;
             niveles.Add(lvl1_2);
 
             Nivel lvl1_3 = new Nivel();
@@ -72,6 +76,9 @@ namespace GemoTale
             lvl2_1.FlechaAbajo = true;
             lvl2_1.DireccionAbajo = "lvl1_3";
             lvl2_1.ImagenFondo = "../../Images/Backgrounds/level2_1.jpg";
+            lvl2_1.EnemigoAcechante = true;
+            Enemigo enemigo2 = new Enemigo("Pingüino", 150, 25, "../../Images/Characters/enemy2.png");
+            lvl2_1.Enemigo = enemigo2;
             niveles.Add(lvl2_1);
 
             Nivel lvl2_2 = new Nivel();
@@ -81,6 +88,9 @@ namespace GemoTale
             lvl2_2.FlechaAbajo = true;
             lvl2_2.DireccionAbajo = "lvl2_1";
             lvl2_2.ImagenFondo = "../../Images/Backgrounds/level2_2.jpg";
+            lvl2_2.EnemigoAcechante = true;
+            Enemigo jefe2 = new Enemigo("Dingodile", 500, 150, "../../Images/Characters/boss2.png");
+            lvl2_2.Enemigo = jefe2;
             niveles.Add(lvl2_2);
 
             Nivel lvl2_3 = new Nivel();
@@ -90,6 +100,9 @@ namespace GemoTale
             lvl2_3.FlechaIzquierda = true;
             lvl2_3.DireccionIzquierda = "lvl2_2";
             lvl2_3.ImagenFondo = "../../Images/Backgrounds/level2_3.jpg";
+            lvl2_3.EnemigoAcechante = true;
+            Enemigo enemigo3 = new Enemigo("Tiburón", 200, 30, "../../Images/Characters/enemy3.png");
+            lvl2_3.Enemigo = enemigo3;
             niveles.Add(lvl2_3);
 
             Nivel lvl3_1 = new Nivel();
@@ -99,6 +112,9 @@ namespace GemoTale
             lvl3_1.FlechaIzquierda = true;
             lvl3_1.DireccionIzquierda = "lvl1_3";
             lvl3_1.ImagenFondo = "../../Images/Backgrounds/level3_1.jpg";
+            lvl3_1.EnemigoAcechante = true;
+            Enemigo enemigo4 = new Enemigo("Planta Piraña", 250, 35, "../../Images/Characters/enemy4.png");
+            lvl3_1.Enemigo = enemigo4;
             niveles.Add(lvl3_1);
 
             Nivel lvl3_2 = new Nivel();
@@ -108,6 +124,9 @@ namespace GemoTale
             lvl3_2.FlechaIzquierda = true;
             lvl3_2.DireccionIzquierda = "lvl3_1";
             lvl3_2.ImagenFondo = "../../Images/Backgrounds/level3_2.jpg";
+            lvl3_2.EnemigoAcechante = true;
+            Enemigo enemigo5 = new Enemigo("Indígena", 300, 40, "../../Images/Characters/enemy5.png");
+            lvl3_2.Enemigo = enemigo5;
             niveles.Add(lvl3_2);
 
             Nivel lvl3_3 = new Nivel();
@@ -117,6 +136,9 @@ namespace GemoTale
             lvl3_3.FlechaIzquierda = true;
             lvl3_3.DireccionIzquierda = "lvl3_2";
             lvl3_3.ImagenFondo = "../../Images/Backgrounds/level3_3.jpg";
+            lvl3_3.EnemigoAcechante = true;
+            Enemigo jefe1 = new Enemigo("Tiny Tiger", 450, 100, "../../Images/Characters/boss1.png");
+            lvl3_3.Enemigo = jefe1;
             niveles.Add(lvl3_3);
 
             Nivel lvl4_1 = new Nivel();
@@ -136,6 +158,9 @@ namespace GemoTale
             lvl4_2.FlechaAbajo = true;
             lvl4_2.DireccionAbajo = "lvl4_1";
             lvl4_2.ImagenFondo = "../../Images/Backgrounds/level4_2.jpg";
+            lvl4_2.EnemigoAcechante = true;
+            Enemigo jefe3 = new Enemigo("Dr. N. Tropy", 550, 200, "../../Images/Characters/boss3.png");
+            lvl4_2.Enemigo = jefe3;
             niveles.Add(lvl4_2);
 
             Nivel lvl5_1 = new Nivel();
@@ -156,6 +181,9 @@ namespace GemoTale
             lvl5_2.FlechaAbajo = true;
             lvl5_2.DireccionAbajo = "lvl5_1";
             lvl5_2.ImagenFondo = "../../Images/Backgrounds/level5_2.jpg";
+            lvl5_2.EnemigoAcechante = true;
+            Enemigo jefe4 = new Enemigo("Dr. N. Gin", 600, 250, "../../Images/Characters/boss4.png");
+            lvl5_2.Enemigo = jefe4;
             niveles.Add(lvl5_2);
 
             Nivel lvl5_3 = new Nivel();
@@ -163,6 +191,9 @@ namespace GemoTale
             lvl5_3.FlechaAbajo = true;
             lvl5_3.DireccionAbajo = "lvl5_2";
             lvl5_3.ImagenFondo = "../../Images/Backgrounds/level5_3.jpg";
+            lvl5_3.EnemigoAcechante = true;
+            Enemigo jefe5 = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png");
+            lvl5_3.Enemigo = jefe5;
             niveles.Add(lvl5_3);
         }
 
@@ -175,6 +206,7 @@ namespace GemoTale
             arrow_top.Visible = false;
             shop_left.Visible = false;
             shop_right.Visible = false;
+            enemigoVisible = false;
             direccionArriba = "";
             direccionAbajo = "";
             direccionIzquierda = "";
@@ -212,6 +244,12 @@ namespace GemoTale
             if (lvl.TiendaIzquierda == true)
             {
                 shop_left.Visible = true;
+            }
+
+            if (lvl.EnemigoAcechante == true)
+            {
+                enemigoVisible = true;
+                player.Image = Image.FromFile(lvl.Enemigo.Foto);
             }
 
             this.BackgroundImage = Image.FromFile(lvl.ImagenFondo);
@@ -337,16 +375,26 @@ namespace GemoTale
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
             player.Play();
+            if (enemigoVisible == false)
+            {
+                // EMPEZAR COMBATE (!)
+            }
         }
 
         private void player_MouseHover(object sender, EventArgs e)
         {
-            player.Image = Image.FromFile("../../Images/Characters/player_map_on.png");
+            if (enemigoVisible == false)
+            {
+                player.Image = Image.FromFile("../../Images/Characters/player_map_on.png");
+            }
         }
 
         private void player_MouseLeave(object sender, EventArgs e)
         {
-            player.Image = Image.FromFile("../../Images/Characters/player_map.png");
+            if (enemigoVisible == false)
+            {
+                player.Image = Image.FromFile("../../Images/Characters/player_map.png");
+            }
         }
 
         private void checkpoint_Click(object sender, EventArgs e)

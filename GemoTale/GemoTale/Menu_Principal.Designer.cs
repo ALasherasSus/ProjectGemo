@@ -146,7 +146,7 @@ namespace GemoTale
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Menu_Principal";
-            this.Text = "Gemo\'s Tale";
+            this.Text = "Crash Bandicoot RPG";
             this.Load += new System.EventHandler(this.Menu_Principal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gameLogo)).EndInit();
             this.ResumeLayout(false);

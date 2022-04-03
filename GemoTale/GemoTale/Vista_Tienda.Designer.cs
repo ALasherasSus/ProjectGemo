@@ -86,7 +86,7 @@ namespace GemoTale
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Vista_Tienda";
-            this.Text = "Gemo\'s Tale - Tienda";
+            this.Text = "Crash Bandicoot RPG - Tienda";
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shopper)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.title)).EndInit();

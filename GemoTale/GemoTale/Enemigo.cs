@@ -17,59 +17,31 @@ namespace GemoTale
         public Enemigo()
         {
         }
-        public Enemigo(String nombre, Double vida, int ataque, String foto)
+
+        public Enemigo(string nombre, double vida, int ataque, string foto)
         {
-            this.nombre = nombre;
-            this.vida = vida;
-            this.ataque = ataque;
-            this.foto = foto;
+            this.Nombre = nombre;
+            this.Vida = vida;
+            this.Ataque = ataque;
+            this.Foto = foto;
         }
 
-        public String getNombre()
-        {
-            return this.nombre;
-        }
-        public Double getVida()
-        {
-            return this.vida;
-        }
-        public int getataque()
-        {
-            return this.ataque;
-        }
-        public String getFoto()
-        {
-            return this.foto;
-        }
-        public void setNombre(String nombre)
-        {
-            this.nombre = nombre;
-        }
-        public void setVida(Double vida)
-        {
-            this.vida = vida;
-        }
-        public void setataque(int ataque)
-        {
-            this.ataque = ataque;
-        }
-
-        public void setFoto(String foto) {
-
-            this.foto = foto;
-        }
+        public string Nombre { get => nombre; set => nombre = value; }
+        public double Vida { get => vida; set => vida = value; }
+        public int Ataque { get => ataque; set => ataque = value; }
+        public string Foto { get => foto; set => foto = value; }
 
         public int generarAtaque()
         {
             //ramdom entre ataque y ataque - 10
             Random rnd = new Random();
-            int ataquegenerado = rnd.Next(this.ataque - 10, this.ataque);
+            int ataquegenerado = rnd.Next(this.Ataque - 10, this.Ataque);
 
             return ataquegenerado;
         }
         public void recibirAtaque(int ataqueEnemigo)
         {
-            this.vida = this.vida - ataqueEnemigo;
+            this.Vida = this.Vida - ataqueEnemigo;
         }
 
 

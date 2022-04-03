@@ -126,8 +126,14 @@
     <Content Include="Images\Characters\boss3.png" />
     <Content Include="Images\Characters\boss4.png" />
     <Content Include="Images\Characters\boss5.png" />
+    <Content Include="Images\Characters\enemy1.png" />
+    <Content Include="Images\Characters\enemy2.png" />
+    <Content Include="Images\Characters\enemy3.png" />
+    <Content Include="Images\Characters\enemy4.png" />
+    <Content Include="Images\Characters\enemy5.png" />
     <Content Include="Images\Characters\player_combat.png" />
     <Content Include="Images\Characters\player_map.png" />
+    <Content Include="Images\Characters\player_map_on.png" />
     <Content Include="Images\Characters\shopper1.png" />
     <Content Include="Images\Characters\shopper2.png" />
     <Content Include="Images\ConceptArt\Boceto_mapa.jpg" />

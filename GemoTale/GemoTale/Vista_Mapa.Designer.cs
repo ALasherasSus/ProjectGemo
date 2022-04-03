@@ -185,7 +185,7 @@ namespace GemoTale
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Vista_Mapa";
-            this.Text = "Gemo\'s Tale - Mapa";
+            this.Text = "Crash Bandicoot RPG - Mapa";
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_top)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_bottom)).EndInit();
