@@ -18,6 +18,7 @@ namespace GemoTale
         private String direccionIzquierda;
         private String direccionDerecha;
         private Boolean enemigoVisible;
+        private Jugador jugador;
         public Vista_Mapa(Boolean cargar, int ranura)
         {
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace GemoTale
             switch (cargar)
             {
                 case false:
+                    jugador = new Jugador(100, 100, 20, 25, 0.0);
                     cargarNivel(niveles[0]);
                     break;
                 case true:
@@ -373,11 +375,19 @@ namespace GemoTale
 
         private void player_Click(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
-            player.Play();
-            if (enemigoVisible == false)
+            if (enemigoVisible == true)
             {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/enemy_encounter.wav");
+                player.Play();
                 // EMPEZAR COMBATE (!)
+            } else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
+                player.Play();
+                this.Hide();
+                Vista_Estadisticas vistaEstadisticas = new Vista_Estadisticas(jugador);
+                vistaEstadisticas.Closed += (s, args) => this.Show(); this.CenterToScreen();
+                vistaEstadisticas.Show();
             }
         }
 
