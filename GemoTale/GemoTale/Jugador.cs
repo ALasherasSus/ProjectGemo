@@ -1,18 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GemoTale
 {
+    [DataContract]
     public class Jugador
     {
-        Double vida;
-        Double vidaMaxima;
-        int ataque;
-        int dinero;
-        Double defensa;
+        [DataMember] Double vida;
+        [DataMember] Double vidaMaxima;
+        [DataMember] int ataque;
+        [DataMember] int dinero;
+        [DataMember] Double defensa;
 
         public Jugador()
         {

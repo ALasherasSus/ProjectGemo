@@ -1,27 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace GemoTale
 {
+    [DataContract]
     public class Nivel
     {
-        String nombre;
-        String imagenFondo;
-        Boolean flechaArriba;
-        Boolean flechaAbajo;
-        Boolean flechaIzquierda;
-        Boolean flechaDerecha;
-        Boolean tiendaIzquierda;
-        Boolean tiendaDerecha;
-        String direccionArriba;
-        String direccionAbajo;
-        String direccionIzquierda;
-        String direccionDerecha;
-        Boolean enemigoAcechante;
-        Enemigo enemigo;
+        [DataMember] String nombre;
+        [DataMember] String imagenFondo;
+        [DataMember] Boolean flechaArriba;
+        [DataMember] Boolean flechaAbajo;
+        [DataMember] Boolean flechaIzquierda;
+        [DataMember] Boolean flechaDerecha;
+        [DataMember] Boolean tiendaIzquierda;
+        [DataMember] Boolean tiendaDerecha;
+        [DataMember] String direccionArriba;
+        [DataMember] String direccionAbajo;
+        [DataMember] String direccionIzquierda;
+        [DataMember] String direccionDerecha;
+        [DataMember] Boolean enemigoAcechante;
+        [DataMember] Enemigo enemigo;
 
         public Nivel()
         {
