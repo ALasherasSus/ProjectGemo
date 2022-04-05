@@ -17,7 +17,6 @@ namespace GemoTale
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
 
-            title.Image = Image.FromFile("../../Images/UI/shop_title.png");
             switch (tienda)
             {
                 case "izquierda":
@@ -32,14 +31,12 @@ namespace GemoTale
         private void cargarIzquierda()
         {
             go_back.Image = Image.FromFile("../../Images/UI/arrow_right.png");
-            shopper.Image = Image.FromFile("../../Images/Characters/shopper1.png");
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/shop1.jpg");
         }
 
         private void cargarDerecha()
         {
             go_back.Image = Image.FromFile("../../Images/UI/arrow_left.png");
-            shopper.Image = Image.FromFile("../../Images/Characters/shopper2.png");
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/shop2.jpg");
         }
 
