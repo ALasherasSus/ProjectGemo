@@ -31,11 +31,7 @@ namespace GemoTale
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vista_Tienda));
             this.go_back = new System.Windows.Forms.PictureBox();
-            this.shopper = new System.Windows.Forms.PictureBox();
-            this.title = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopper)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.title)).BeginInit();
             this.SuspendLayout();
             // 
             // go_back
@@ -51,28 +47,6 @@ namespace GemoTale
             this.go_back.TabStop = false;
             this.go_back.Click += new System.EventHandler(this.go_back_Click);
             // 
-            // shopper
-            // 
-            this.shopper.BackColor = System.Drawing.Color.Transparent;
-            this.shopper.Image = ((System.Drawing.Image)(resources.GetObject("shopper.Image")));
-            this.shopper.Location = new System.Drawing.Point(12, 96);
-            this.shopper.Name = "shopper";
-            this.shopper.Size = new System.Drawing.Size(280, 462);
-            this.shopper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.shopper.TabIndex = 6;
-            this.shopper.TabStop = false;
-            // 
-            // title
-            // 
-            this.title.BackColor = System.Drawing.Color.Transparent;
-            this.title.Image = ((System.Drawing.Image)(resources.GetObject("title.Image")));
-            this.title.Location = new System.Drawing.Point(12, 5);
-            this.title.Name = "title";
-            this.title.Size = new System.Drawing.Size(600, 92);
-            this.title.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.title.TabIndex = 7;
-            this.title.TabStop = false;
-            // 
             // Vista_Tienda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -81,15 +55,11 @@ namespace GemoTale
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
             this.Controls.Add(this.go_back);
-            this.Controls.Add(this.shopper);
-            this.Controls.Add(this.title);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Vista_Tienda";
             this.Text = "Crash Bandicoot RPG - Tienda";
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shopper)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.title)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,7 +67,5 @@ namespace GemoTale
         #endregion
 
         private System.Windows.Forms.PictureBox go_back;
-        private System.Windows.Forms.PictureBox shopper;
-        private System.Windows.Forms.PictureBox title;
     }
 }

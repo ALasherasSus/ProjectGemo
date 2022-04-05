@@ -12,15 +12,15 @@ namespace GemoTale
 {
     public partial class Vista_Mapa : Form
     {
-        private List<Nivel> niveles; //Listado de niveles generados
-        private String mapaAnterior = "lvl1_1"; //Mapa anterior al que huir
-        private Nivel mapaActual; //Mapa en el que te encuentras
+        private List<Nivel> niveles; //Listado de niveles generados - GUARDAR
+        private String mapaAnterior = "lvl1_1"; //Mapa anterior al que huir - GUARDAR
+        private Nivel mapaActual; //Mapa en el que te encuentras - GUARDAR
         private String direccionArriba; //Mapa al que te mueves usando la flecha de arriba
         private String direccionAbajo; //Mapa al que te mueves usando la flecha de abajo
         private String direccionIzquierda; //Mapa al que te mueves usando la flecha de la izquierda
         private String direccionDerecha; //Mapa al que te mueves usando la flecha de la derecha
         private Boolean enemigoVisible; //Indica si hay un enemigo en el mapa actual
-        private Jugador jugador; //El objeto jugador
+        private Jugador jugador; //El objeto jugador - GUARDAR
         private int ranura; //La ranura en la que se guarda/carga la partida
 
         private Boolean modoDebug; //Si está activado permitirá el movimiento libre por todo el mapa
