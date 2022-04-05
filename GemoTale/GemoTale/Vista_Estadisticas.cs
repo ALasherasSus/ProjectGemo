@@ -12,16 +12,21 @@ namespace GemoTale
 {
     public partial class Vista_Estadisticas : Form
     {
-        public Vista_Estadisticas(Jugador jugador)
+        public Vista_Estadisticas()
         {
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
-            pbVida.Maximum = (int)jugador.VidaMaxima;
-            pbVida.Value = (int)jugador.Vida;
-            pbVidaMaxima.Value = (int)jugador.VidaMaxima;
-            pbAtaque.Value = jugador.Ataque;
-            pbDefensa.Value = (int)(jugador.Defensa * 10);
-            tbDinero.Text = jugador.Dinero + "$";
+            cargarPantalla();
+
+            if (Globales.modoDebug == true)
+            {
+                lblDebug.Visible = true;
+                nudVida.Visible = true;
+                nudVidaMaxima.Visible = true;
+                nudAtaque.Visible = true;
+                nudDefensa.Visible = true;
+                nudDinero.Visible = true;
+            }
 
             //BURBUJAS DE INFORMACIÓN
             // Create the ToolTip and associate with the Form container.
@@ -40,6 +45,59 @@ namespace GemoTale
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_hit.wav");
             player.Play();
             this.Close();
+        }
+
+        private void cargarPantalla()
+        {
+            try
+            {
+                pbVida.Maximum = (int)Globales.Jugador.VidaMaxima;
+                pbVida.Value = (int)Globales.Jugador.Vida;
+                pbVidaMaxima.Value = (int)Globales.Jugador.VidaMaxima;
+                pbAtaque.Value = Globales.Jugador.Ataque;
+                pbDefensa.Value = (int)(Globales.Jugador.Defensa);
+                tbDinero.Text = Globales.Jugador.Dinero + "$";
+
+                nudVida.Value = (int)Globales.Jugador.Vida;
+                nudVidaMaxima.Value = (int)Globales.Jugador.VidaMaxima;
+                nudAtaque.Value = Globales.Jugador.Ataque;
+                nudDefensa.Value = (int)(Globales.Jugador.Defensa);
+                nudDinero.Value = Globales.Jugador.Dinero;
+            }
+            catch (System.ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("El valor no es valido.");
+            }
+        }
+
+        private void nudVida_ValueChanged(object sender, EventArgs e)
+        {
+            Globales.Jugador.Vida = (double)nudVida.Value;
+            cargarPantalla();
+        }
+
+        private void nudVidaMaxima_ValueChanged(object sender, EventArgs e)
+        {
+            Globales.Jugador.VidaMaxima = (double)nudVidaMaxima.Value;
+            cargarPantalla();
+        }
+
+        private void nudAtaque_ValueChanged(object sender, EventArgs e)
+        {
+            Globales.Jugador.Ataque = (int)nudAtaque.Value;
+            cargarPantalla();
+        }
+
+        private void nudDefensa_ValueChanged(object sender, EventArgs e)
+        {
+            Globales.Jugador.Defensa = (int)nudDefensa.Value;
+            cargarPantalla();
+        }
+
+        private void nudDinero_ValueChanged(object sender, EventArgs e)
+        {
+            Globales.Jugador.Dinero = (int)nudDinero.Value;
+            cargarPantalla();
         }
     }
 }

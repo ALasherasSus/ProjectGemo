@@ -8,7 +8,6 @@ namespace GemoTale
 {
     public class Enemigo
     {
-
         String nombre;
         Double vida;
         int ataque;

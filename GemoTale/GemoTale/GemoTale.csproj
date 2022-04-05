@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,7 +47,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cargarGuardar.cs" />
     <Compile Include="Enemigo.cs" />
+    <Compile Include="Globales.cs" />
     <Compile Include="Jugador.cs" />
     <Compile Include="Menu_Principal.cs">
       <SubType>Form</SubType>
@@ -130,6 +133,7 @@
     <Content Include="Images\Backgrounds\mainmenu.jpg" />
     <Content Include="Images\Backgrounds\shop1.jpg" />
     <Content Include="Images\Backgrounds\shop2.jpg" />
+    <Content Include="Images\Backgrounds\stats.jpg" />
     <Content Include="Images\Characters\boss1.png" />
     <Content Include="Images\Characters\boss2.png" />
     <Content Include="Images\Characters\boss3.png" />
@@ -143,8 +147,6 @@
     <Content Include="Images\Characters\player_combat.png" />
     <Content Include="Images\Characters\player_map.png" />
     <Content Include="Images\Characters\player_map_on.png" />
-    <Content Include="Images\Characters\shopper1.png" />
-    <Content Include="Images\Characters\shopper2.png" />
     <Content Include="Images\ConceptArt\Boceto_mapa.jpg" />
     <Content Include="Images\ConceptArt\Mapa.jpg" />
     <Content Include="Images\UI\arrow_down.png" />
@@ -160,7 +162,6 @@
     <Content Include="Images\UI\run.png" />
     <Content Include="Images\UI\shop_icon.png" />
     <Content Include="Images\UI\shop_icon_on.png" />
-    <Content Include="Images\UI\shop_title.png" />
     <Content Include="Sounds\Music\1_1 Nsanity Island MSTR.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
     <Content Include="Sounds\SFX\change_screen.wav" />

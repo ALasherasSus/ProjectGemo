@@ -20,10 +20,8 @@ namespace GemoTale
         private String direccionIzquierda; //Mapa al que te mueves usando la flecha de la izquierda
         private String direccionDerecha; //Mapa al que te mueves usando la flecha de la derecha
         private Boolean enemigoVisible; //Indica si hay un enemigo en el mapa actual
-        private Jugador jugador; //El objeto jugador - GUARDAR
+        //public static Jugador jugador; //El objeto jugador - GUARDAR
         private int ranura; //La ranura en la que se guarda/carga la partida
-
-        private Boolean modoDebug; //Si está activado permitirá el movimiento libre por todo el mapa
         public Vista_Mapa(Boolean cargar, int ranura)
         {
             InitializeComponent();
@@ -31,8 +29,8 @@ namespace GemoTale
             niveles = new List<Nivel>();
             this.ranura = ranura;
 
-            modoDebug = true; //ACTIVAR EL MODO DEBUG
-            if (modoDebug == true)
+            Globales.modoDebug = true; //ACTIVAR EL MODO DEBUG
+            if (Globales.modoDebug == true)
             {
                 lblDebug.Visible = true;
             }
@@ -41,7 +39,7 @@ namespace GemoTale
             {
                 case false: //Nueva Partida
                     generarMapas();
-                    jugador = new Jugador(100, 100, 20, 0, 0.0);
+                    Globales.Jugador = new Jugador(60, 100, 100, 900, 0);
                     cargarNivel(niveles[0]);
                     break;
                 case true: //Cargar Partida
@@ -285,7 +283,7 @@ namespace GemoTale
                 enemigoVisible = true;
                 player.Image = Image.FromFile(lvl.Enemigo.Foto);
                 checkpoint.Image = Image.FromFile("../../Images/UI/run.png");
-                if (modoDebug == false)
+                if (Globales.modoDebug == false)
                 {
                     arrow_bottom.Visible = false;
                     arrow_top.Visible = false;
@@ -429,7 +427,7 @@ namespace GemoTale
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
                 player.Play();
                 this.Hide();
-                Vista_Estadisticas vistaEstadisticas = new Vista_Estadisticas(jugador);
+                Vista_Estadisticas vistaEstadisticas = new Vista_Estadisticas();
                 vistaEstadisticas.Closed += (s, args) => this.Show(); this.CenterToScreen();
                 vistaEstadisticas.Show();
             }

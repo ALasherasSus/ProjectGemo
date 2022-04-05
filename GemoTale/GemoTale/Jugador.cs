@@ -14,13 +14,13 @@ namespace GemoTale
         [DataMember] Double vidaMaxima;
         [DataMember] int ataque;
         [DataMember] int dinero;
-        [DataMember] Double defensa;
+        [DataMember] int defensa;
 
         public Jugador()
         {
         }
 
-        public Jugador(double vida, double vidaMaxima, int ataque, int dinero, double defensa)
+        public Jugador(double vida, double vidaMaxima, int ataque, int dinero, int defensa)
         {
             this.Vida = vida;
             this.VidaMaxima = vidaMaxima;
@@ -33,17 +33,18 @@ namespace GemoTale
         public double VidaMaxima { get => vidaMaxima; set => vidaMaxima = value; }
         public int Ataque { get => ataque; set => ataque = value; }
         public int Dinero { get => dinero; set => dinero = value; }
-        public double Defensa { get => defensa; set => defensa = value; }
+        public int Defensa { get => defensa; set => defensa = value; }
 
-        public void recibirAtaque(int ataqueEnemigo) {
-            this.Vida = this.Vida - ataqueEnemigo;
+        public void recibirAtaque(int ataqueEnemigo)
+        {
+            this.Vida = this.Vida - (ataqueEnemigo * (1 - (defensa / 10)));
         }
 
         public int generarAtaque()
         {
             //ramdom entre ataque y ataque - 10
             Random rnd = new Random();
-            int ataquegenerado = rnd.Next(this.Ataque-10, this.Ataque);
+            int ataquegenerado = rnd.Next(this.Ataque - 10, this.Ataque);
 
             return ataquegenerado;
         }

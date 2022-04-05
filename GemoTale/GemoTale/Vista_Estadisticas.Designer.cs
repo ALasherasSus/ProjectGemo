@@ -41,7 +41,18 @@ namespace GemoTale
             this.lblDefensa = new System.Windows.Forms.Label();
             this.lblDinero = new System.Windows.Forms.Label();
             this.tbDinero = new System.Windows.Forms.TextBox();
+            this.nudVida = new System.Windows.Forms.NumericUpDown();
+            this.nudVidaMaxima = new System.Windows.Forms.NumericUpDown();
+            this.nudAtaque = new System.Windows.Forms.NumericUpDown();
+            this.nudDefensa = new System.Windows.Forms.NumericUpDown();
+            this.nudDinero = new System.Windows.Forms.NumericUpDown();
+            this.lblDebug = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVida)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVidaMaxima)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAtaque)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDefensa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDinero)).BeginInit();
             this.SuspendLayout();
             // 
             // go_back
@@ -170,6 +181,93 @@ namespace GemoTale
             this.tbDinero.TabIndex = 16;
             this.tbDinero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // nudVida
+            // 
+            this.nudVida.Location = new System.Drawing.Point(211, 130);
+            this.nudVida.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.nudVida.Name = "nudVida";
+            this.nudVida.Size = new System.Drawing.Size(78, 20);
+            this.nudVida.TabIndex = 17;
+            this.nudVida.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nudVida.Visible = false;
+            this.nudVida.ValueChanged += new System.EventHandler(this.nudVida_ValueChanged);
+            // 
+            // nudVidaMaxima
+            // 
+            this.nudVidaMaxima.Location = new System.Drawing.Point(212, 186);
+            this.nudVidaMaxima.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.nudVidaMaxima.Name = "nudVidaMaxima";
+            this.nudVidaMaxima.Size = new System.Drawing.Size(78, 20);
+            this.nudVidaMaxima.TabIndex = 18;
+            this.nudVidaMaxima.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nudVidaMaxima.Visible = false;
+            this.nudVidaMaxima.ValueChanged += new System.EventHandler(this.nudVidaMaxima_ValueChanged);
+            // 
+            // nudAtaque
+            // 
+            this.nudAtaque.Location = new System.Drawing.Point(212, 242);
+            this.nudAtaque.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.nudAtaque.Name = "nudAtaque";
+            this.nudAtaque.Size = new System.Drawing.Size(78, 20);
+            this.nudAtaque.TabIndex = 19;
+            this.nudAtaque.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nudAtaque.Visible = false;
+            this.nudAtaque.ValueChanged += new System.EventHandler(this.nudAtaque_ValueChanged);
+            // 
+            // nudDefensa
+            // 
+            this.nudDefensa.Location = new System.Drawing.Point(211, 298);
+            this.nudDefensa.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.nudDefensa.Name = "nudDefensa";
+            this.nudDefensa.Size = new System.Drawing.Size(78, 20);
+            this.nudDefensa.TabIndex = 20;
+            this.nudDefensa.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nudDefensa.Visible = false;
+            this.nudDefensa.ValueChanged += new System.EventHandler(this.nudDefensa_ValueChanged);
+            // 
+            // nudDinero
+            // 
+            this.nudDinero.Location = new System.Drawing.Point(211, 355);
+            this.nudDinero.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.nudDinero.Name = "nudDinero";
+            this.nudDinero.Size = new System.Drawing.Size(78, 20);
+            this.nudDinero.TabIndex = 21;
+            this.nudDinero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nudDinero.Visible = false;
+            this.nudDinero.ValueChanged += new System.EventHandler(this.nudDinero_ValueChanged);
+            // 
+            // lblDebug
+            // 
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.BackColor = System.Drawing.Color.Transparent;
+            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDebug.Location = new System.Drawing.Point(0, 0);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Size = new System.Drawing.Size(149, 24);
+            this.lblDebug.TabIndex = 22;
+            this.lblDebug.Text = "MODO DEBUG";
+            this.lblDebug.Visible = false;
+            // 
             // Vista_Estadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +275,12 @@ namespace GemoTale
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.lblDebug);
+            this.Controls.Add(this.nudDinero);
+            this.Controls.Add(this.nudDefensa);
+            this.Controls.Add(this.nudAtaque);
+            this.Controls.Add(this.nudVidaMaxima);
+            this.Controls.Add(this.nudVida);
             this.Controls.Add(this.tbDinero);
             this.Controls.Add(this.lblDinero);
             this.Controls.Add(this.pbDefensa);
@@ -193,6 +297,11 @@ namespace GemoTale
             this.Name = "Vista_Estadisticas";
             this.Text = "Crash Bandicoot RPG - Estadísticas";
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVida)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudVidaMaxima)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAtaque)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDefensa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudDinero)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +320,11 @@ namespace GemoTale
         private System.Windows.Forms.Label lblDefensa;
         private System.Windows.Forms.Label lblDinero;
         private System.Windows.Forms.TextBox tbDinero;
+        private System.Windows.Forms.NumericUpDown nudVida;
+        private System.Windows.Forms.NumericUpDown nudVidaMaxima;
+        private System.Windows.Forms.NumericUpDown nudAtaque;
+        private System.Windows.Forms.NumericUpDown nudDefensa;
+        private System.Windows.Forms.NumericUpDown nudDinero;
+        private System.Windows.Forms.Label lblDebug;
     }
 }

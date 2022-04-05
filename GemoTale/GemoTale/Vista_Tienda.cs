@@ -15,8 +15,8 @@ namespace GemoTale
         public Vista_Tienda(String tienda)
         {
             InitializeComponent();
-            this.CenterToScreen(); // Centrar la ventana en la pantalla
-
+            this.CenterToScreen(); //Centrar la ventana en la pantalla
+            cargarPantalla();
             switch (tienda)
             {
                 case "izquierda":
@@ -32,12 +32,26 @@ namespace GemoTale
         {
             go_back.Image = Image.FromFile("../../Images/UI/arrow_right.png");
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/shop1.jpg");
+
+            lblAtaque.Enabled = false;
+            pbAtaque.Enabled = false;
+            btnAtaque.Enabled = false;
+            lblDefensa.Enabled = false;
+            pbDefensa.Enabled = false;
+            btnDefensa.Enabled = false;
         }
 
         private void cargarDerecha()
         {
             go_back.Image = Image.FromFile("../../Images/UI/arrow_left.png");
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/shop2.jpg");
+
+            lblVida.Enabled = false;
+            pbVida.Enabled = false;
+            btnVida.Enabled = false;
+            lblVidaMaxima.Enabled = false;
+            pbVidaMaxima.Enabled = false;
+            btnVidaMaxima.Enabled = false;
         }
 
         private void go_back_Click(object sender, EventArgs e)
@@ -45,6 +59,60 @@ namespace GemoTale
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/door_close.wav");
             player.Play();
             this.Close();
+        }
+
+        private void btnVida_Click(object sender, EventArgs e)
+        {
+            if (Globales.Jugador.Dinero >= Convert.ToInt32(btnVida.Text) && pbVida.Maximum != Globales.Jugador.Vida)
+            {
+                Globales.Jugador.Dinero -= Convert.ToInt32(btnVida.Text);
+                Globales.Jugador.Vida += 10;
+                if (Globales.Jugador.Vida > Globales.Jugador.VidaMaxima)
+                {
+                    Globales.Jugador.Vida = Globales.Jugador.VidaMaxima;
+                }
+            }
+            cargarPantalla();
+        }
+
+        private void btnVidaMaxima_Click(object sender, EventArgs e)
+        {
+            if (Globales.Jugador.Dinero >= Convert.ToInt32(btnVidaMaxima.Text) && pbVidaMaxima.Maximum != Globales.Jugador.VidaMaxima)
+            {
+                Globales.Jugador.Dinero -= Convert.ToInt32(btnVidaMaxima.Text);
+                Globales.Jugador.VidaMaxima += 50;
+            }
+            cargarPantalla();
+        }
+
+        private void btnAtaque_Click(object sender, EventArgs e)
+        {
+            if (Globales.Jugador.Dinero >= Convert.ToInt32(btnAtaque.Text) && pbAtaque.Maximum != Globales.Jugador.Ataque)
+            {
+                Globales.Jugador.Dinero -= Convert.ToInt32(btnAtaque.Text);
+                Globales.Jugador.Ataque += 5;
+            }
+            cargarPantalla();
+        }
+
+        private void btnDefensa_Click(object sender, EventArgs e)
+        {
+            if (Globales.Jugador.Dinero >= Convert.ToInt32(btnDefensa.Text) && pbDefensa.Maximum != Globales.Jugador.Defensa)
+            {
+                Globales.Jugador.Dinero -= Convert.ToInt32(btnDefensa.Text);
+                Globales.Jugador.Defensa += 1;
+            }
+            cargarPantalla();
+        }
+
+        private void cargarPantalla()
+        {
+            pbVida.Maximum = (int)Globales.Jugador.VidaMaxima;
+            pbVida.Value = (int)Globales.Jugador.Vida;
+            pbVidaMaxima.Value = (int)Globales.Jugador.VidaMaxima;
+            pbAtaque.Value = Globales.Jugador.Ataque;
+            pbDefensa.Value = (int)(Globales.Jugador.Defensa);
+            tbDinero.Text = Globales.Jugador.Dinero + "$";
         }
     }
 }
