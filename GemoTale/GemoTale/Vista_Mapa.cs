@@ -12,27 +12,40 @@ namespace GemoTale
 {
     public partial class Vista_Mapa : Form
     {
-        private List<Nivel> niveles;
-        private String direccionArriba;
-        private String direccionAbajo;
-        private String direccionIzquierda;
-        private String direccionDerecha;
-        private Boolean enemigoVisible;
-        private Jugador jugador;
+        private List<Nivel> niveles; //Listado de niveles generados
+        private String mapaAnterior = "lvl1_1"; //Mapa anterior al que huir
+        private Nivel mapaActual; //Mapa en el que te encuentras
+        private String direccionArriba; //Mapa al que te mueves usando la flecha de arriba
+        private String direccionAbajo; //Mapa al que te mueves usando la flecha de abajo
+        private String direccionIzquierda; //Mapa al que te mueves usando la flecha de la izquierda
+        private String direccionDerecha; //Mapa al que te mueves usando la flecha de la derecha
+        private Boolean enemigoVisible; //Indica si hay un enemigo en el mapa actual
+        private Jugador jugador; //El objeto jugador
+        private int ranura; //La ranura en la que se guarda/carga la partida
+
+        private Boolean modoDebug; //Si está activado permitirá el movimiento libre por todo el mapa
         public Vista_Mapa(Boolean cargar, int ranura)
         {
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
             niveles = new List<Nivel>();
-            generarMapas();
+            this.ranura = ranura;
+
+            modoDebug = true; //ACTIVAR EL MODO DEBUG
+            if (modoDebug == true)
+            {
+                lblDebug.Visible = true;
+            }
 
             switch (cargar)
             {
-                case false:
-                    jugador = new Jugador(100, 100, 20, 25, 0.0);
+                case false: //Nueva Partida
+                    generarMapas();
+                    jugador = new Jugador(100, 100, 20, 0, 0.0);
                     cargarNivel(niveles[0]);
                     break;
-                case true:
+                case true: //Cargar Partida
+                    generarMapas(); //CUANDO ESTÉ IMPLEMENTADA LA CARGA DE PARTIDA ESTO DEBERÁ QUITARSE Y CARGAR LOS MAPAS DESDE LA PARTIDA
                     cargarNivel(niveles[1]);
                     break;
             }
@@ -201,7 +214,9 @@ namespace GemoTale
 
         private void cargarNivel(Nivel lvl)
         {
+            //Se cargan todos los atributos de un mapa a su estado por defecto
             player.Image = Image.FromFile("../../Images/Characters/player_map.png");
+            checkpoint.Image = Image.FromFile("../../Images/UI/checkpoint.png");
             arrow_bottom.Visible = false;
             arrow_left.Visible = false;
             arrow_right.Visible = false;
@@ -213,6 +228,14 @@ namespace GemoTale
             direccionAbajo = "";
             direccionIzquierda = "";
             direccionDerecha = "";
+
+            //Se guarda el nombre del mapa anterior para volver a él en caso de huida
+            if (mapaActual != null)
+            {
+                mapaAnterior = mapaActual.Nombre;
+            }
+            //Se establece el nuevo nivel como actual
+            mapaActual = lvl;
 
             if (lvl.FlechaAbajo == true)
             {
@@ -252,6 +275,16 @@ namespace GemoTale
             {
                 enemigoVisible = true;
                 player.Image = Image.FromFile(lvl.Enemigo.Foto);
+                checkpoint.Image = Image.FromFile("../../Images/UI/run.png");
+                if (modoDebug == false)
+                {
+                    arrow_bottom.Visible = false;
+                    arrow_top.Visible = false;
+                    arrow_right.Visible = false;
+                    arrow_left.Visible = false;
+                    shop_left.Visible = false;
+                    shop_right.Visible = false;
+                }
             }
 
             this.BackgroundImage = Image.FromFile(lvl.ImagenFondo);
@@ -259,6 +292,7 @@ namespace GemoTale
 
         private int extraerNombreNivel(String nombreNivel)
         {
+            //Se introduce el nombre del nivel a buscar y devuelve su id en el list
             int numeroNivel = -1;
 
             for (int i = 0; i < niveles.Count; i++)
@@ -380,7 +414,8 @@ namespace GemoTale
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/enemy_encounter.wav");
                 player.Play();
                 // EMPEZAR COMBATE (!)
-            } else
+            }
+            else
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
                 player.Play();
@@ -409,9 +444,18 @@ namespace GemoTale
 
         private void checkpoint_Click(object sender, EventArgs e)
         {
-            // IMPLEMENTAR GUARDAR PARTIDA (!)
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/checkpoint.wav");
-            player.PlaySync();
+            if (enemigoVisible == false)
+            {
+                // IMPLEMENTAR GUARDAR PARTIDA (!)
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/checkpoint.wav");
+                player.PlaySync();
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
+                player.Play();
+                cargarNivel(niveles[extraerNombreNivel(mapaAnterior)]);
+            }
         }
     }
 }

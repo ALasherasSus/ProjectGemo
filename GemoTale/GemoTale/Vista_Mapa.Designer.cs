@@ -38,6 +38,7 @@ namespace GemoTale
             this.shop_right = new System.Windows.Forms.PictureBox();
             this.shop_left = new System.Windows.Forms.PictureBox();
             this.checkpoint = new System.Windows.Forms.PictureBox();
+            this.lblDebug = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_top)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.arrow_bottom)).BeginInit();
@@ -167,6 +168,18 @@ namespace GemoTale
             this.checkpoint.TabStop = false;
             this.checkpoint.Click += new System.EventHandler(this.checkpoint_Click);
             // 
+            // lblDebug
+            // 
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.BackColor = System.Drawing.Color.Transparent;
+            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDebug.Location = new System.Drawing.Point(0, 0);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Size = new System.Drawing.Size(149, 24);
+            this.lblDebug.TabIndex = 8;
+            this.lblDebug.Text = "MODO DEBUG";
+            this.lblDebug.Visible = false;
+            // 
             // Vista_Mapa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -174,6 +187,7 @@ namespace GemoTale
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.checkpoint);
             this.Controls.Add(this.arrow_bottom);
             this.Controls.Add(this.arrow_top);
@@ -195,6 +209,7 @@ namespace GemoTale
             ((System.ComponentModel.ISupportInitialize)(this.shop_left)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkpoint)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -208,5 +223,6 @@ namespace GemoTale
         private System.Windows.Forms.PictureBox shop_right;
         private System.Windows.Forms.PictureBox shop_left;
         private System.Windows.Forms.PictureBox checkpoint;
+        private System.Windows.Forms.Label lblDebug;
     }
 }

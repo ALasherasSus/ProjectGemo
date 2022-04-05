@@ -157,6 +157,7 @@
     <Content Include="Images\UI\arrow_up_on.png" />
     <Content Include="Images\UI\checkpoint.png" />
     <Content Include="Images\UI\game_logo.png" />
+    <Content Include="Images\UI\run.png" />
     <Content Include="Images\UI\shop_icon.png" />
     <Content Include="Images\UI\shop_icon_on.png" />
     <Content Include="Images\UI\shop_title.png" />

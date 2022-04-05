@@ -94,7 +94,7 @@ namespace GemoTale
             this.btnRanura1.Name = "btnRanura1";
             this.btnRanura1.Size = new System.Drawing.Size(190, 59);
             this.btnRanura1.TabIndex = 3;
-            this.btnRanura1.Text = "0%";
+            this.btnRanura1.Text = "Ranura 1";
             this.btnRanura1.UseVisualStyleBackColor = false;
             this.btnRanura1.Click += new System.EventHandler(this.btnRanura1_Click);
             // 
@@ -110,7 +110,7 @@ namespace GemoTale
             this.btnRanura2.Name = "btnRanura2";
             this.btnRanura2.Size = new System.Drawing.Size(190, 59);
             this.btnRanura2.TabIndex = 4;
-            this.btnRanura2.Text = "0%";
+            this.btnRanura2.Text = "Ranura 2";
             this.btnRanura2.UseVisualStyleBackColor = false;
             this.btnRanura2.Click += new System.EventHandler(this.btnRanura2_Click);
             // 
@@ -126,7 +126,7 @@ namespace GemoTale
             this.btnRanura3.Name = "btnRanura3";
             this.btnRanura3.Size = new System.Drawing.Size(190, 59);
             this.btnRanura3.TabIndex = 5;
-            this.btnRanura3.Text = "0%";
+            this.btnRanura3.Text = "Ranura 3";
             this.btnRanura3.UseVisualStyleBackColor = false;
             this.btnRanura3.Click += new System.EventHandler(this.btnRanura3_Click);
             // 
