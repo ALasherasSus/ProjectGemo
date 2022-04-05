@@ -22,6 +22,17 @@ namespace GemoTale
             pbAtaque.Value = jugador.Ataque;
             pbDefensa.Value = (int)(jugador.Defensa * 10);
             tbDinero.Text = jugador.Dinero + "$";
+
+            //BURBUJAS DE INFORMACIÓN
+            // Create the ToolTip and associate with the Form container.
+            ToolTip toolTip1 = new ToolTip();
+
+            // Set up the ToolTip text for the Button and Checkbox.
+            toolTip1.SetToolTip(this.lblVida, "La vida actual de tu personaje.");
+            toolTip1.SetToolTip(this.lblVidaMaxima, "Como de mejorada está la vida máxima de tu personaje.");
+            toolTip1.SetToolTip(this.lblAtaque, "Cuanto daño hace tu personaje.");
+            toolTip1.SetToolTip(this.lblDefensa, "Cuanto defensa tiene tu personaje.");
+            toolTip1.SetToolTip(this.lblDinero, "Cuanto dinero tiene tu personaje.");
         }
 
         private void go_back_Click(object sender, EventArgs e)

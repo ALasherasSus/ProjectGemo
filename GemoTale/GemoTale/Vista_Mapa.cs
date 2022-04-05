@@ -49,6 +49,15 @@ namespace GemoTale
                     cargarNivel(niveles[1]);
                     break;
             }
+
+            //BURBUJAS DE INFORMACIÓN
+            // Create the ToolTip and associate with the Form container.
+            ToolTip toolTip1 = new ToolTip();
+
+            // Set up the ToolTip text for the Button and Checkbox.
+            toolTip1.SetToolTip(this.checkpoint, "Cuando no haya un enemigo en pantalla,\nutiliza este icono para guardar partida.\nSi estás en peligro utliza la bota para huir.");
+            toolTip1.SetToolTip(this.player, "Pincha aquí para interactuar.");
+
         }
 
         private void generarMapas()
