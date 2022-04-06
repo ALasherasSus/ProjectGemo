@@ -35,8 +35,8 @@ namespace GemoTale
             // Set up the ToolTip text for the Button and Checkbox.
             toolTip1.SetToolTip(this.lblVida, "La vida actual de tu personaje.");
             toolTip1.SetToolTip(this.lblVidaMaxima, "Como de mejorada está la vida máxima de tu personaje.");
-            toolTip1.SetToolTip(this.lblAtaque, "Cuanto daño hace tu personaje.");
-            toolTip1.SetToolTip(this.lblDefensa, "Cuanto defensa tiene tu personaje.");
+            toolTip1.SetToolTip(this.lblAtaque, "El daño que inflinges en los ataques.");
+            toolTip1.SetToolTip(this.lblDefensa, "La defensa reduce el daño del ataque enemigo.");
             toolTip1.SetToolTip(this.lblDinero, "Cuanto dinero tiene tu personaje.");
         }
 
