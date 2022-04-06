@@ -9,28 +9,25 @@ using System.Xml;
 
 namespace GemoTale
 {
-    internal class cargarGuardar
+    public class cargarGuardar
     {
 
-        public static List<Object> cargarPartida()
+        public static List<Object> cargarPartida(int slot)
         {
-            List<Object> objetos = (List<object>)LoadViaDataContractSerialization<Object>("ranura.xml");
+            List<Object> objetos = (List<object>)LoadViaDataContractSerialization<Object>("ranura" + slot + ".xml");
 
             return objetos;
-
         }
 
-        public static void guardarPartida(List<Nivel> niveles, string mapaAnterior, Nivel mapaActual, Jugador jugador)
+        public static void guardarPartida(List<Nivel> niveles, string mapaAnterior, Nivel mapaActual, Jugador jugador, int slot)
         {
-
             List<Object> objetos = new List<object>();
+            objetos.Add(niveles);
             objetos.Add(mapaAnterior);
             objetos.Add(mapaActual);
             objetos.Add(jugador);
-            objetos.Add(niveles);
 
-            SaveViaDataContractSerialization(objetos, "ranura.xml");
-
+            SaveViaDataContractSerialization(objetos, "ranura" + slot + ".xml");
         }
 
         public static void SaveViaDataContractSerialization<T>(T serializableObject, string filepath)

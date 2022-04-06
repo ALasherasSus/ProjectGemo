@@ -43,8 +43,9 @@ namespace GemoTale
                     cargarNivel(niveles[0]);
                     break;
                 case true: //Cargar Partida
-                    generarMapas(); //CUANDO ESTÉ IMPLEMENTADA LA CARGA DE PARTIDA ESTO DEBERÁ QUITARSE Y CARGAR LOS MAPAS DESDE LA PARTIDA
-                    cargarNivel(niveles[1]);
+                    cargarRanura(ranura);
+                    //generarMapas(); //CUANDO ESTÉ IMPLEMENTADA LA CARGA DE PARTIDA ESTO DEBERÁ QUITARSE Y CARGAR LOS MAPAS DESDE LA PARTIDA
+                    cargarNivel(mapaActual);
                     break;
             }
 
@@ -56,6 +57,15 @@ namespace GemoTale
             toolTip1.SetToolTip(this.checkpoint, "Cuando no haya un enemigo en pantalla,\nutiliza este icono para guardar partida.\nSi estás en peligro utliza la bota para huir.");
             toolTip1.SetToolTip(this.player, "Pincha aquí para interactuar.");
 
+        }
+
+        private void cargarRanura(int ranura)
+        {
+            List<Object> objetos = cargarGuardar.cargarPartida(ranura);
+            niveles = (List<Nivel>)objetos[0];
+            mapaAnterior = (string)objetos[1];
+            mapaActual = (Nivel)objetos[2];
+            Globales.Jugador = (Jugador)objetos[3];
         }
 
         private void generarMapas()
@@ -453,7 +463,7 @@ namespace GemoTale
         {
             if (enemigoVisible == false)
             {
-                // IMPLEMENTAR GUARDAR PARTIDA (!)
+                cargarGuardar.guardarPartida(niveles, mapaAnterior, mapaActual, Globales.Jugador, ranura);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/checkpoint.wav");
                 player.PlaySync();
             }
