@@ -31,7 +31,7 @@ namespace GemoTale
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vista_Combate));
             this.player_combat = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.enemy = new System.Windows.Forms.PictureBox();
             this.lblNombreEnemigo = new System.Windows.Forms.Label();
             this.pbEnemigo = new System.Windows.Forms.ProgressBar();
             this.pbJugador = new System.Windows.Forms.ProgressBar();
@@ -40,7 +40,7 @@ namespace GemoTale
             this.btnEsquivar = new System.Windows.Forms.Button();
             this.go_back = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.player_combat)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,16 +55,16 @@ namespace GemoTale
             this.player_combat.TabIndex = 0;
             this.player_combat.TabStop = false;
             // 
-            // pictureBox1
+            // enemy
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(312, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(300, 200);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.enemy.BackColor = System.Drawing.Color.Transparent;
+            this.enemy.Image = ((System.Drawing.Image)(resources.GetObject("enemy.Image")));
+            this.enemy.Location = new System.Drawing.Point(312, 12);
+            this.enemy.Name = "enemy";
+            this.enemy.Size = new System.Drawing.Size(300, 200);
+            this.enemy.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.enemy.TabIndex = 1;
+            this.enemy.TabStop = false;
             // 
             // lblNombreEnemigo
             // 
@@ -163,14 +163,14 @@ namespace GemoTale
             this.Controls.Add(this.pbJugador);
             this.Controls.Add(this.pbEnemigo);
             this.Controls.Add(this.lblNombreEnemigo);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.enemy);
             this.Controls.Add(this.player_combat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Vista_Combate";
             this.Text = "Crash Bandicoot RPG - Combate";
             ((System.ComponentModel.ISupportInitialize)(this.player_combat)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -180,7 +180,7 @@ namespace GemoTale
         #endregion
 
         private System.Windows.Forms.PictureBox player_combat;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox enemy;
         private System.Windows.Forms.Label lblNombreEnemigo;
         private System.Windows.Forms.ProgressBar pbEnemigo;
         private System.Windows.Forms.ProgressBar pbJugador;

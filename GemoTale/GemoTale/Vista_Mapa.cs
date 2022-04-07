@@ -12,7 +12,6 @@ namespace GemoTale
 {
     public partial class Vista_Mapa : Form
     {
-        private List<Nivel> niveles; //Listado de niveles generados - GUARDAR
         private String mapaAnterior = "lvl1_1"; //Mapa anterior al que huir - GUARDAR
         private Nivel mapaActual; //Mapa en el que te encuentras - GUARDAR
         private String direccionArriba; //Mapa al que te mueves usando la flecha de arriba
@@ -26,7 +25,6 @@ namespace GemoTale
         {
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
-            niveles = new List<Nivel>();
             this.ranura = ranura;
 
             Globales.modoDebug = true; //ACTIVAR EL MODO DEBUG
@@ -38,9 +36,10 @@ namespace GemoTale
             switch (cargar)
             {
                 case false: //Nueva Partida
+                    Globales.niveles = new List<Nivel>();
                     generarMapas();
                     Globales.Jugador = new Jugador(60, 100, 100, 900, 0);
-                    cargarNivel(niveles[0]);
+                    cargarNivel(Globales.niveles[0]);
                     break;
                 case true: //Cargar Partida
                     cargarRanura(ranura);
@@ -62,7 +61,7 @@ namespace GemoTale
         private void cargarRanura(int ranura)
         {
             partida P = cargarGuardar.cargarPartida(ranura);
-            niveles = P.Niveles;
+            Globales.niveles = P.Niveles;
             mapaAnterior = P.MapaAnterior;
             mapaActual = P.MapaActual;
             Globales.Jugador = P.Jugador;
@@ -75,7 +74,7 @@ namespace GemoTale
             lvl1_1.FlechaArriba = true;
             lvl1_1.DireccionArriba = "lvl1_2";
             lvl1_1.ImagenFondo = "../../Images/Backgrounds/level1_1.jpg";
-            niveles.Add(lvl1_1);
+            Globales.niveles.Add(lvl1_1);
 
             Nivel lvl1_2 = new Nivel();
             lvl1_2.Nombre = "lvl1_2";
@@ -88,7 +87,7 @@ namespace GemoTale
             lvl1_2.EnemigoAcechante = true;
             Enemigo enemigo1 = new Enemigo("Cangrejo", 100, 20, "../../Images/Characters/enemy1.png");
             lvl1_2.Enemigo = enemigo1;
-            niveles.Add(lvl1_2);
+            Globales.niveles.Add(lvl1_2);
 
             Nivel lvl1_3 = new Nivel();
             lvl1_3.Nombre = "lvl1_3";
@@ -99,7 +98,7 @@ namespace GemoTale
             lvl1_3.FlechaAbajo = true;
             lvl1_3.DireccionAbajo = "lvl1_2";
             lvl1_3.ImagenFondo = "../../Images/Backgrounds/level1_3.jpg";
-            niveles.Add(lvl1_3);
+            Globales.niveles.Add(lvl1_3);
 
             Nivel lvl2_1 = new Nivel();
             lvl2_1.Nombre = "lvl2_1";
@@ -111,7 +110,7 @@ namespace GemoTale
             lvl2_1.EnemigoAcechante = true;
             Enemigo enemigo2 = new Enemigo("Pingüino", 150, 25, "../../Images/Characters/enemy2.png");
             lvl2_1.Enemigo = enemigo2;
-            niveles.Add(lvl2_1);
+            Globales.niveles.Add(lvl2_1);
 
             Nivel lvl2_2 = new Nivel();
             lvl2_2.Nombre = "lvl2_2";
@@ -123,7 +122,7 @@ namespace GemoTale
             lvl2_2.EnemigoAcechante = true;
             Enemigo jefe2 = new Enemigo("Dingodile", 500, 150, "../../Images/Characters/boss2.png");
             lvl2_2.Enemigo = jefe2;
-            niveles.Add(lvl2_2);
+            Globales.niveles.Add(lvl2_2);
 
             Nivel lvl2_3 = new Nivel();
             lvl2_3.Nombre = "lvl2_3";
@@ -135,7 +134,7 @@ namespace GemoTale
             lvl2_3.EnemigoAcechante = true;
             Enemigo enemigo3 = new Enemigo("Tiburón", 200, 30, "../../Images/Characters/enemy3.png");
             lvl2_3.Enemigo = enemigo3;
-            niveles.Add(lvl2_3);
+            Globales.niveles.Add(lvl2_3);
 
             Nivel lvl3_1 = new Nivel();
             lvl3_1.Nombre = "lvl3_1";
@@ -147,7 +146,7 @@ namespace GemoTale
             lvl3_1.EnemigoAcechante = true;
             Enemigo enemigo4 = new Enemigo("Planta Piraña", 250, 35, "../../Images/Characters/enemy4.png");
             lvl3_1.Enemigo = enemigo4;
-            niveles.Add(lvl3_1);
+            Globales.niveles.Add(lvl3_1);
 
             Nivel lvl3_2 = new Nivel();
             lvl3_2.Nombre = "lvl3_2";
@@ -159,7 +158,7 @@ namespace GemoTale
             lvl3_2.EnemigoAcechante = true;
             Enemigo enemigo5 = new Enemigo("Indígena", 300, 40, "../../Images/Characters/enemy5.png");
             lvl3_2.Enemigo = enemigo5;
-            niveles.Add(lvl3_2);
+            Globales.niveles.Add(lvl3_2);
 
             Nivel lvl3_3 = new Nivel();
             lvl3_3.Nombre = "lvl3_3";
@@ -171,7 +170,7 @@ namespace GemoTale
             lvl3_3.EnemigoAcechante = true;
             Enemigo jefe1 = new Enemigo("Tiny Tiger", 450, 100, "../../Images/Characters/boss1.png");
             lvl3_3.Enemigo = jefe1;
-            niveles.Add(lvl3_3);
+            Globales.niveles.Add(lvl3_3);
 
             Nivel lvl4_1 = new Nivel();
             lvl4_1.Nombre = "lvl4_1";
@@ -181,7 +180,7 @@ namespace GemoTale
             lvl4_1.DireccionAbajo = "lvl3_3";
             lvl4_1.TiendaDerecha = true;
             lvl4_1.ImagenFondo = "../../Images/Backgrounds/level4_1.jpg";
-            niveles.Add(lvl4_1);
+            Globales.niveles.Add(lvl4_1);
 
             Nivel lvl4_2 = new Nivel();
             lvl4_2.Nombre = "lvl4_2";
@@ -193,7 +192,7 @@ namespace GemoTale
             lvl4_2.EnemigoAcechante = true;
             Enemigo jefe3 = new Enemigo("Dr. N. Tropy", 550, 200, "../../Images/Characters/boss3.png");
             lvl4_2.Enemigo = jefe3;
-            niveles.Add(lvl4_2);
+            Globales.niveles.Add(lvl4_2);
 
             Nivel lvl5_1 = new Nivel();
             lvl5_1.Nombre = "lvl5_1";
@@ -204,7 +203,7 @@ namespace GemoTale
             lvl5_1.FlechaDerecha = false;
             lvl5_1.DireccionDerecha = "lvl4_2";
             lvl5_1.ImagenFondo = "../../Images/Backgrounds/level5_1.jpg";
-            niveles.Add(lvl5_1);
+            Globales.niveles.Add(lvl5_1);
 
             Nivel lvl5_2 = new Nivel();
             lvl5_2.Nombre = "lvl5_2";
@@ -216,7 +215,7 @@ namespace GemoTale
             lvl5_2.EnemigoAcechante = true;
             Enemigo jefe4 = new Enemigo("Dr. N. Gin", 600, 250, "../../Images/Characters/boss4.png");
             lvl5_2.Enemigo = jefe4;
-            niveles.Add(lvl5_2);
+            Globales.niveles.Add(lvl5_2);
 
             Nivel lvl5_3 = new Nivel();
             lvl5_3.Nombre = "lvl5_3";
@@ -226,7 +225,7 @@ namespace GemoTale
             lvl5_3.EnemigoAcechante = true;
             Enemigo jefe5 = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png");
             lvl5_3.Enemigo = jefe5;
-            niveles.Add(lvl5_3);
+            Globales.niveles.Add(lvl5_3);
         }
 
         private void cargarNivel(Nivel lvl)
@@ -312,9 +311,9 @@ namespace GemoTale
             //Se introduce el nombre del nivel a buscar y devuelve su id en el list
             int numeroNivel = -1;
 
-            for (int i = 0; i < niveles.Count; i++)
+            for (int i = 0; i < Globales.niveles.Count; i++)
             {
-                if (niveles[i].Nombre == nombreNivel)
+                if (Globales.niveles[i].Nombre == nombreNivel)
                 {
                     numeroNivel = i;
                     break;
@@ -328,7 +327,7 @@ namespace GemoTale
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
-            cargarNivel(niveles[extraerNombreNivel(direccionArriba)]);
+            cargarNivel(Globales.niveles[extraerNombreNivel(direccionArriba)]);
         }
 
         private void arrow_top_MouseHover(object sender, EventArgs e)
@@ -345,7 +344,7 @@ namespace GemoTale
         {
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
-            cargarNivel(niveles[extraerNombreNivel(direccionAbajo)]);
+            cargarNivel(Globales.niveles[extraerNombreNivel(direccionAbajo)]);
         }
 
         private void arrow_bottom_MouseHover(object sender, EventArgs e)
@@ -362,11 +361,11 @@ namespace GemoTale
         {
             if (mapaActual.Nombre == "lvl4_2")
             {
-                niveles[extraerNombreNivel("lvl5_1")].FlechaDerecha = true;
+                Globales.niveles[extraerNombreNivel("lvl5_1")].FlechaDerecha = true;
             }
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
-            cargarNivel(niveles[extraerNombreNivel(direccionIzquierda)]);
+            cargarNivel(Globales.niveles[extraerNombreNivel(direccionIzquierda)]);
         }
 
         private void arrow_left_MouseHover(object sender, EventArgs e)
@@ -383,11 +382,11 @@ namespace GemoTale
         {
             if (mapaActual.Nombre == "lvl2_3")
             {
-                niveles[extraerNombreNivel("lvl5_1")].FlechaIzquierda = true;
+                Globales.niveles[extraerNombreNivel("lvl5_1")].FlechaIzquierda = true;
             }
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
-            cargarNivel(niveles[extraerNombreNivel(direccionDerecha)]);
+            cargarNivel(Globales.niveles[extraerNombreNivel(direccionDerecha)]);
         }
 
         private void arrow_right_MouseHover(object sender, EventArgs e)
@@ -439,6 +438,10 @@ namespace GemoTale
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/enemy_encounter.wav");
                 player.Play();
                 // EMPEZAR COMBATE (!)
+                this.Hide();
+                Vista_Combate vistaCombate = new Vista_Combate(extraerNombreNivel(mapaActual.Nombre));
+                vistaCombate.Closed += (s, args) => this.Show(); this.CenterToScreen();
+                vistaCombate.Show();
             }
             else
             {
@@ -471,7 +474,7 @@ namespace GemoTale
         {
             if (enemigoVisible == false)
             {
-                cargarGuardar.guardarPartida(niveles, mapaAnterior, mapaActual, Globales.Jugador, ranura);
+                cargarGuardar.guardarPartida(Globales.niveles, mapaAnterior, mapaActual, Globales.Jugador, ranura);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/checkpoint.wav");
                 player.PlaySync();
             }
@@ -479,7 +482,7 @@ namespace GemoTale
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
                 player.Play();
-                cargarNivel(niveles[extraerNombreNivel(mapaAnterior)]);
+                cargarNivel(Globales.niveles[extraerNombreNivel(mapaAnterior)]);
             }
         }
     }

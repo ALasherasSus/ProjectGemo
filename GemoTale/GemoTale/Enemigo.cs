@@ -34,7 +34,7 @@ namespace GemoTale
         {
             //ramdom entre ataque y ataque - 10
             Random rnd = new Random();
-            int ataquegenerado = rnd.Next(this.Ataque - 10, this.Ataque);
+            int ataquegenerado = rnd.Next(10, this.Ataque);
 
             return ataquegenerado;
         }

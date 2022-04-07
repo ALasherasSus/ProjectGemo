@@ -82,6 +82,13 @@ namespace GemoTale
                 {
                     Globales.Jugador.Vida = Globales.Jugador.VidaMaxima;
                 }
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/buy_upgrade.wav");
+                player.Play();
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/upgrade_unavailable.wav");
+                player.Play();
             }
             cargarPantalla();
         }
@@ -92,6 +99,13 @@ namespace GemoTale
             {
                 Globales.Jugador.Dinero -= Convert.ToInt32(btnVidaMaxima.Text);
                 Globales.Jugador.VidaMaxima += 50;
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/buy_upgrade.wav");
+                player.Play();
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/upgrade_unavailable.wav");
+                player.Play();
             }
             cargarPantalla();
         }
@@ -102,6 +116,13 @@ namespace GemoTale
             {
                 Globales.Jugador.Dinero -= Convert.ToInt32(btnAtaque.Text);
                 Globales.Jugador.Ataque += 5;
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/buy_upgrade.wav");
+                player.Play();
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/upgrade_unavailable.wav");
+                player.Play();
             }
             cargarPantalla();
         }
@@ -112,6 +133,13 @@ namespace GemoTale
             {
                 Globales.Jugador.Dinero -= Convert.ToInt32(btnDefensa.Text);
                 Globales.Jugador.Defensa += 1;
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/buy_upgrade.wav");
+                player.Play();
+            }
+            else
+            {
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/upgrade_unavailable.wav");
+                player.Play();
             }
             cargarPantalla();
         }
