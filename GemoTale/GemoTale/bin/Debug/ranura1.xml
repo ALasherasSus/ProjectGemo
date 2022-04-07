@@ -2,28 +2,28 @@
 <partida xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/GemoTale">
 	<jugador>
 		<ataque>100</ataque>
-		<defensa>0</defensa>
+		<defensa>3</defensa>
 		<dinero>900</dinero>
 		<vida>60</vida>
 		<vidaMaxima>100</vidaMaxima>
 	</jugador>
 	<mapaActual>
-		<direccionAbajo>lvl1_2</direccionAbajo>
-		<direccionArriba>lvl2_1</direccionArriba>
-		<direccionDerecha>lvl3_1</direccionDerecha>
+		<direccionAbajo>lvl3_3</direccionAbajo>
+		<direccionArriba>lvl4_2</direccionArriba>
+		<direccionDerecha i:nil="true" />
 		<direccionIzquierda i:nil="true" />
 		<enemigo i:nil="true" />
 		<enemigoAcechante>false</enemigoAcechante>
 		<flechaAbajo>true</flechaAbajo>
 		<flechaArriba>true</flechaArriba>
-		<flechaDerecha>true</flechaDerecha>
+		<flechaDerecha>false</flechaDerecha>
 		<flechaIzquierda>false</flechaIzquierda>
-		<imagenFondo>../../Images/Backgrounds/level1_3.jpg</imagenFondo>
-		<nombre>lvl1_3</nombre>
-		<tiendaDerecha>false</tiendaDerecha>
+		<imagenFondo>../../Images/Backgrounds/level4_1.jpg</imagenFondo>
+		<nombre>lvl4_1</nombre>
+		<tiendaDerecha>true</tiendaDerecha>
 		<tiendaIzquierda>false</tiendaIzquierda>
 	</mapaActual>
-	<mapaAnterior>lvl1_2</mapaAnterior>
+	<mapaAnterior>lvl3_3</mapaAnterior>
 	<niveles>
 		<Nivel>
 			<direccionAbajo i:nil="true" />
@@ -250,8 +250,8 @@
 			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
-			<flechaDerecha>true</flechaDerecha>
-			<flechaIzquierda>true</flechaIzquierda>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
 			<nombre>lvl5_1</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
