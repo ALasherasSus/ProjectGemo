@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cargarGuardar.cs" />
+    <Compile Include="partida.cs" />
     <Compile Include="Enemigo.cs" />
     <Compile Include="Globales.cs" />
     <Compile Include="Jugador.cs" />

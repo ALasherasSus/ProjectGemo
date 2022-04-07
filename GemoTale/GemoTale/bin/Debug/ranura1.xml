@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<partida xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/GemoTale">
+	<jugador>
+		<ataque>100</ataque>
+		<defensa>0</defensa>
+		<dinero>900</dinero>
+		<vida>60</vida>
+		<vidaMaxima>100</vidaMaxima>
+	</jugador>
+	<mapaActual>
+		<direccionAbajo>lvl1_2</direccionAbajo>
+		<direccionArriba>lvl2_1</direccionArriba>
+		<direccionDerecha>lvl3_1</direccionDerecha>
+		<direccionIzquierda i:nil="true" />
+		<enemigo i:nil="true" />
+		<enemigoAcechante>false</enemigoAcechante>
+		<flechaAbajo>true</flechaAbajo>
+		<flechaArriba>true</flechaArriba>
+		<flechaDerecha>true</flechaDerecha>
+		<flechaIzquierda>false</flechaIzquierda>
+		<imagenFondo>../../Images/Backgrounds/level1_3.jpg</imagenFondo>
+		<nombre>lvl1_3</nombre>
+		<tiendaDerecha>false</tiendaDerecha>
+		<tiendaIzquierda>false</tiendaIzquierda>
+	</mapaActual>
+	<mapaAnterior>lvl1_2</mapaAnterior>
+	<niveles>
+		<Nivel>
+			<direccionAbajo i:nil="true" />
+			<direccionArriba>lvl1_2</direccionArriba>
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda i:nil="true" />
+			<enemigo i:nil="true" />
+			<enemigoAcechante>false</enemigoAcechante>
+			<flechaAbajo>false</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level1_1.jpg</imagenFondo>
+			<nombre>lvl1_1</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl1_1</direccionAbajo>
+			<direccionArriba>lvl1_3</direccionArriba>
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda i:nil="true" />
+			<enemigo>
+				<Ataque>20</Ataque>
+				<Foto>../../Images/Characters/enemy1.png</Foto>
+				<Nombre>Cangrejo</Nombre>
+				<Vida>100</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level1_2.jpg</imagenFondo>
+			<nombre>lvl1_2</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>true</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl1_2</direccionAbajo>
+			<direccionArriba>lvl2_1</direccionArriba>
+			<direccionDerecha>lvl3_1</direccionDerecha>
+			<direccionIzquierda i:nil="true" />
+			<enemigo i:nil="true" />
+			<enemigoAcechante>false</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>true</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level1_3.jpg</imagenFondo>
+			<nombre>lvl1_3</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl1_3</direccionAbajo>
+			<direccionArriba>lvl2_2</direccionArriba>
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda i:nil="true" />
+			<enemigo>
+				<Ataque>25</Ataque>
+				<Foto>../../Images/Characters/enemy2.png</Foto>
+				<Nombre>Pingüino</Nombre>
+				<Vida>150</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level2_1.jpg</imagenFondo>
+			<nombre>lvl2_1</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl2_1</direccionAbajo>
+			<direccionArriba i:nil="true" />
+			<direccionDerecha>lvl2_3</direccionDerecha>
+			<direccionIzquierda i:nil="true" />
+			<enemigo>
+				<Ataque>150</Ataque>
+				<Foto>../../Images/Characters/boss2.png</Foto>
+				<Nombre>Dingodile</Nombre>
+				<Vida>500</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>false</flechaArriba>
+			<flechaDerecha>true</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level2_2.jpg</imagenFondo>
+			<nombre>lvl2_2</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo i:nil="true" />
+			<direccionArriba i:nil="true" />
+			<direccionDerecha>lvl5_1</direccionDerecha>
+			<direccionIzquierda>lvl2_2</direccionIzquierda>
+			<enemigo>
+				<Ataque>30</Ataque>
+				<Foto>../../Images/Characters/enemy3.png</Foto>
+				<Nombre>Tiburón</Nombre>
+				<Vida>200</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>false</flechaAbajo>
+			<flechaArriba>false</flechaArriba>
+			<flechaDerecha>true</flechaDerecha>
+			<flechaIzquierda>true</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level2_3.jpg</imagenFondo>
+			<nombre>lvl2_3</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo i:nil="true" />
+			<direccionArriba i:nil="true" />
+			<direccionDerecha>lvl3_2</direccionDerecha>
+			<direccionIzquierda>lvl1_3</direccionIzquierda>
+			<enemigo>
+				<Ataque>35</Ataque>
+				<Foto>../../Images/Characters/enemy4.png</Foto>
+				<Nombre>Planta Piraña</Nombre>
+				<Vida>250</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>false</flechaAbajo>
+			<flechaArriba>false</flechaArriba>
+			<flechaDerecha>true</flechaDerecha>
+			<flechaIzquierda>true</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level3_1.jpg</imagenFondo>
+			<nombre>lvl3_1</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo i:nil="true" />
+			<direccionArriba i:nil="true" />
+			<direccionDerecha>lvl3_3</direccionDerecha>
+			<direccionIzquierda>lvl3_1</direccionIzquierda>
+			<enemigo>
+				<Ataque>40</Ataque>
+				<Foto>../../Images/Characters/enemy5.png</Foto>
+				<Nombre>Indígena</Nombre>
+				<Vida>300</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>false</flechaAbajo>
+			<flechaArriba>false</flechaArriba>
+			<flechaDerecha>true</flechaDerecha>
+			<flechaIzquierda>true</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level3_2.jpg</imagenFondo>
+			<nombre>lvl3_2</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo i:nil="true" />
+			<direccionArriba>lvl4_1</direccionArriba>
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda>lvl3_2</direccionIzquierda>
+			<enemigo>
+				<Ataque>100</Ataque>
+				<Foto>../../Images/Characters/boss1.png</Foto>
+				<Nombre>Tiny Tiger</Nombre>
+				<Vida>450</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>false</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>true</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level3_3.jpg</imagenFondo>
+			<nombre>lvl3_3</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl3_3</direccionAbajo>
+			<direccionArriba>lvl4_2</direccionArriba>
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda i:nil="true" />
+			<enemigo i:nil="true" />
+			<enemigoAcechante>false</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level4_1.jpg</imagenFondo>
+			<nombre>lvl4_1</nombre>
+			<tiendaDerecha>true</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl4_1</direccionAbajo>
+			<direccionArriba i:nil="true" />
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda>lvl5_1</direccionIzquierda>
+			<enemigo>
+				<Ataque>200</Ataque>
+				<Foto>../../Images/Characters/boss3.png</Foto>
+				<Nombre>Dr. N. Tropy</Nombre>
+				<Vida>550</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>false</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>true</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level4_2.jpg</imagenFondo>
+			<nombre>lvl4_2</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo i:nil="true" />
+			<direccionArriba>lvl5_2</direccionArriba>
+			<direccionDerecha>lvl4_2</direccionDerecha>
+			<direccionIzquierda>lvl2_3</direccionIzquierda>
+			<enemigo i:nil="true" />
+			<enemigoAcechante>false</enemigoAcechante>
+			<flechaAbajo>false</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>true</flechaDerecha>
+			<flechaIzquierda>true</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
+			<nombre>lvl5_1</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl5_1</direccionAbajo>
+			<direccionArriba>lvl5_3</direccionArriba>
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda i:nil="true" />
+			<enemigo>
+				<Ataque>250</Ataque>
+				<Foto>../../Images/Characters/boss4.png</Foto>
+				<Nombre>Dr. N. Gin</Nombre>
+				<Vida>600</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>true</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level5_2.jpg</imagenFondo>
+			<nombre>lvl5_2</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+		<Nivel>
+			<direccionAbajo>lvl5_2</direccionAbajo>
+			<direccionArriba i:nil="true" />
+			<direccionDerecha i:nil="true" />
+			<direccionIzquierda i:nil="true" />
+			<enemigo>
+				<Ataque>300</Ataque>
+				<Foto>../../Images/Characters/boss5.png</Foto>
+				<Nombre>Dr. N. Cortex</Nombre>
+				<Vida>650</Vida>
+			</enemigo>
+			<enemigoAcechante>true</enemigoAcechante>
+			<flechaAbajo>true</flechaAbajo>
+			<flechaArriba>false</flechaArriba>
+			<flechaDerecha>false</flechaDerecha>
+			<flechaIzquierda>false</flechaIzquierda>
+			<imagenFondo>../../Images/Backgrounds/level5_3.jpg</imagenFondo>
+			<nombre>lvl5_3</nombre>
+			<tiendaDerecha>false</tiendaDerecha>
+			<tiendaIzquierda>false</tiendaIzquierda>
+		</Nivel>
+	</niveles>
+</partida>

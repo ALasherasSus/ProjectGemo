@@ -12,22 +12,18 @@ namespace GemoTale
     public class cargarGuardar
     {
 
-        public static List<Object> cargarPartida(int slot)
+        public static partida cargarPartida(int slot)
         {
-            List<Object> objetos = (List<object>)LoadViaDataContractSerialization<Object>("ranura" + slot + ".xml");
+            partida P = (partida)LoadViaDataContractSerialization<partida>("ranura" + slot + ".xml");
 
-            return objetos;
+            return P;
         }
 
         public static void guardarPartida(List<Nivel> niveles, string mapaAnterior, Nivel mapaActual, Jugador jugador, int slot)
         {
-            List<Object> objetos = new List<object>();
-            objetos.Add(niveles);
-            objetos.Add(mapaAnterior);
-            objetos.Add(mapaActual);
-            objetos.Add(jugador);
+            partida P = new partida(niveles, mapaAnterior, mapaActual, jugador);
 
-            SaveViaDataContractSerialization(objetos, "ranura" + slot + ".xml");
+            SaveViaDataContractSerialization(P, "ranura" + slot + ".xml");
         }
 
         public static void SaveViaDataContractSerialization<T>(T serializableObject, string filepath)

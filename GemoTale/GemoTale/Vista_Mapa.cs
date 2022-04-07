@@ -61,11 +61,11 @@ namespace GemoTale
 
         private void cargarRanura(int ranura)
         {
-            List<Object> objetos = cargarGuardar.cargarPartida(ranura);
-            niveles = (List<Nivel>)objetos[0];
-            mapaAnterior = (string)objetos[1];
-            mapaActual = (Nivel)objetos[2];
-            Globales.Jugador = (Jugador)objetos[3];
+            partida P = cargarGuardar.cargarPartida(ranura);
+            niveles = P.Niveles;
+            mapaAnterior = P.MapaAnterior;
+            mapaActual = P.MapaActual;
+            Globales.Jugador = P.Jugador;
         }
 
         private void generarMapas()
