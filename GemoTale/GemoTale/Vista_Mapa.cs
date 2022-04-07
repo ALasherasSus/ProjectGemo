@@ -199,9 +199,9 @@ namespace GemoTale
             lvl5_1.Nombre = "lvl5_1";
             lvl5_1.FlechaArriba = true;
             lvl5_1.DireccionArriba = "lvl5_2";
-            lvl5_1.FlechaIzquierda = true;
+            lvl5_1.FlechaIzquierda = false;
             lvl5_1.DireccionIzquierda = "lvl2_3";
-            lvl5_1.FlechaDerecha = true;
+            lvl5_1.FlechaDerecha = false;
             lvl5_1.DireccionDerecha = "lvl4_2";
             lvl5_1.ImagenFondo = "../../Images/Backgrounds/level5_1.jpg";
             niveles.Add(lvl5_1);
@@ -267,9 +267,9 @@ namespace GemoTale
             }
 
             if (lvl.FlechaDerecha == true)
-            {
+            { 
                 arrow_right.Visible = true;
-                direccionDerecha = lvl.DireccionDerecha;
+                direccionDerecha = lvl.DireccionDerecha; 
             }
 
             if (lvl.FlechaIzquierda == true)
@@ -360,6 +360,10 @@ namespace GemoTale
 
         private void arrow_left_Click(object sender, EventArgs e)
         {
+            if (mapaActual.Nombre == "lvl4_2")
+            {
+                niveles[extraerNombreNivel("lvl5_1")].FlechaDerecha = true;
+            }
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
             cargarNivel(niveles[extraerNombreNivel(direccionIzquierda)]);
@@ -377,6 +381,10 @@ namespace GemoTale
 
         private void arrow_right_Click(object sender, EventArgs e)
         {
+            if (mapaActual.Nombre == "lvl2_3")
+            {
+                niveles[extraerNombreNivel("lvl5_1")].FlechaIzquierda = true;
+            }
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
             cargarNivel(niveles[extraerNombreNivel(direccionDerecha)]);
