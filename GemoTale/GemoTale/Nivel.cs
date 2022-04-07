@@ -12,6 +12,7 @@ namespace GemoTale
     {
         [DataMember] String nombre;
         [DataMember] String imagenFondo;
+        [DataMember] String mundo;
         [DataMember] Boolean flechaArriba;
         [DataMember] Boolean flechaAbajo;
         [DataMember] Boolean flechaIzquierda;
@@ -32,6 +33,7 @@ namespace GemoTale
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string ImagenFondo { get => imagenFondo; set => imagenFondo = value; }
+        public string Mundo { get => mundo; set => mundo = value; }
         public bool FlechaArriba { get => flechaArriba; set => flechaArriba = value; }
         public bool FlechaAbajo { get => flechaAbajo; set => flechaAbajo = value; }
         public bool FlechaIzquierda { get => flechaIzquierda; set => flechaIzquierda = value; }

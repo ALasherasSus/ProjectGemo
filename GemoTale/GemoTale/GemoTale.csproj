@@ -176,7 +176,6 @@
     <Content Include="Images\UI\run.png" />
     <Content Include="Images\UI\shop_icon.png" />
     <Content Include="Images\UI\shop_icon_on.png" />
-    <Content Include="Sounds\Music\1_1 Nsanity Island MSTR.wav" />
     <Content Include="Sounds\SFX\aku_hit.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
     <Content Include="Sounds\SFX\buy_upgrade.wav" />
@@ -184,6 +183,10 @@
     <Content Include="Sounds\SFX\checkpoint.wav" />
     <Content Include="Sounds\SFX\click1.wav" />
     <Content Include="Sounds\SFX\click2.wav" />
+    <Content Include="Sounds\SFX\crash_cortexthrow.wav" />
+    <Content Include="Sounds\SFX\crash_spin1.wav" />
+    <Content Include="Sounds\SFX\crash_spin2.wav" />
+    <Content Include="Sounds\SFX\crash_victory.wav" />
     <Content Include="Sounds\SFX\door_close.wav" />
     <Content Include="Sounds\SFX\door_open.wav" />
     <Content Include="Sounds\SFX\enemy_encounter.wav" />

@@ -2,28 +2,34 @@
 <partida xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/GemoTale">
 	<jugador>
 		<ataque>100</ataque>
-		<defensa>1</defensa>
-		<dinero>900</dinero>
-		<vida>60</vida>
-		<vidaMaxima>100</vidaMaxima>
+		<defensa>0</defensa>
+		<dinero>1430</dinero>
+		<vida>550</vida>
+		<vidaMaxima>550</vidaMaxima>
 	</jugador>
 	<mapaActual>
-		<direccionAbajo>lvl1_2</direccionAbajo>
-		<direccionArriba>lvl2_1</direccionArriba>
-		<direccionDerecha>lvl3_1</direccionDerecha>
+		<direccionAbajo>lvl1_1</direccionAbajo>
+		<direccionArriba>lvl1_3</direccionArriba>
+		<direccionDerecha i:nil="true" />
 		<direccionIzquierda i:nil="true" />
-		<enemigo i:nil="true" />
+		<enemigo>
+			<Ataque>20</Ataque>
+			<Foto>../../Images/Characters/enemy1.png</Foto>
+			<Nombre>Cangrejo</Nombre>
+			<Vida>0</Vida>
+		</enemigo>
 		<enemigoAcechante>false</enemigoAcechante>
 		<flechaAbajo>true</flechaAbajo>
 		<flechaArriba>true</flechaArriba>
-		<flechaDerecha>true</flechaDerecha>
+		<flechaDerecha>false</flechaDerecha>
 		<flechaIzquierda>false</flechaIzquierda>
-		<imagenFondo>../../Images/Backgrounds/level1_3.jpg</imagenFondo>
-		<nombre>lvl1_3</nombre>
+		<imagenFondo>../../Images/Backgrounds/level1_2.jpg</imagenFondo>
+		<mundo>selva</mundo>
+		<nombre>lvl1_2</nombre>
 		<tiendaDerecha>false</tiendaDerecha>
-		<tiendaIzquierda>false</tiendaIzquierda>
+		<tiendaIzquierda>true</tiendaIzquierda>
 	</mapaActual>
-	<mapaAnterior>lvl2_1</mapaAnterior>
+	<mapaAnterior>lvl1_3</mapaAnterior>
 	<niveles>
 		<Nivel>
 			<direccionAbajo i:nil="true" />
@@ -37,6 +43,7 @@
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level1_1.jpg</imagenFondo>
+			<mundo>selva</mundo>
 			<nombre>lvl1_1</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -50,14 +57,15 @@
 				<Ataque>20</Ataque>
 				<Foto>../../Images/Characters/enemy1.png</Foto>
 				<Nombre>Cangrejo</Nombre>
-				<Vida>100</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>true</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level1_2.jpg</imagenFondo>
+			<mundo>selva</mundo>
 			<nombre>lvl1_2</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>true</tiendaIzquierda>
@@ -74,6 +82,7 @@
 			<flechaDerecha>true</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level1_3.jpg</imagenFondo>
+			<mundo>selva</mundo>
 			<nombre>lvl1_3</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -95,6 +104,7 @@
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level2_1.jpg</imagenFondo>
+			<mundo>nieve</mundo>
 			<nombre>lvl2_1</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -116,6 +126,7 @@
 			<flechaDerecha>true</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level2_2.jpg</imagenFondo>
+			<mundo>nieve</mundo>
 			<nombre>lvl2_2</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -137,6 +148,7 @@
 			<flechaDerecha>true</flechaDerecha>
 			<flechaIzquierda>true</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level2_3.jpg</imagenFondo>
+			<mundo>nieve</mundo>
 			<nombre>lvl2_3</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -150,14 +162,15 @@
 				<Ataque>35</Ataque>
 				<Foto>../../Images/Characters/enemy4.png</Foto>
 				<Nombre>Planta Piraña</Nombre>
-				<Vida>250</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>false</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
 			<flechaIzquierda>true</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level3_1.jpg</imagenFondo>
+			<mundo>templo</mundo>
 			<nombre>lvl3_1</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -171,14 +184,15 @@
 				<Ataque>40</Ataque>
 				<Foto>../../Images/Characters/enemy5.png</Foto>
 				<Nombre>Indígena</Nombre>
-				<Vida>300</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>false</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
 			<flechaIzquierda>true</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level3_2.jpg</imagenFondo>
+			<mundo>templo</mundo>
 			<nombre>lvl3_2</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -192,14 +206,15 @@
 				<Ataque>100</Ataque>
 				<Foto>../../Images/Characters/boss1.png</Foto>
 				<Nombre>Tiny Tiger</Nombre>
-				<Vida>450</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>true</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level3_3.jpg</imagenFondo>
+			<mundo>templo</mundo>
 			<nombre>lvl3_3</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -216,6 +231,7 @@
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level4_1.jpg</imagenFondo>
+			<mundo>alterno</mundo>
 			<nombre>lvl4_1</nombre>
 			<tiendaDerecha>true</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -237,6 +253,7 @@
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>true</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level4_2.jpg</imagenFondo>
+			<mundo>alterno</mundo>
 			<nombre>lvl4_2</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -251,8 +268,9 @@
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
-			<flechaIzquierda>true</flechaIzquierda>
+			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
+			<mundo>castillo</mundo>
 			<nombre>lvl5_1</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -274,6 +292,7 @@
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level5_2.jpg</imagenFondo>
+			<mundo>castillo</mundo>
 			<nombre>lvl5_2</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>
@@ -295,6 +314,7 @@
 			<flechaDerecha>false</flechaDerecha>
 			<flechaIzquierda>false</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level5_3.jpg</imagenFondo>
+			<mundo>castillo</mundo>
 			<nombre>lvl5_3</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
 			<tiendaIzquierda>false</tiendaIzquierda>

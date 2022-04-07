@@ -99,6 +99,7 @@ namespace GemoTale
             {
                 Globales.Jugador.Dinero -= Convert.ToInt32(btnVidaMaxima.Text);
                 Globales.Jugador.VidaMaxima += 50;
+                Globales.Jugador.Vida += 50;
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/buy_upgrade.wav");
                 player.Play();
             }

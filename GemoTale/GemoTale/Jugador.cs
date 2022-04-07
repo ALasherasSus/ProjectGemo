@@ -35,7 +35,7 @@ namespace GemoTale
         public int Dinero { get => dinero; set => dinero = value; }
         public int Defensa { get => defensa; set => defensa = value; }
 
-        public void recibirAtaque(int ataqueEnemigo)
+        public void recibirAtaque(double ataqueEnemigo)
         {
             this.Vida = this.Vida - (ataqueEnemigo * (1 - (defensa / 10)));
         }

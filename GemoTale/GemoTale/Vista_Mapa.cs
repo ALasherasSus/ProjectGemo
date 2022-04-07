@@ -38,12 +38,11 @@ namespace GemoTale
                 case false: //Nueva Partida
                     Globales.niveles = new List<Nivel>();
                     generarMapas();
-                    Globales.Jugador = new Jugador(60, 100, 100, 900, 0);
+                    Globales.Jugador = new Jugador(100, 100, 25, 0, 0);
                     cargarNivel(Globales.niveles[0]);
                     break;
                 case true: //Cargar Partida
                     cargarRanura(ranura);
-                    //generarMapas(); //CUANDO ESTÉ IMPLEMENTADA LA CARGA DE PARTIDA ESTO DEBERÁ QUITARSE Y CARGAR LOS MAPAS DESDE LA PARTIDA
                     cargarNivel(mapaActual);
                     break;
             }
@@ -74,6 +73,7 @@ namespace GemoTale
             lvl1_1.FlechaArriba = true;
             lvl1_1.DireccionArriba = "lvl1_2";
             lvl1_1.ImagenFondo = "../../Images/Backgrounds/level1_1.jpg";
+            lvl1_1.Mundo = "selva";
             Globales.niveles.Add(lvl1_1);
 
             Nivel lvl1_2 = new Nivel();
@@ -84,6 +84,7 @@ namespace GemoTale
             lvl1_2.DireccionAbajo = "lvl1_1";
             lvl1_2.TiendaIzquierda = true;
             lvl1_2.ImagenFondo = "../../Images/Backgrounds/level1_2.jpg";
+            lvl1_2.Mundo = "selva";
             lvl1_2.EnemigoAcechante = true;
             Enemigo enemigo1 = new Enemigo("Cangrejo", 100, 20, "../../Images/Characters/enemy1.png");
             lvl1_2.Enemigo = enemigo1;
@@ -98,6 +99,7 @@ namespace GemoTale
             lvl1_3.FlechaAbajo = true;
             lvl1_3.DireccionAbajo = "lvl1_2";
             lvl1_3.ImagenFondo = "../../Images/Backgrounds/level1_3.jpg";
+            lvl1_3.Mundo = "selva";
             Globales.niveles.Add(lvl1_3);
 
             Nivel lvl2_1 = new Nivel();
@@ -107,6 +109,7 @@ namespace GemoTale
             lvl2_1.FlechaAbajo = true;
             lvl2_1.DireccionAbajo = "lvl1_3";
             lvl2_1.ImagenFondo = "../../Images/Backgrounds/level2_1.jpg";
+            lvl2_1.Mundo = "nieve";
             lvl2_1.EnemigoAcechante = true;
             Enemigo enemigo2 = new Enemigo("Pingüino", 150, 25, "../../Images/Characters/enemy2.png");
             lvl2_1.Enemigo = enemigo2;
@@ -119,6 +122,7 @@ namespace GemoTale
             lvl2_2.FlechaAbajo = true;
             lvl2_2.DireccionAbajo = "lvl2_1";
             lvl2_2.ImagenFondo = "../../Images/Backgrounds/level2_2.jpg";
+            lvl2_2.Mundo = "nieve";
             lvl2_2.EnemigoAcechante = true;
             Enemigo jefe2 = new Enemigo("Dingodile", 500, 150, "../../Images/Characters/boss2.png");
             lvl2_2.Enemigo = jefe2;
@@ -131,6 +135,7 @@ namespace GemoTale
             lvl2_3.FlechaIzquierda = true;
             lvl2_3.DireccionIzquierda = "lvl2_2";
             lvl2_3.ImagenFondo = "../../Images/Backgrounds/level2_3.jpg";
+            lvl2_3.Mundo = "nieve";
             lvl2_3.EnemigoAcechante = true;
             Enemigo enemigo3 = new Enemigo("Tiburón", 200, 30, "../../Images/Characters/enemy3.png");
             lvl2_3.Enemigo = enemigo3;
@@ -143,6 +148,7 @@ namespace GemoTale
             lvl3_1.FlechaIzquierda = true;
             lvl3_1.DireccionIzquierda = "lvl1_3";
             lvl3_1.ImagenFondo = "../../Images/Backgrounds/level3_1.jpg";
+            lvl3_1.Mundo = "templo";
             lvl3_1.EnemigoAcechante = true;
             Enemigo enemigo4 = new Enemigo("Planta Piraña", 250, 35, "../../Images/Characters/enemy4.png");
             lvl3_1.Enemigo = enemigo4;
@@ -155,6 +161,7 @@ namespace GemoTale
             lvl3_2.FlechaIzquierda = true;
             lvl3_2.DireccionIzquierda = "lvl3_1";
             lvl3_2.ImagenFondo = "../../Images/Backgrounds/level3_2.jpg";
+            lvl3_2.Mundo = "templo";
             lvl3_2.EnemigoAcechante = true;
             Enemigo enemigo5 = new Enemigo("Indígena", 300, 40, "../../Images/Characters/enemy5.png");
             lvl3_2.Enemigo = enemigo5;
@@ -167,6 +174,7 @@ namespace GemoTale
             lvl3_3.FlechaIzquierda = true;
             lvl3_3.DireccionIzquierda = "lvl3_2";
             lvl3_3.ImagenFondo = "../../Images/Backgrounds/level3_3.jpg";
+            lvl3_3.Mundo = "templo";
             lvl3_3.EnemigoAcechante = true;
             Enemigo jefe1 = new Enemigo("Tiny Tiger", 450, 100, "../../Images/Characters/boss1.png");
             lvl3_3.Enemigo = jefe1;
@@ -180,6 +188,7 @@ namespace GemoTale
             lvl4_1.DireccionAbajo = "lvl3_3";
             lvl4_1.TiendaDerecha = true;
             lvl4_1.ImagenFondo = "../../Images/Backgrounds/level4_1.jpg";
+            lvl4_1.Mundo = "alterno";
             Globales.niveles.Add(lvl4_1);
 
             Nivel lvl4_2 = new Nivel();
@@ -189,6 +198,7 @@ namespace GemoTale
             lvl4_2.FlechaAbajo = true;
             lvl4_2.DireccionAbajo = "lvl4_1";
             lvl4_2.ImagenFondo = "../../Images/Backgrounds/level4_2.jpg";
+            lvl4_2.Mundo = "alterno";
             lvl4_2.EnemigoAcechante = true;
             Enemigo jefe3 = new Enemigo("Dr. N. Tropy", 550, 200, "../../Images/Characters/boss3.png");
             lvl4_2.Enemigo = jefe3;
@@ -203,6 +213,7 @@ namespace GemoTale
             lvl5_1.FlechaDerecha = false;
             lvl5_1.DireccionDerecha = "lvl4_2";
             lvl5_1.ImagenFondo = "../../Images/Backgrounds/level5_1.jpg";
+            lvl5_1.Mundo = "castillo";
             Globales.niveles.Add(lvl5_1);
 
             Nivel lvl5_2 = new Nivel();
@@ -212,6 +223,7 @@ namespace GemoTale
             lvl5_2.FlechaAbajo = true;
             lvl5_2.DireccionAbajo = "lvl5_1";
             lvl5_2.ImagenFondo = "../../Images/Backgrounds/level5_2.jpg";
+            lvl5_2.Mundo = "castillo";
             lvl5_2.EnemigoAcechante = true;
             Enemigo jefe4 = new Enemigo("Dr. N. Gin", 600, 250, "../../Images/Characters/boss4.png");
             lvl5_2.Enemigo = jefe4;
@@ -222,6 +234,7 @@ namespace GemoTale
             lvl5_3.FlechaAbajo = true;
             lvl5_3.DireccionAbajo = "lvl5_2";
             lvl5_3.ImagenFondo = "../../Images/Backgrounds/level5_3.jpg";
+            lvl5_3.Mundo = "castillo";
             lvl5_3.EnemigoAcechante = true;
             Enemigo jefe5 = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png");
             lvl5_3.Enemigo = jefe5;
@@ -266,9 +279,9 @@ namespace GemoTale
             }
 
             if (lvl.FlechaDerecha == true)
-            { 
+            {
                 arrow_right.Visible = true;
-                direccionDerecha = lvl.DireccionDerecha; 
+                direccionDerecha = lvl.DireccionDerecha;
             }
 
             if (lvl.FlechaIzquierda == true)
@@ -437,10 +450,10 @@ namespace GemoTale
             {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/enemy_encounter.wav");
                 player.Play();
-                // EMPEZAR COMBATE (!)
+                // EMPEZAR COMBATE
                 this.Hide();
                 Vista_Combate vistaCombate = new Vista_Combate(extraerNombreNivel(mapaActual.Nombre));
-                vistaCombate.Closed += (s, args) => this.Show(); this.CenterToScreen();
+                vistaCombate.Closed += (s, args) => { this.Show(); this.CenterToScreen(); cargarNivel(Globales.niveles[extraerNombreNivel(mapaActual.Nombre)]); };
                 vistaCombate.Show();
             }
             else
@@ -449,7 +462,7 @@ namespace GemoTale
                 player.Play();
                 this.Hide();
                 Vista_Estadisticas vistaEstadisticas = new Vista_Estadisticas();
-                vistaEstadisticas.Closed += (s, args) => this.Show(); this.CenterToScreen();
+                vistaEstadisticas.Closed += (s, args) => { this.Show(); this.CenterToScreen(); };
                 vistaEstadisticas.Show();
             }
         }

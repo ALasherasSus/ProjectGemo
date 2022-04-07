@@ -68,14 +68,14 @@ namespace GemoTale
             // 
             // lblNombreEnemigo
             // 
-            this.lblNombreEnemigo.AutoSize = true;
             this.lblNombreEnemigo.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreEnemigo.Font = new System.Drawing.Font("Cooper Black", 25F);
             this.lblNombreEnemigo.Location = new System.Drawing.Point(12, 14);
             this.lblNombreEnemigo.Name = "lblNombreEnemigo";
-            this.lblNombreEnemigo.Size = new System.Drawing.Size(198, 39);
+            this.lblNombreEnemigo.Size = new System.Drawing.Size(290, 39);
             this.lblNombreEnemigo.TabIndex = 2;
             this.lblNombreEnemigo.Text = "Tiny Tiger";
+            this.lblNombreEnemigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pbEnemigo
             // 
@@ -95,7 +95,6 @@ namespace GemoTale
             // 
             // lblJugador
             // 
-            this.lblJugador.AutoSize = true;
             this.lblJugador.BackColor = System.Drawing.Color.Transparent;
             this.lblJugador.Font = new System.Drawing.Font("Cooper Black", 25F);
             this.lblJugador.Location = new System.Drawing.Point(312, 258);
@@ -103,6 +102,7 @@ namespace GemoTale
             this.lblJugador.Size = new System.Drawing.Size(300, 39);
             this.lblJugador.TabIndex = 5;
             this.lblJugador.Text = "Crash Bandicoot";
+            this.lblJugador.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnAtacar
             // 
@@ -173,7 +173,6 @@ namespace GemoTale
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
