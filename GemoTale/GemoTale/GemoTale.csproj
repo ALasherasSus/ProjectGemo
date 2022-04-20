@@ -82,6 +82,12 @@
     <Compile Include="Vista_Mapa.Designer.cs">
       <DependentUpon>Vista_Mapa.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista_Muerte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Muerte.Designer.cs">
+      <DependentUpon>Vista_Muerte.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista_Tienda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     <EmbeddedResource Include="Vista_Mapa.resx">
       <DependentUpon>Vista_Mapa.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista_Muerte.resx">
+      <DependentUpon>Vista_Muerte.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista_Tienda.resx">
       <DependentUpon>Vista_Tienda.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,8 +137,10 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="game_icon.ico" />
+    <Content Include="Images\Backgrounds\alterno.jpg" />
     <Content Include="Images\Backgrounds\bg.gif" />
-    <Content Include="Images\Backgrounds\castle.jpg" />
+    <Content Include="Images\Backgrounds\castillo.jpg" />
+    <Content Include="Images\Backgrounds\gameOver.jpg" />
     <Content Include="Images\Backgrounds\level1_1.jpg" />
     <Content Include="Images\Backgrounds\level1_2.jpg" />
     <Content Include="Images\Backgrounds\level1_3.jpg" />
@@ -145,9 +156,12 @@
     <Content Include="Images\Backgrounds\level5_2.jpg" />
     <Content Include="Images\Backgrounds\level5_3.jpg" />
     <Content Include="Images\Backgrounds\mainmenu.jpg" />
+    <Content Include="Images\Backgrounds\nieve.jpg" />
+    <Content Include="Images\Backgrounds\selva.jpg" />
     <Content Include="Images\Backgrounds\shop1.jpg" />
     <Content Include="Images\Backgrounds\shop2.jpg" />
     <Content Include="Images\Backgrounds\stats.jpg" />
+    <Content Include="Images\Backgrounds\templo.jpg" />
     <Content Include="Images\Characters\boss1.png" />
     <Content Include="Images\Characters\boss2.png" />
     <Content Include="Images\Characters\boss3.png" />
@@ -183,6 +197,9 @@
     <Content Include="Sounds\SFX\checkpoint.wav" />
     <Content Include="Sounds\SFX\click1.wav" />
     <Content Include="Sounds\SFX\click2.wav" />
+    <Content Include="Sounds\SFX\cortex_game_over.wav" />
+    <Content Include="Sounds\SFX\cortex_game_over_continue_no.wav" />
+    <Content Include="Sounds\SFX\cortex_game_over_continue_yes.wav" />
     <Content Include="Sounds\SFX\crash_cortexthrow.wav" />
     <Content Include="Sounds\SFX\crash_spin1.wav" />
     <Content Include="Sounds\SFX\crash_spin2.wav" />
@@ -190,6 +207,7 @@
     <Content Include="Sounds\SFX\door_close.wav" />
     <Content Include="Sounds\SFX\door_open.wav" />
     <Content Include="Sounds\SFX\enemy_encounter.wav" />
+    <Content Include="Sounds\SFX\gameOver.wav" />
     <Content Include="Sounds\SFX\upgrade_unavailable.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

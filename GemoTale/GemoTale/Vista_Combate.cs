@@ -46,12 +46,15 @@ namespace GemoTale
             {
                 Globales.Jugador.Vida = 0;
                 pbJugador.Value = (int)Globales.Jugador.Vida;
-                //REINICIAR EL JUEGO
-                Application.Restart();
-                Environment.Exit(0);
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/gameOver.wav");
+                player.PlaySync();
+                //FIN DE LA PARTIDA Y REINICIAR EL JUEGO
+                this.Hide();
+                Vista_Muerte vistaMuerte = new Vista_Muerte();
+                //vistaMuerte.Closed += (s, args) => { Application.Restart(); Environment.Exit(0); };
+                vistaMuerte.Show();
             }
-            pbJugador.Value = (int)Globales.Jugador.Vida;
-            if (Globales.niveles[idNivel].Enemigo.Vida <= 0)
+            else if (Globales.niveles[idNivel].Enemigo.Vida <= 0)
             {
                 Globales.niveles[idNivel].Enemigo.Vida = 0;
                 pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
@@ -68,7 +71,22 @@ namespace GemoTale
                 btnEsquivar.Visible = false;
                 go_back.Image = Image.FromFile("../../Images/UI/arrow_right.png");
             }
-            pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
+            try
+            {
+                pbJugador.Value = (int)Globales.Jugador.Vida;
+            }
+            catch (Exception)
+            {
+                pbJugador.Value = 0;
+            }
+            try
+            {
+                pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
+            }
+            catch (Exception)
+            {
+                pbEnemigo.Value = 0;
+            }
         }
 
         private void go_back_Click(object sender, EventArgs e)

@@ -19,7 +19,6 @@ namespace GemoTale
         private String direccionIzquierda; //Mapa al que te mueves usando la flecha de la izquierda
         private String direccionDerecha; //Mapa al que te mueves usando la flecha de la derecha
         private Boolean enemigoVisible; //Indica si hay un enemigo en el mapa actual
-        //public static Jugador jugador; //El objeto jugador - GUARDAR
         private int ranura; //La ranura en la que se guarda/carga la partida
         public Vista_Mapa(Boolean cargar, int ranura)
         {

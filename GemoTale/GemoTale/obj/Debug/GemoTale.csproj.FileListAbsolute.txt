@@ -39,3 +39,4 @@ C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Ma
 C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Tienda.resources
 C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Combate.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Combate.resources
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Muerte.resources

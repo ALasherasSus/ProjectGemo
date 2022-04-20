@@ -1,35 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <partida xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/GemoTale">
 	<jugador>
-		<ataque>100</ataque>
+		<ataque>300</ataque>
 		<defensa>0</defensa>
 		<dinero>1430</dinero>
-		<vida>550</vida>
-		<vidaMaxima>550</vidaMaxima>
+		<vida>10</vida>
+		<vidaMaxima>100</vidaMaxima>
 	</jugador>
 	<mapaActual>
-		<direccionAbajo>lvl1_1</direccionAbajo>
-		<direccionArriba>lvl1_3</direccionArriba>
-		<direccionDerecha i:nil="true" />
-		<direccionIzquierda i:nil="true" />
-		<enemigo>
-			<Ataque>20</Ataque>
-			<Foto>../../Images/Characters/enemy1.png</Foto>
-			<Nombre>Cangrejo</Nombre>
-			<Vida>0</Vida>
-		</enemigo>
+		<direccionAbajo i:nil="true" />
+		<direccionArriba>lvl5_2</direccionArriba>
+		<direccionDerecha>lvl4_2</direccionDerecha>
+		<direccionIzquierda>lvl2_3</direccionIzquierda>
+		<enemigo i:nil="true" />
 		<enemigoAcechante>false</enemigoAcechante>
-		<flechaAbajo>true</flechaAbajo>
+		<flechaAbajo>false</flechaAbajo>
 		<flechaArriba>true</flechaArriba>
-		<flechaDerecha>false</flechaDerecha>
-		<flechaIzquierda>false</flechaIzquierda>
-		<imagenFondo>../../Images/Backgrounds/level1_2.jpg</imagenFondo>
-		<mundo>selva</mundo>
-		<nombre>lvl1_2</nombre>
+		<flechaDerecha>true</flechaDerecha>
+		<flechaIzquierda>true</flechaIzquierda>
+		<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
+		<mundo>castillo</mundo>
+		<nombre>lvl5_1</nombre>
 		<tiendaDerecha>false</tiendaDerecha>
-		<tiendaIzquierda>true</tiendaIzquierda>
+		<tiendaIzquierda>false</tiendaIzquierda>
 	</mapaActual>
-	<mapaAnterior>lvl1_3</mapaAnterior>
+	<mapaAnterior>lvl5_1</mapaAnterior>
 	<niveles>
 		<Nivel>
 			<direccionAbajo i:nil="true" />
@@ -268,7 +263,7 @@
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
-			<flechaIzquierda>false</flechaIzquierda>
+			<flechaIzquierda>true</flechaIzquierda>
 			<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
 			<mundo>castillo</mundo>
 			<nombre>lvl5_1</nombre>
