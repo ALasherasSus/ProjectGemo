@@ -44,8 +44,10 @@ namespace GemoTale
         {
             if (Globales.Jugador.Vida <= 0)
             {
+                player_combat.Image = Image.FromFile("../../Images/Characters/player_combat_dead.png");
                 Globales.Jugador.Vida = 0;
                 pbJugador.Value = (int)Globales.Jugador.Vida;
+                System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/gameOver.wav");
                 player.PlaySync();
                 //FIN DE LA PARTIDA Y REINICIAR EL JUEGO
@@ -58,6 +60,8 @@ namespace GemoTale
             {
                 Globales.niveles[idNivel].Enemigo.Vida = 0;
                 pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
+                enemy.Image = Image.FromFile("../../Images/Characters/deadEnemy.png");
+                player_combat.Image = Image.FromFile("../../Images/Characters/player_combat_win.png");
                 Globales.niveles[idNivel].EnemigoAcechante = false;
                 Globales.Jugador.Dinero += pbEnemigo.Maximum;
                 Globales.Jugador.Vida += (Globales.Jugador.VidaMaxima / 4);

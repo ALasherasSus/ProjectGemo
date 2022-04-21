@@ -22,22 +22,8 @@ namespace GemoTale
 
         private void continuar_Click(object sender, EventArgs e)
         {
-            //String audio = "gameOver";
-            //var rand = new Random();
-            //int randomNumber = rand.Next(1, 30);
-            //if (randomNumber < 10)
-            //{
-            //    audio = "cortex_game_over_continue_no";
-            //} else if (randomNumber > 20)
-            //{
-            //    audio = "cortex_game_over_continue_yes";
-            //}
-
-            //System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/" + audio + ".wav");
-
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/cortex_game_over_continue_yes.wav");
             player.PlaySync();
-            //this.Close();
             Application.Restart();
             Environment.Exit(0);
         }
