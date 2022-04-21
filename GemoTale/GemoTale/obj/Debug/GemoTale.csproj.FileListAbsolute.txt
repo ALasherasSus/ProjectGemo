@@ -40,3 +40,19 @@ C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Ti
 C:\Users\Admin\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Combate.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Combate.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Muerte.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\GemoTale.exe.config
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\GemoTale.exe
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\GemoTale.pdb
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.AssemblyReference.cache
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.SuggestedBindingRedirects.cache
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Menu_Principal.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.Resources.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Combate.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Estadisticas.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Mapa.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Muerte.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Tienda.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.GenerateResource.cache
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.CoreCompileInputs.cache
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.exe
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.pdb

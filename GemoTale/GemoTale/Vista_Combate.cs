@@ -44,10 +44,11 @@ namespace GemoTale
         {
             if (Globales.Jugador.Vida <= 0)
             {
-                player_combat.Image = Image.FromFile("../../Images/Characters/player_combat_dead.png");
                 Globales.Jugador.Vida = 0;
                 pbJugador.Value = (int)Globales.Jugador.Vida;
-                System.Threading.Thread.Sleep(1000);
+                player_combat.Image = Image.FromFile("../../Images/Characters/player_combat_dead.png");
+                player_combat.Refresh();
+                System.Threading.Thread.Sleep(500);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/gameOver.wav");
                 player.PlaySync();
                 //FIN DE LA PARTIDA Y REINICIAR EL JUEGO
