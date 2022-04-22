@@ -28,6 +28,13 @@ namespace GemoTale
             pbJugador.Value = (int)Globales.Jugador.Vida;
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/" + Globales.niveles[idNivel].Mundo + ".jpg");
 
+            if(Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
+            {
+                System.Threading.Thread.Sleep(1000);
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoIntro);
+                player.Play();
+            }
+
             //BURBUJAS DE INFORMACIÓN
             // Create the ToolTip and associate with the Form container.
             ToolTip toolTip1 = new ToolTip();
@@ -46,9 +53,10 @@ namespace GemoTale
             {
                 Globales.Jugador.Vida = 0;
                 pbJugador.Value = (int)Globales.Jugador.Vida;
+                pbJugador.Refresh();
                 player_combat.Image = Image.FromFile("../../Images/Characters/player_combat_dead.png");
                 player_combat.Refresh();
-                System.Threading.Thread.Sleep(500);
+                System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/gameOver.wav");
                 player.PlaySync();
                 //FIN DE LA PARTIDA Y REINICIAR EL JUEGO
@@ -61,8 +69,10 @@ namespace GemoTale
             {
                 Globales.niveles[idNivel].Enemigo.Vida = 0;
                 pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
-                enemy.Image = Image.FromFile("../../Images/Characters/deadEnemy.png");
+                pbEnemigo.Refresh();
                 player_combat.Image = Image.FromFile("../../Images/Characters/player_combat_win.png");
+                player_combat.Refresh();
+                enemy.Image = Image.FromFile("../../Images/Characters/deadEnemy.png");
                 Globales.niveles[idNivel].EnemigoAcechante = false;
                 Globales.Jugador.Dinero += pbEnemigo.Maximum;
                 Globales.Jugador.Vida += (Globales.Jugador.VidaMaxima / 4);
@@ -70,8 +80,8 @@ namespace GemoTale
                 {
                     Globales.Jugador.Vida = Globales.Jugador.VidaMaxima;
                 }
-                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/crash_victory.wav");
-                player.Play();
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoDerrota);
+                player.PlaySync();
                 btnAtacar.Visible = false;
                 btnEsquivar.Visible = false;
                 go_back.Image = Image.FromFile("../../Images/UI/arrow_right.png");

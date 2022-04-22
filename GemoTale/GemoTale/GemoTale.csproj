@@ -195,6 +195,16 @@
     <Content Include="Images\UI\shop_icon_on.png" />
     <Content Include="Sounds\SFX\aku_hit.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
+    <Content Include="Sounds\SFX\boss1defeat.wav" />
+    <Content Include="Sounds\SFX\boss1intro.wav" />
+    <Content Include="Sounds\SFX\boss2defeat.wav" />
+    <Content Include="Sounds\SFX\boss2intro.wav" />
+    <Content Include="Sounds\SFX\boss3defeat.wav" />
+    <Content Include="Sounds\SFX\boss3intro.wav" />
+    <Content Include="Sounds\SFX\boss4defeat.wav" />
+    <Content Include="Sounds\SFX\boss4intro.wav" />
+    <Content Include="Sounds\SFX\boss5defeat.wav" />
+    <Content Include="Sounds\SFX\boss5intro.wav" />
     <Content Include="Sounds\SFX\buy_upgrade.wav" />
     <Content Include="Sounds\SFX\change_screen.wav" />
     <Content Include="Sounds\SFX\checkpoint.wav" />

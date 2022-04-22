@@ -123,7 +123,7 @@ namespace GemoTale
             lvl2_2.ImagenFondo = "../../Images/Backgrounds/level2_2.jpg";
             lvl2_2.Mundo = "nieve";
             lvl2_2.EnemigoAcechante = true;
-            Enemigo jefe2 = new Enemigo("Dingodile", 500, 150, "../../Images/Characters/boss2.png");
+            Enemigo jefe2 = new Enemigo("Dingodile", 500, 150, "../../Images/Characters/boss2.png", "../../Sounds/SFX/boss2intro.wav", "../../Sounds/SFX/boss2defeat.wav");
             lvl2_2.Enemigo = jefe2;
             Globales.niveles.Add(lvl2_2);
 
@@ -175,7 +175,7 @@ namespace GemoTale
             lvl3_3.ImagenFondo = "../../Images/Backgrounds/level3_3.jpg";
             lvl3_3.Mundo = "templo";
             lvl3_3.EnemigoAcechante = true;
-            Enemigo jefe1 = new Enemigo("Tiny Tiger", 450, 100, "../../Images/Characters/boss1.png");
+            Enemigo jefe1 = new Enemigo("Tiny Tiger", 450, 100, "../../Images/Characters/boss1.png", "../../Sounds/SFX/boss1intro.wav", "../../Sounds/SFX/boss1defeat.wav");
             lvl3_3.Enemigo = jefe1;
             Globales.niveles.Add(lvl3_3);
 
@@ -199,7 +199,7 @@ namespace GemoTale
             lvl4_2.ImagenFondo = "../../Images/Backgrounds/level4_2.jpg";
             lvl4_2.Mundo = "alterno";
             lvl4_2.EnemigoAcechante = true;
-            Enemigo jefe3 = new Enemigo("Dr. N. Tropy", 550, 200, "../../Images/Characters/boss3.png");
+            Enemigo jefe3 = new Enemigo("Dr. N. Tropy", 550, 200, "../../Images/Characters/boss3.png", "../../Sounds/SFX/boss3intro.wav", "../../Sounds/SFX/boss3defeat.wav");
             lvl4_2.Enemigo = jefe3;
             Globales.niveles.Add(lvl4_2);
 
@@ -224,7 +224,7 @@ namespace GemoTale
             lvl5_2.ImagenFondo = "../../Images/Backgrounds/level5_2.jpg";
             lvl5_2.Mundo = "castillo";
             lvl5_2.EnemigoAcechante = true;
-            Enemigo jefe4 = new Enemigo("Dr. N. Gin", 600, 250, "../../Images/Characters/boss4.png");
+            Enemigo jefe4 = new Enemigo("Dr. N. Gin", 600, 250, "../../Images/Characters/boss4.png", "../../Sounds/SFX/boss4intro.wav", "../../Sounds/SFX/boss4defeat.wav");
             lvl5_2.Enemigo = jefe4;
             Globales.niveles.Add(lvl5_2);
 
@@ -235,7 +235,7 @@ namespace GemoTale
             lvl5_3.ImagenFondo = "../../Images/Backgrounds/level5_3.jpg";
             lvl5_3.Mundo = "castillo";
             lvl5_3.EnemigoAcechante = true;
-            Enemigo jefe5 = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png");
+            Enemigo jefe5 = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png", "../../Sounds/SFX/boss5intro.wav", "../../Sounds/SFX/boss5defeat.wav");
             lvl5_3.Enemigo = jefe5;
             Globales.niveles.Add(lvl5_3);
         }
