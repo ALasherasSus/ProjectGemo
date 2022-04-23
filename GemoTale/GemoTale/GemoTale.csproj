@@ -76,6 +76,18 @@
     <Compile Include="Vista_Estadisticas.Designer.cs">
       <DependentUpon>Vista_Estadisticas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista_FinalBueno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_FinalBueno.Designer.cs">
+      <DependentUpon>Vista_FinalBueno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista_FinalMalo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_FinalMalo.Designer.cs">
+      <DependentUpon>Vista_FinalMalo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista_Mapa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,12 @@
     <EmbeddedResource Include="Vista_Estadisticas.resx">
       <DependentUpon>Vista_Estadisticas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista_FinalBueno.resx">
+      <DependentUpon>Vista_FinalBueno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista_FinalMalo.resx">
+      <DependentUpon>Vista_FinalMalo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista_Mapa.resx">
       <DependentUpon>Vista_Mapa.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,9 +156,11 @@
   <ItemGroup>
     <Content Include="game_icon.ico" />
     <Content Include="Images\Backgrounds\alterno.jpg" />
+    <Content Include="Images\Backgrounds\badEnding.jpg" />
     <Content Include="Images\Backgrounds\bg.gif" />
     <Content Include="Images\Backgrounds\castillo.jpg" />
     <Content Include="Images\Backgrounds\gameOver.jpg" />
+    <Content Include="Images\Backgrounds\goodEnding.jpg" />
     <Content Include="Images\Backgrounds\level1_1.jpg" />
     <Content Include="Images\Backgrounds\level1_2.jpg" />
     <Content Include="Images\Backgrounds\level1_3.jpg" />
@@ -193,6 +213,8 @@
     <Content Include="Images\UI\run.png" />
     <Content Include="Images\UI\shop_icon.png" />
     <Content Include="Images\UI\shop_icon_on.png" />
+    <Content Include="Sounds\Music\BadEndingTheme.wav" />
+    <Content Include="Sounds\Music\GoodEndingTheme.wav" />
     <Content Include="Sounds\SFX\aku_hit.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
     <Content Include="Sounds\SFX\boss1defeat.wav" />

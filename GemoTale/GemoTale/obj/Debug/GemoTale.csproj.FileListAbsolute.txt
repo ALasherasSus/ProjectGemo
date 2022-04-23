@@ -56,3 +56,5 @@ C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.c
 C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.CoreCompileInputs.cache
 C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.exe
 C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.pdb
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_FinalBueno.resources
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_FinalMalo.resources

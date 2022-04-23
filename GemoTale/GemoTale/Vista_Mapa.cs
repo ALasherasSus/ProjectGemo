@@ -20,6 +20,7 @@ namespace GemoTale
         private String direccionDerecha; //Mapa al que te mueves usando la flecha de la derecha
         private Boolean enemigoVisible; //Indica si hay un enemigo en el mapa actual
         private int ranura; //La ranura en la que se guarda/carga la partida
+        private Boolean enemigosVivos; //Indica si aun quedan enemigos por derrotar en el juego
         public Vista_Mapa(Boolean cargar, int ranura)
         {
             InitializeComponent();
@@ -67,6 +68,10 @@ namespace GemoTale
 
         private void generarMapas()
         {
+            //Este método crea el listado de mapas en su forma de salida,
+            //como estarían en una nueva partida
+            enemigosVivos = true;
+
             Nivel lvl1_1 = new Nivel();
             lvl1_1.Nombre = "lvl1_1";
             lvl1_1.FlechaArriba = true;
@@ -265,6 +270,7 @@ namespace GemoTale
             //Se establece el nuevo nivel como actual
             mapaActual = lvl;
 
+            //Se establece que flechas están disponibles y si lo están, a que dirección te dirigen
             if (lvl.FlechaAbajo == true)
             {
                 arrow_bottom.Visible = true;
@@ -299,6 +305,7 @@ namespace GemoTale
                 shop_left.Visible = true;
             }
 
+            //Comprueba si hay un enemigo en el mapa actual
             if (lvl.EnemigoAcechante == true)
             {
                 enemigoVisible = true;
@@ -315,6 +322,7 @@ namespace GemoTale
                 }
             }
 
+            //Establece el fondo del nivel/pantalla actual
             this.BackgroundImage = Image.FromFile(lvl.ImagenFondo);
         }
 
@@ -333,6 +341,34 @@ namespace GemoTale
             }
 
             return numeroNivel;
+        }
+
+        private void comprobarFinal()
+        {
+            //Comprueba si aun quedan enemigos vivos en el juego para dar valor a la variable
+            enemigosVivos = false;
+            foreach (var nivel in Globales.niveles)
+            {
+                if (nivel.EnemigoAcechante == true)
+                {
+                    enemigosVivos = true;
+                }
+            }
+        }
+
+        private void cargarFinal()
+        {
+            //En base a si quedan enemigos en el juego o no, recibes un final u otro
+            if (enemigosVivos == true)
+            {
+                Vista_FinalMalo vistaFinalMalo = new Vista_FinalMalo();
+                vistaFinalMalo.Show();
+            }
+            else
+            {
+                Vista_FinalBueno vistaFinalBueno = new Vista_FinalBueno();
+                vistaFinalBueno.Show();
+            }
         }
 
         private void arrow_top_Click(object sender, EventArgs e)
@@ -447,16 +483,30 @@ namespace GemoTale
         {
             if (enemigoVisible == true)
             {
+                //EMPEZAR COMBATE
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/enemy_encounter.wav");
                 player.Play();
-                // EMPEZAR COMBATE
                 this.Hide();
                 Vista_Combate vistaCombate = new Vista_Combate(extraerNombreNivel(mapaActual.Nombre));
-                vistaCombate.Closed += (s, args) => { this.Show(); this.CenterToScreen(); cargarNivel(Globales.niveles[extraerNombreNivel(mapaActual.Nombre)]); };
+                vistaCombate.Closed += (s, args) =>
+                {
+                    if (mapaActual.Nombre == "lvl5_3") //Si es el nivel final (Jefe de fase final)
+                    {
+                        comprobarFinal();
+                        cargarFinal();
+                    }
+                    else
+                    {
+                        this.Show();
+                        this.CenterToScreen();
+                        cargarNivel(Globales.niveles[extraerNombreNivel(mapaActual.Nombre)]);
+                    }
+                };
                 vistaCombate.Show();
             }
             else
             {
+                //MOSTRAR ESTADÍSTICAS
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
                 player.Play();
                 this.Hide();
@@ -486,12 +536,14 @@ namespace GemoTale
         {
             if (enemigoVisible == false)
             {
+                //Si no hay enemigos, guardas partida
                 cargarGuardar.guardarPartida(Globales.niveles, mapaAnterior, mapaActual, Globales.Jugador, ranura);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/checkpoint.wav");
                 player.PlaySync();
             }
             else
             {
+                //Si hay enemigos, huyes del nivel
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
                 player.Play();
                 cargarNivel(Globales.niveles[extraerNombreNivel(mapaAnterior)]);
