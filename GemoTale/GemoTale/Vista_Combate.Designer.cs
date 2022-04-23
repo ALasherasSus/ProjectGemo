@@ -70,6 +70,7 @@ namespace GemoTale
             // 
             this.lblNombreEnemigo.BackColor = System.Drawing.Color.Transparent;
             this.lblNombreEnemigo.Font = new System.Drawing.Font("Cooper Black", 25F);
+            this.lblNombreEnemigo.ForeColor = System.Drawing.Color.Red;
             this.lblNombreEnemigo.Location = new System.Drawing.Point(12, 14);
             this.lblNombreEnemigo.Name = "lblNombreEnemigo";
             this.lblNombreEnemigo.Size = new System.Drawing.Size(290, 39);
@@ -97,6 +98,7 @@ namespace GemoTale
             // 
             this.lblJugador.BackColor = System.Drawing.Color.Transparent;
             this.lblJugador.Font = new System.Drawing.Font("Cooper Black", 25F);
+            this.lblJugador.ForeColor = System.Drawing.Color.DodgerBlue;
             this.lblJugador.Location = new System.Drawing.Point(312, 258);
             this.lblJugador.Name = "lblJugador";
             this.lblJugador.Size = new System.Drawing.Size(300, 39);
