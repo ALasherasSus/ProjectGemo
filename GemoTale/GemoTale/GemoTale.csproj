@@ -215,6 +215,7 @@
     <Content Include="Images\UI\shop_icon_on.png" />
     <Content Include="Sounds\Music\BadEndingTheme.wav" />
     <Content Include="Sounds\Music\GoodEndingTheme.wav" />
+    <Content Include="Sounds\Music\StatsTheme.wav" />
     <Content Include="Sounds\SFX\aku_hit.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
     <Content Include="Sounds\SFX\boss1defeat.wav" />

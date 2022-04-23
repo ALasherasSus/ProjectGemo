@@ -16,6 +16,8 @@ namespace GemoTale
         {
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/Music/StatsTheme.wav");
+            player.PlayLooping();
             cargarPantalla();
 
             if (Globales.modoDebug == true)

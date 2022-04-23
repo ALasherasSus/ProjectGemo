@@ -20,6 +20,14 @@ namespace GemoTale
             this.CenterToScreen(); // Centrar la ventana en la pantalla
             gameLogo.Image = Image.FromFile("../../Images/UI/game_logo.png");
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/mainmenu.jpg");
+
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(Menu_Principal_KeyDown);
+
+            if (Globales.modoDebug == true)
+            {
+                lblDebug.Visible = true;
+            }
         }
 
         private void Menu_Principal_Load(object sender, EventArgs e)
@@ -81,6 +89,28 @@ namespace GemoTale
             Vista_Mapa vistaMapa = new Vista_Mapa(load, ranura);
             vistaMapa.Closed += (s, args) => this.Close();
             vistaMapa.Show();
+        }
+
+        private void Menu_Principal_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode.ToString() == "F1")
+            {
+                cheatBox.Visible = true;
+            }
+        }
+
+        private void cheatBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && cheatBox.Text.ToUpper() == "WOMBAT")
+            {
+                Globales.modoDebug = true;
+                System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/buy_upgrade.wav");
+                player.Play();
+                if (Globales.modoDebug == true)
+                {
+                    lblDebug.Visible = true;
+                }
+            }
         }
     }
 }

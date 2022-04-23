@@ -27,7 +27,7 @@ namespace GemoTale
             this.CenterToScreen(); // Centrar la ventana en la pantalla
             this.ranura = ranura;
 
-            Globales.modoDebug = true; //ACTIVAR EL MODO DEBUG
+            //Globales.modoDebug = true; //ACTIVAR EL MODO DEBUG
             if (Globales.modoDebug == true)
             {
                 lblDebug.Visible = true;
@@ -490,7 +490,7 @@ namespace GemoTale
                 Vista_Combate vistaCombate = new Vista_Combate(extraerNombreNivel(mapaActual.Nombre));
                 vistaCombate.Closed += (s, args) =>
                 {
-                    if (mapaActual.Nombre == "lvl5_3") //Si es el nivel final (Jefe de fase final)
+                    if (mapaActual.Nombre == "lvl5_3" && Globales.niveles[extraerNombreNivel("lvl5_3")].EnemigoAcechante == false) //Si es el nivel final (Jefe de fase final)
                     {
                         comprobarFinal();
                         cargarFinal();

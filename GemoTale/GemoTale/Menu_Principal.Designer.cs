@@ -36,6 +36,8 @@ namespace GemoTale
             this.btnRanura1 = new System.Windows.Forms.Button();
             this.btnRanura2 = new System.Windows.Forms.Button();
             this.btnRanura3 = new System.Windows.Forms.Button();
+            this.lblDebug = new System.Windows.Forms.Label();
+            this.cheatBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,6 +132,27 @@ namespace GemoTale
             this.btnRanura3.UseVisualStyleBackColor = false;
             this.btnRanura3.Click += new System.EventHandler(this.btnRanura3_Click);
             // 
+            // lblDebug
+            // 
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.BackColor = System.Drawing.Color.Transparent;
+            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDebug.Location = new System.Drawing.Point(0, 0);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Size = new System.Drawing.Size(149, 24);
+            this.lblDebug.TabIndex = 9;
+            this.lblDebug.Text = "MODO DEBUG";
+            this.lblDebug.Visible = false;
+            // 
+            // cheatBox
+            // 
+            this.cheatBox.Location = new System.Drawing.Point(524, 0);
+            this.cheatBox.Name = "cheatBox";
+            this.cheatBox.Size = new System.Drawing.Size(100, 20);
+            this.cheatBox.TabIndex = 10;
+            this.cheatBox.Visible = false;
+            this.cheatBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cheatBox_KeyDown);
+            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -137,6 +160,8 @@ namespace GemoTale
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.Controls.Add(this.cheatBox);
+            this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.btnRanura3);
             this.Controls.Add(this.btnRanura2);
             this.Controls.Add(this.btnRanura1);
@@ -148,8 +173,10 @@ namespace GemoTale
             this.Name = "Menu_Principal";
             this.Text = "Crash Bandicoot RPG";
             this.Load += new System.EventHandler(this.Menu_Principal_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menu_Principal_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.gameLogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -161,6 +188,8 @@ namespace GemoTale
         private System.Windows.Forms.Button btnRanura1;
         private System.Windows.Forms.Button btnRanura2;
         private System.Windows.Forms.Button btnRanura3;
+        private System.Windows.Forms.Label lblDebug;
+        private System.Windows.Forms.TextBox cheatBox;
     }
 }
 

@@ -22,15 +22,15 @@ namespace GemoTale
 
         private void continuar_Click(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/click1.wav");
-            player.Play();
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/bad_ending_continue_yes.wav");
+            player.PlaySync();
             Application.Restart();
             Environment.Exit(0);
         }
 
         private void salir_Click(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/gameOver.wav");
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/bad_ending_continue_no.wav");
             player.PlaySync();
             Environment.Exit(0);
         }

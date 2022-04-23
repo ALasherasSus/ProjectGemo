@@ -8,23 +8,30 @@
 		<vidaMaxima>650</vidaMaxima>
 	</jugador>
 	<mapaActual>
-		<direccionAbajo i:nil="true" />
-		<direccionArriba>lvl5_2</direccionArriba>
-		<direccionDerecha>lvl4_2</direccionDerecha>
-		<direccionIzquierda>lvl2_3</direccionIzquierda>
-		<enemigo i:nil="true" />
+		<direccionAbajo>lvl5_1</direccionAbajo>
+		<direccionArriba>lvl5_3</direccionArriba>
+		<direccionDerecha i:nil="true" />
+		<direccionIzquierda i:nil="true" />
+		<enemigo>
+			<Ataque>250</Ataque>
+			<Foto>../../Images/Characters/boss4.png</Foto>
+			<Nombre>Dr. N. Gin</Nombre>
+			<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
+			<SonidoIntro i:nil="true" />
+			<Vida>0</Vida>
+		</enemigo>
 		<enemigoAcechante>false</enemigoAcechante>
-		<flechaAbajo>false</flechaAbajo>
+		<flechaAbajo>true</flechaAbajo>
 		<flechaArriba>true</flechaArriba>
-		<flechaDerecha>true</flechaDerecha>
-		<flechaIzquierda>true</flechaIzquierda>
-		<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
+		<flechaDerecha>false</flechaDerecha>
+		<flechaIzquierda>false</flechaIzquierda>
+		<imagenFondo>../../Images/Backgrounds/level5_2.jpg</imagenFondo>
 		<mundo>castillo</mundo>
-		<nombre>lvl5_1</nombre>
+		<nombre>lvl5_2</nombre>
 		<tiendaDerecha>false</tiendaDerecha>
 		<tiendaIzquierda>false</tiendaIzquierda>
 	</mapaActual>
-	<mapaAnterior>lvl2_3</mapaAnterior>
+	<mapaAnterior>lvl5_1</mapaAnterior>
 	<niveles>
 		<Nivel>
 			<direccionAbajo i:nil="true" />
