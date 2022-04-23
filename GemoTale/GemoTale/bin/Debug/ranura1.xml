@@ -3,7 +3,7 @@
 	<jugador>
 		<ataque>300</ataque>
 		<defensa>9</defensa>
-		<dinero>3430</dinero>
+		<dinero>3100</dinero>
 		<vida>650</vida>
 		<vidaMaxima>650</vidaMaxima>
 	</jugador>
@@ -16,8 +16,8 @@
 			<Ataque>250</Ataque>
 			<Foto>../../Images/Characters/boss4.png</Foto>
 			<Nombre>Dr. N. Gin</Nombre>
-			<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
-			<SonidoIntro i:nil="true" />
+			<SonidoDerrota>../../Sounds/SFX/boss4defeat.wav</SonidoDerrota>
+			<SonidoIntro>../../Sounds/SFX/boss4intro.wav</SonidoIntro>
 			<Vida>0</Vida>
 		</enemigo>
 		<enemigoAcechante>false</enemigoAcechante>
@@ -31,7 +31,7 @@
 		<tiendaDerecha>false</tiendaDerecha>
 		<tiendaIzquierda>false</tiendaIzquierda>
 	</mapaActual>
-	<mapaAnterior>lvl5_1</mapaAnterior>
+	<mapaAnterior>lvl5_3</mapaAnterior>
 	<niveles>
 		<Nivel>
 			<direccionAbajo i:nil="true" />
@@ -124,8 +124,8 @@
 				<Ataque>150</Ataque>
 				<Foto>../../Images/Characters/boss2.png</Foto>
 				<Nombre>Dingodile</Nombre>
-				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
-				<SonidoIntro i:nil="true" />
+				<SonidoDerrota>../../Sounds/SFX/boss2defeat.wav</SonidoDerrota>
+				<SonidoIntro>../../Sounds/SFX/boss2intro.wav</SonidoIntro>
 				<Vida>0</Vida>
 			</enemigo>
 			<enemigoAcechante>false</enemigoAcechante>
@@ -220,8 +220,8 @@
 				<Ataque>100</Ataque>
 				<Foto>../../Images/Characters/boss1.png</Foto>
 				<Nombre>Tiny Tiger</Nombre>
-				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
-				<SonidoIntro i:nil="true" />
+				<SonidoDerrota>../../Sounds/SFX/boss1defeat.wav</SonidoDerrota>
+				<SonidoIntro>../../Sounds/SFX/boss1intro.wav</SonidoIntro>
 				<Vida>0</Vida>
 			</enemigo>
 			<enemigoAcechante>false</enemigoAcechante>
@@ -261,8 +261,8 @@
 				<Ataque>200</Ataque>
 				<Foto>../../Images/Characters/boss3.png</Foto>
 				<Nombre>Dr. N. Tropy</Nombre>
-				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
-				<SonidoIntro i:nil="true" />
+				<SonidoDerrota>../../Sounds/SFX/boss3defeat.wav</SonidoDerrota>
+				<SonidoIntro>../../Sounds/SFX/boss3intro.wav</SonidoIntro>
 				<Vida>0</Vida>
 			</enemigo>
 			<enemigoAcechante>false</enemigoAcechante>
@@ -287,7 +287,7 @@
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
 			<flechaIzquierda>true</flechaIzquierda>
-			<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
+			<imagenFondo>../../Images/Backgrounds/level5_1_both.jpg</imagenFondo>
 			<mundo>castillo</mundo>
 			<nombre>lvl5_1</nombre>
 			<tiendaDerecha>false</tiendaDerecha>
@@ -302,8 +302,8 @@
 				<Ataque>250</Ataque>
 				<Foto>../../Images/Characters/boss4.png</Foto>
 				<Nombre>Dr. N. Gin</Nombre>
-				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
-				<SonidoIntro i:nil="true" />
+				<SonidoDerrota>../../Sounds/SFX/boss4defeat.wav</SonidoDerrota>
+				<SonidoIntro>../../Sounds/SFX/boss4intro.wav</SonidoIntro>
 				<Vida>0</Vida>
 			</enemigo>
 			<enemigoAcechante>false</enemigoAcechante>
@@ -326,8 +326,8 @@
 				<Ataque>300</Ataque>
 				<Foto>../../Images/Characters/boss5.png</Foto>
 				<Nombre>Dr. N. Cortex</Nombre>
-				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
-				<SonidoIntro i:nil="true" />
+				<SonidoDerrota>../../Sounds/SFX/boss5defeat.wav</SonidoDerrota>
+				<SonidoIntro>../../Sounds/SFX/boss5intro.wav</SonidoIntro>
 				<Vida>650</Vida>
 			</enemigo>
 			<enemigoAcechante>true</enemigoAcechante>

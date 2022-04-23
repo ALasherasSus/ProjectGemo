@@ -37,7 +37,7 @@ namespace GemoTale
 
         public void recibirAtaque(double ataqueEnemigo)
         {
-            this.Vida = this.Vida - (ataqueEnemigo * (1 - (defensa / 10)));
+            this.Vida = ((this.Vida * 10) - (ataqueEnemigo * (10 - defensa))) / 10;
         }
 
         public int generarAtaque()

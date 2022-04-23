@@ -80,6 +80,7 @@ namespace GemoTale
                 {
                     Globales.Jugador.Vida = Globales.Jugador.VidaMaxima;
                 }
+                System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoDerrota);
                 player.PlaySync();
                 btnAtacar.Visible = false;

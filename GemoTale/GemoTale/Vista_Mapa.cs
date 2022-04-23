@@ -216,7 +216,7 @@ namespace GemoTale
             lvl5_1.DireccionIzquierda = "lvl2_3";
             lvl5_1.FlechaDerecha = false;
             lvl5_1.DireccionDerecha = "lvl4_2";
-            lvl5_1.ImagenFondo = "../../Images/Backgrounds/level5_1.jpg";
+            lvl5_1.ImagenFondo = "../../Images/Backgrounds/level5_1_left.jpg";
             lvl5_1.Mundo = "castillo";
             Globales.niveles.Add(lvl5_1);
 
@@ -410,6 +410,14 @@ namespace GemoTale
             if (mapaActual.Nombre == "lvl4_2")
             {
                 Globales.niveles[extraerNombreNivel("lvl5_1")].FlechaDerecha = true;
+                if (Globales.niveles[extraerNombreNivel("lvl5_1")].FlechaIzquierda == true)
+                {
+                    Globales.niveles[extraerNombreNivel("lvl5_1")].ImagenFondo = "../../Images/Backgrounds/level5_1_both.jpg";
+                }
+                else
+                {
+                    Globales.niveles[extraerNombreNivel("lvl5_1")].ImagenFondo = "../../Images/Backgrounds/level5_1_right.jpg";
+                }
             }
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
@@ -431,6 +439,14 @@ namespace GemoTale
             if (mapaActual.Nombre == "lvl2_3")
             {
                 Globales.niveles[extraerNombreNivel("lvl5_1")].FlechaIzquierda = true;
+                if (Globales.niveles[extraerNombreNivel("lvl5_1")].FlechaDerecha == true)
+                {
+                    Globales.niveles[extraerNombreNivel("lvl5_1")].ImagenFondo = "../../Images/Backgrounds/level5_1_both.jpg";
+                }
+                else
+                {
+                    Globales.niveles[extraerNombreNivel("lvl5_1")].ImagenFondo = "../../Images/Backgrounds/level5_1_left.jpg";
+                }
             }
             System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             player.Play();
@@ -499,7 +515,7 @@ namespace GemoTale
                     {
                         this.Show();
                         this.CenterToScreen();
-                        cargarNivel(Globales.niveles[extraerNombreNivel(mapaActual.Nombre)]);
+                        if (Globales.niveles[extraerNombreNivel(mapaActual.Nombre)].EnemigoAcechante == false) cargarNivel(Globales.niveles[extraerNombreNivel(mapaActual.Nombre)]);
                     }
                 };
                 vistaCombate.Show();
