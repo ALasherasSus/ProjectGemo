@@ -172,7 +172,9 @@
     <Content Include="Images\Backgrounds\level3_3.jpg" />
     <Content Include="Images\Backgrounds\level4_1.jpg" />
     <Content Include="Images\Backgrounds\level4_2.jpg" />
-    <Content Include="Images\Backgrounds\level5_1.jpg" />
+    <Content Include="Images\Backgrounds\level5_1_both.jpg" />
+    <Content Include="Images\Backgrounds\level5_1_left.jpg" />
+    <Content Include="Images\Backgrounds\level5_1_right.jpg" />
     <Content Include="Images\Backgrounds\level5_2.jpg" />
     <Content Include="Images\Backgrounds\level5_3.jpg" />
     <Content Include="Images\Backgrounds\mainmenu.jpg" />

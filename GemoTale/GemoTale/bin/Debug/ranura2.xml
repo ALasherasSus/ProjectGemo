@@ -16,15 +16,15 @@
 		<enemigoAcechante>false</enemigoAcechante>
 		<flechaAbajo>false</flechaAbajo>
 		<flechaArriba>true</flechaArriba>
-		<flechaDerecha>false</flechaDerecha>
+		<flechaDerecha>true</flechaDerecha>
 		<flechaIzquierda>true</flechaIzquierda>
-		<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
+		<imagenFondo>../../Images/Backgrounds/level5_1_both.jpg</imagenFondo>
 		<mundo>castillo</mundo>
 		<nombre>lvl5_1</nombre>
 		<tiendaDerecha>false</tiendaDerecha>
 		<tiendaIzquierda>false</tiendaIzquierda>
 	</mapaActual>
-	<mapaAnterior>lvl5_2</mapaAnterior>
+	<mapaAnterior>lvl4_2</mapaAnterior>
 	<niveles>
 		<Nivel>
 			<direccionAbajo i:nil="true" />
@@ -278,9 +278,9 @@
 			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
-			<flechaDerecha>false</flechaDerecha>
+			<flechaDerecha>true</flechaDerecha>
 			<flechaIzquierda>true</flechaIzquierda>
-			<imagenFondo>../../Images/Backgrounds/level5_1.jpg</imagenFondo>
+			<imagenFondo>../../Images/Backgrounds/level5_1_both.jpg</imagenFondo>
 			<mundo>castillo</mundo>
 			<nombre>lvl5_1</nombre>
 			<tiendaDerecha>false</tiendaDerecha>

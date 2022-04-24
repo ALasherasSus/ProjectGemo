@@ -42,7 +42,7 @@ namespace GemoTale
             // Set up the ToolTip text for the Button and Checkbox.
             toolTip1.SetToolTip(this.go_back, "Huye del combate asumiendo el daño recibido.");
             toolTip1.SetToolTip(this.btnAtacar, "Ataca al enemigo.");
-            toolTip1.SetToolTip(this.btnEsquivar, "Esquiva el ataque sufriendo la mitad de daño\ny recupera algo de energia.");
+            toolTip1.SetToolTip(this.btnEsquivar, "Esquiva el ataque sufriendo la mitad de daño\ny recupera algo de energía.");
             toolTip1.SetToolTip(this.pbEnemigo, "La salud del enemigo.");
             toolTip1.SetToolTip(this.pbJugador, "Tu propia salud.");
         }
