@@ -220,6 +220,8 @@
     <Content Include="Sounds\Music\StatsTheme.wav" />
     <Content Include="Sounds\SFX\aku_hit.wav" />
     <Content Include="Sounds\SFX\aku_up.wav" />
+    <Content Include="Sounds\SFX\bad_ending_continue_no.wav" />
+    <Content Include="Sounds\SFX\bad_ending_continue_yes.wav" />
     <Content Include="Sounds\SFX\boss1defeat.wav" />
     <Content Include="Sounds\SFX\boss1intro.wav" />
     <Content Include="Sounds\SFX\boss2defeat.wav" />
