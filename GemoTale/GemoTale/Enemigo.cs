@@ -46,7 +46,7 @@ namespace GemoTale
 
         public int generarAtaque()
         {
-            //ramdom entre ataque y ataque - 10
+            //ramdom entre 10 y ataque del enemigo
             Random rnd = new Random();
             int ataquegenerado = rnd.Next(10, this.Ataque);
 

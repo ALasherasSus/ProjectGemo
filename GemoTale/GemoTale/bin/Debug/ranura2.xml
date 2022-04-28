@@ -1,30 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <partida xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/GemoTale">
 	<jugador>
-		<ataque>300</ataque>
-		<defensa>9</defensa>
+		<ataque>175</ataque>
+		<defensa>7</defensa>
 		<dinero>0</dinero>
 		<vida>650</vida>
 		<vidaMaxima>650</vidaMaxima>
 	</jugador>
 	<mapaActual>
-		<direccionAbajo i:nil="true" />
-		<direccionArriba>lvl5_2</direccionArriba>
-		<direccionDerecha>lvl4_2</direccionDerecha>
-		<direccionIzquierda>lvl2_3</direccionIzquierda>
-		<enemigo i:nil="true" />
+		<direccionAbajo>lvl5_1</direccionAbajo>
+		<direccionArriba>lvl5_3</direccionArriba>
+		<direccionDerecha i:nil="true" />
+		<direccionIzquierda i:nil="true" />
+		<enemigo>
+			<Ataque>250</Ataque>
+			<Foto>../../Images/Characters/boss4.png</Foto>
+			<Nombre>Dr. N. Gin</Nombre>
+			<SonidoDerrota>../../Sounds/SFX/boss4defeat.wav</SonidoDerrota>
+			<SonidoIntro>../../Sounds/SFX/boss4intro.wav</SonidoIntro>
+			<Vida>0</Vida>
+		</enemigo>
 		<enemigoAcechante>false</enemigoAcechante>
-		<flechaAbajo>false</flechaAbajo>
+		<flechaAbajo>true</flechaAbajo>
 		<flechaArriba>true</flechaArriba>
-		<flechaDerecha>true</flechaDerecha>
-		<flechaIzquierda>true</flechaIzquierda>
-		<imagenFondo>../../Images/Backgrounds/level5_1_both.jpg</imagenFondo>
+		<flechaDerecha>false</flechaDerecha>
+		<flechaIzquierda>false</flechaIzquierda>
+		<imagenFondo>../../Images/Backgrounds/level5_2.jpg</imagenFondo>
 		<mundo>castillo</mundo>
-		<nombre>lvl5_1</nombre>
+		<nombre>lvl5_2</nombre>
 		<tiendaDerecha>false</tiendaDerecha>
 		<tiendaIzquierda>false</tiendaIzquierda>
 	</mapaActual>
-	<mapaAnterior>lvl4_2</mapaAnterior>
+	<mapaAnterior>lvl5_1</mapaAnterior>
 	<niveles>
 		<Nivel>
 			<direccionAbajo i:nil="true" />
@@ -54,9 +61,9 @@
 				<Nombre>Cangrejo</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
 				<SonidoIntro i:nil="true" />
-				<Vida>100</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>true</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>false</flechaDerecha>
@@ -95,9 +102,9 @@
 				<Nombre>Pingüino</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
 				<SonidoIntro i:nil="true" />
-				<Vida>150</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>true</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>false</flechaDerecha>
@@ -119,9 +126,9 @@
 				<Nombre>Dingodile</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/boss2defeat.wav</SonidoDerrota>
 				<SonidoIntro>../../Sounds/SFX/boss2intro.wav</SonidoIntro>
-				<Vida>500</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>true</flechaAbajo>
 			<flechaArriba>false</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
@@ -143,9 +150,9 @@
 				<Nombre>Tiburón</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
 				<SonidoIntro i:nil="true" />
-				<Vida>200</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>false</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
@@ -167,9 +174,9 @@
 				<Nombre>Planta Piraña</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
 				<SonidoIntro i:nil="true" />
-				<Vida>250</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>false</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
@@ -191,9 +198,9 @@
 				<Nombre>Indígena</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/crash_victory.wav</SonidoDerrota>
 				<SonidoIntro i:nil="true" />
-				<Vida>300</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>false</flechaArriba>
 			<flechaDerecha>true</flechaDerecha>
@@ -215,9 +222,9 @@
 				<Nombre>Tiny Tiger</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/boss1defeat.wav</SonidoDerrota>
 				<SonidoIntro>../../Sounds/SFX/boss1intro.wav</SonidoIntro>
-				<Vida>450</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>false</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>false</flechaDerecha>
@@ -256,9 +263,9 @@
 				<Nombre>Dr. N. Tropy</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/boss3defeat.wav</SonidoDerrota>
 				<SonidoIntro>../../Sounds/SFX/boss3intro.wav</SonidoIntro>
-				<Vida>550</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>true</flechaAbajo>
 			<flechaArriba>false</flechaArriba>
 			<flechaDerecha>false</flechaDerecha>
@@ -297,9 +304,9 @@
 				<Nombre>Dr. N. Gin</Nombre>
 				<SonidoDerrota>../../Sounds/SFX/boss4defeat.wav</SonidoDerrota>
 				<SonidoIntro>../../Sounds/SFX/boss4intro.wav</SonidoIntro>
-				<Vida>600</Vida>
+				<Vida>0</Vida>
 			</enemigo>
-			<enemigoAcechante>true</enemigoAcechante>
+			<enemigoAcechante>false</enemigoAcechante>
 			<flechaAbajo>true</flechaAbajo>
 			<flechaArriba>true</flechaArriba>
 			<flechaDerecha>false</flechaDerecha>

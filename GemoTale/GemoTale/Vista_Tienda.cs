@@ -130,7 +130,7 @@ namespace GemoTale
 
         private void btnDefensa_Click(object sender, EventArgs e)
         {
-            if (Globales.Jugador.Dinero >= Convert.ToInt32(btnDefensa.Text) && pbDefensa.Maximum != Globales.Jugador.Defensa)
+            if (Globales.Jugador.Dinero >= Convert.ToInt32(btnDefensa.Text) && pbDefensa.Maximum != pbDefensa.Value)
             {
                 Globales.Jugador.Dinero -= Convert.ToInt32(btnDefensa.Text);
                 Globales.Jugador.Defensa += 1;
@@ -151,7 +151,14 @@ namespace GemoTale
             pbVida.Value = (int)Globales.Jugador.Vida;
             pbVidaMaxima.Value = (int)Globales.Jugador.VidaMaxima;
             pbAtaque.Value = Globales.Jugador.Ataque;
-            pbDefensa.Value = (int)(Globales.Jugador.Defensa);
+            if (Globales.Jugador.Defensa > pbDefensa.Maximum)
+            {
+                pbDefensa.Value = pbDefensa.Maximum;
+            }
+            else
+            {
+                pbDefensa.Value = (int)(Globales.Jugador.Defensa);
+            }
             tbDinero.Text = Globales.Jugador.Dinero + "$";
         }
     }

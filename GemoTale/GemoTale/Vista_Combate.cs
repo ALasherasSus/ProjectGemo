@@ -28,7 +28,7 @@ namespace GemoTale
             pbJugador.Value = (int)Globales.Jugador.Vida;
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/" + Globales.niveles[idNivel].Mundo + ".jpg");
 
-            if(Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
+            if (Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
             {
                 System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoIntro);
@@ -51,6 +51,7 @@ namespace GemoTale
         {
             if (Globales.Jugador.Vida <= 0)
             {
+                //FIN DE LA PARTIDA Y REINICIAR EL JUEGO
                 Globales.Jugador.Vida = 0;
                 pbJugador.Value = (int)Globales.Jugador.Vida;
                 pbJugador.Refresh();
@@ -59,7 +60,6 @@ namespace GemoTale
                 System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/gameOver.wav");
                 player.PlaySync();
-                //FIN DE LA PARTIDA Y REINICIAR EL JUEGO
                 this.Hide();
                 Vista_Muerte vistaMuerte = new Vista_Muerte();
                 //vistaMuerte.Closed += (s, args) => { Application.Restart(); Environment.Exit(0); };
@@ -67,6 +67,7 @@ namespace GemoTale
             }
             else if (Globales.niveles[idNivel].Enemigo.Vida <= 0)
             {
+                //ENEMIGO DERROTADO
                 Globales.niveles[idNivel].Enemigo.Vida = 0;
                 pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
                 pbEnemigo.Refresh();
@@ -74,11 +75,22 @@ namespace GemoTale
                 player_combat.Refresh();
                 enemy.Image = Image.FromFile("../../Images/Characters/deadEnemy.png");
                 Globales.niveles[idNivel].EnemigoAcechante = false;
-                Globales.Jugador.Dinero += pbEnemigo.Maximum;
-                Globales.Jugador.Vida += (Globales.Jugador.VidaMaxima / 4);
+                Globales.Jugador.Dinero += pbEnemigo.Maximum; //El jugador recibe la cantidad inicial de vida del enemigo en dinero
+                Globales.Jugador.Vida += (Globales.Jugador.VidaMaxima / 3); //El jugador recupera hasta un tercio de su vida máxima
                 if (Globales.Jugador.Vida > Globales.Jugador.VidaMaxima)
                 {
                     Globales.Jugador.Vida = Globales.Jugador.VidaMaxima;
+                }
+                Globales.Jugador.Ataque += 10; //El jugador sube de ataque al derrotar a un enemigo
+                if (Globales.Jugador.Ataque > 300)
+                {
+                    Globales.Jugador.Ataque = 300;
+                }
+                //Si derrotas a un Jefe Supremo (que se identifican por tener diálogo inicial), subes el nivel de defensa del jugador
+                if (Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
+                {
+                    Globales.Jugador.Defensa++;
+                    if (Globales.Jugador.Defensa > 9) Globales.Jugador.Defensa = 9;
                 }
                 System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoDerrota);
@@ -157,6 +169,10 @@ namespace GemoTale
                 Globales.Jugador.Vida = Globales.Jugador.VidaMaxima;
             }
             int saludEnemigo = rnd.Next(1, (int)(pbEnemigo.Maximum / 5));
+            if (Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
+            {
+                saludEnemigo = saludEnemigo / 2;
+            }
             Globales.niveles[idNivel].Enemigo.Vida += saludEnemigo;
             if (Globales.niveles[idNivel].Enemigo.Vida > pbEnemigo.Maximum)
             {

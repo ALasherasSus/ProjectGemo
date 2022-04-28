@@ -89,7 +89,7 @@ namespace GemoTale
             this.pbDefensa.BackColor = System.Drawing.Color.Red;
             this.pbDefensa.ForeColor = System.Drawing.Color.Lime;
             this.pbDefensa.Location = new System.Drawing.Point(33, 324);
-            this.pbDefensa.Maximum = 9;
+            this.pbDefensa.Maximum = 5;
             this.pbDefensa.Name = "pbDefensa";
             this.pbDefensa.Size = new System.Drawing.Size(256, 23);
             this.pbDefensa.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
@@ -203,7 +203,7 @@ namespace GemoTale
             this.btnAtaque.Name = "btnAtaque";
             this.btnAtaque.Size = new System.Drawing.Size(75, 23);
             this.btnAtaque.TabIndex = 29;
-            this.btnAtaque.Text = "100";
+            this.btnAtaque.Text = "150";
             this.btnAtaque.UseVisualStyleBackColor = true;
             this.btnAtaque.Click += new System.EventHandler(this.btnAtaque_Click);
             // 
@@ -214,7 +214,7 @@ namespace GemoTale
             this.btnDefensa.Name = "btnDefensa";
             this.btnDefensa.Size = new System.Drawing.Size(75, 23);
             this.btnDefensa.TabIndex = 30;
-            this.btnDefensa.Text = "200";
+            this.btnDefensa.Text = "250";
             this.btnDefensa.UseVisualStyleBackColor = true;
             this.btnDefensa.Click += new System.EventHandler(this.btnDefensa_Click);
             // 
