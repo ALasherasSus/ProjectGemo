@@ -225,6 +225,7 @@ namespace GemoTale
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ControlBox = false;
             this.Controls.Add(this.btnDefensa);
             this.Controls.Add(this.btnAtaque);
             this.Controls.Add(this.btnVidaMaxima);
