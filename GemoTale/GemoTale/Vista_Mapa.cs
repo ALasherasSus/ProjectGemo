@@ -42,9 +42,21 @@ namespace GemoTale
                     cargarNivel(Globales.niveles[0]);
                     break;
                 case true: //Cargar Partida
-                    cargarRanura(ranura);
-                    cargarNivel(mapaActual);
-                    break;
+                    try
+                    {
+                        cargarRanura(ranura);
+                        cargarNivel(mapaActual);
+                        break;
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("La partida a cargar no existe o está dañada. Creando una nueva.");
+                        Globales.niveles = new List<Nivel>();
+                        generarMapas();
+                        Globales.Jugador = new Jugador(100, 100, 25, 0, 0);
+                        cargarNivel(Globales.niveles[0]);
+                        break;
+                    }
             }
 
             //BURBUJAS DE INFORMACIÓN

@@ -179,7 +179,7 @@ namespace GemoTale
             Globales.Jugador.recibirAtaque((Globales.niveles[idNivel].Enemigo.generarAtaque() / 2));
 
             Random rnd = new Random();
-            int saludGenerada = rnd.Next(10, (int)(Globales.Jugador.VidaMaxima / 4));
+            int saludGenerada = rnd.Next(10, (int)(Globales.Jugador.VidaMaxima / 3));
             Globales.Jugador.Vida += saludGenerada;
             if (Globales.Jugador.Vida > Globales.Jugador.VidaMaxima)
             {
