@@ -50,7 +50,7 @@ namespace GemoTale
                     }
                     catch (Exception)
                     {
-                        MessageBox.Show("La partida a cargar no existe o está dañada. Creando una nueva.");
+                        MessageBox.Show("La partida a cargar no existe o está dañada. Iniciando una nueva.");
                         Globales.niveles = new List<Nivel>();
                         generarMapas();
                         Globales.Jugador = new Jugador(100, 100, 25, 0, 0);
