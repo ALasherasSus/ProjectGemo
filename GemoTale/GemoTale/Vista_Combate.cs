@@ -104,6 +104,8 @@ namespace GemoTale
                 System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoDerrota);
                 player.PlaySync();
+                player = new System.Media.SoundPlayer(@"../../Sounds/SFX/crystal_aquire.wav");
+                player.Play();
                 btnAtacar.Visible = false;
                 btnEsquivar.Visible = false;
                 go_back.Image = Image.FromFile("../../Images/UI/arrow_right.png");
