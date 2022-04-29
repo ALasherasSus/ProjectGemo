@@ -29,7 +29,6 @@ namespace GemoTale
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vista_Tienda));
             this.go_back = new System.Windows.Forms.PictureBox();
             this.tbDinero = new System.Windows.Forms.TextBox();
             this.lblDinero = new System.Windows.Forms.Label();
@@ -50,12 +49,13 @@ namespace GemoTale
             // 
             // go_back
             // 
+            this.go_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.go_back.BackColor = System.Drawing.Color.Transparent;
             this.go_back.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.go_back.Image = ((System.Drawing.Image)(resources.GetObject("go_back.Image")));
-            this.go_back.Location = new System.Drawing.Point(532, 329);
+            this.go_back.Image = global::GemoTale.Properties.UI.arrow_right;
+            this.go_back.Location = new System.Drawing.Point(812, 519);
             this.go_back.Name = "go_back";
-            this.go_back.Size = new System.Drawing.Size(80, 100);
+            this.go_back.Size = new System.Drawing.Size(120, 150);
             this.go_back.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.go_back.TabIndex = 5;
             this.go_back.TabStop = false;
@@ -63,123 +63,134 @@ namespace GemoTale
             // 
             // tbDinero
             // 
+            this.tbDinero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.tbDinero.Cursor = System.Windows.Forms.Cursors.Default;
             this.tbDinero.Enabled = false;
-            this.tbDinero.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbDinero.Location = new System.Drawing.Point(33, 381);
+            this.tbDinero.Font = new System.Drawing.Font("Cooper Black", 15F);
+            this.tbDinero.Location = new System.Drawing.Point(34, 617);
             this.tbDinero.Name = "tbDinero";
             this.tbDinero.ReadOnly = true;
-            this.tbDinero.Size = new System.Drawing.Size(256, 26);
+            this.tbDinero.Size = new System.Drawing.Size(424, 30);
             this.tbDinero.TabIndex = 26;
             this.tbDinero.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // lblDinero
             // 
+            this.lblDinero.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDinero.AutoSize = true;
             this.lblDinero.BackColor = System.Drawing.Color.Transparent;
-            this.lblDinero.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDinero.Location = new System.Drawing.Point(28, 350);
+            this.lblDinero.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.lblDinero.Location = new System.Drawing.Point(29, 567);
             this.lblDinero.Name = "lblDinero";
-            this.lblDinero.Size = new System.Drawing.Size(103, 27);
+            this.lblDinero.Size = new System.Drawing.Size(136, 36);
             this.lblDinero.TabIndex = 25;
             this.lblDinero.Text = "Dinero:";
             // 
             // pbDefensa
             // 
+            this.pbDefensa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbDefensa.BackColor = System.Drawing.Color.Red;
             this.pbDefensa.ForeColor = System.Drawing.Color.Lime;
-            this.pbDefensa.Location = new System.Drawing.Point(33, 324);
+            this.pbDefensa.Location = new System.Drawing.Point(34, 521);
             this.pbDefensa.Maximum = 5;
             this.pbDefensa.Name = "pbDefensa";
-            this.pbDefensa.Size = new System.Drawing.Size(256, 23);
+            this.pbDefensa.Size = new System.Drawing.Size(424, 30);
             this.pbDefensa.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbDefensa.TabIndex = 24;
             // 
             // lblDefensa
             // 
+            this.lblDefensa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblDefensa.AutoSize = true;
             this.lblDefensa.BackColor = System.Drawing.Color.Transparent;
-            this.lblDefensa.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDefensa.Location = new System.Drawing.Point(28, 294);
+            this.lblDefensa.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.lblDefensa.Location = new System.Drawing.Point(29, 471);
             this.lblDefensa.Name = "lblDefensa";
-            this.lblDefensa.Size = new System.Drawing.Size(115, 27);
+            this.lblDefensa.Size = new System.Drawing.Size(153, 36);
             this.lblDefensa.TabIndex = 23;
             this.lblDefensa.Text = "Defensa:";
             // 
             // pbAtaque
             // 
+            this.pbAtaque.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbAtaque.BackColor = System.Drawing.Color.Red;
             this.pbAtaque.ForeColor = System.Drawing.Color.Lime;
-            this.pbAtaque.Location = new System.Drawing.Point(33, 268);
+            this.pbAtaque.Location = new System.Drawing.Point(34, 425);
             this.pbAtaque.Maximum = 300;
             this.pbAtaque.Name = "pbAtaque";
-            this.pbAtaque.Size = new System.Drawing.Size(256, 23);
+            this.pbAtaque.Size = new System.Drawing.Size(424, 30);
             this.pbAtaque.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbAtaque.TabIndex = 22;
             this.pbAtaque.Value = 20;
             // 
             // lblAtaque
             // 
+            this.lblAtaque.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAtaque.AutoSize = true;
             this.lblAtaque.BackColor = System.Drawing.Color.Transparent;
-            this.lblAtaque.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAtaque.Location = new System.Drawing.Point(28, 238);
+            this.lblAtaque.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.lblAtaque.Location = new System.Drawing.Point(29, 375);
             this.lblAtaque.Name = "lblAtaque";
-            this.lblAtaque.Size = new System.Drawing.Size(109, 27);
+            this.lblAtaque.Size = new System.Drawing.Size(144, 36);
             this.lblAtaque.TabIndex = 21;
             this.lblAtaque.Text = "Ataque:";
             // 
             // pbVidaMaxima
             // 
+            this.pbVidaMaxima.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbVidaMaxima.BackColor = System.Drawing.Color.Red;
             this.pbVidaMaxima.ForeColor = System.Drawing.Color.Lime;
-            this.pbVidaMaxima.Location = new System.Drawing.Point(33, 212);
+            this.pbVidaMaxima.Location = new System.Drawing.Point(34, 329);
             this.pbVidaMaxima.Maximum = 650;
             this.pbVidaMaxima.Name = "pbVidaMaxima";
-            this.pbVidaMaxima.Size = new System.Drawing.Size(256, 23);
+            this.pbVidaMaxima.Size = new System.Drawing.Size(424, 30);
             this.pbVidaMaxima.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbVidaMaxima.TabIndex = 20;
             this.pbVidaMaxima.Value = 100;
             // 
             // lblVidaMaxima
             // 
+            this.lblVidaMaxima.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblVidaMaxima.AutoSize = true;
             this.lblVidaMaxima.BackColor = System.Drawing.Color.Transparent;
-            this.lblVidaMaxima.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVidaMaxima.Location = new System.Drawing.Point(28, 182);
+            this.lblVidaMaxima.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.lblVidaMaxima.Location = new System.Drawing.Point(29, 279);
             this.lblVidaMaxima.Name = "lblVidaMaxima";
-            this.lblVidaMaxima.Size = new System.Drawing.Size(178, 27);
+            this.lblVidaMaxima.Size = new System.Drawing.Size(234, 36);
             this.lblVidaMaxima.TabIndex = 19;
             this.lblVidaMaxima.Text = "Vida Máxima:";
             // 
             // pbVida
             // 
+            this.pbVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pbVida.BackColor = System.Drawing.Color.Red;
             this.pbVida.ForeColor = System.Drawing.Color.Lime;
-            this.pbVida.Location = new System.Drawing.Point(33, 156);
+            this.pbVida.Location = new System.Drawing.Point(34, 233);
             this.pbVida.Name = "pbVida";
-            this.pbVida.Size = new System.Drawing.Size(256, 23);
+            this.pbVida.Size = new System.Drawing.Size(424, 30);
             this.pbVida.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
             this.pbVida.TabIndex = 18;
             this.pbVida.Value = 100;
             // 
             // lblVida
             // 
+            this.lblVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblVida.AutoSize = true;
             this.lblVida.BackColor = System.Drawing.Color.Transparent;
-            this.lblVida.Font = new System.Drawing.Font("Cooper Black", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVida.Location = new System.Drawing.Point(28, 126);
+            this.lblVida.Font = new System.Drawing.Font("Cooper Black", 24F);
+            this.lblVida.Location = new System.Drawing.Point(29, 183);
             this.lblVida.Name = "lblVida";
-            this.lblVida.Size = new System.Drawing.Size(77, 27);
+            this.lblVida.Size = new System.Drawing.Size(101, 36);
             this.lblVida.TabIndex = 17;
             this.lblVida.Text = "Vida:";
             // 
             // btnVida
             // 
-            this.btnVida.Font = new System.Drawing.Font("Cooper Black", 10F);
-            this.btnVida.Location = new System.Drawing.Point(214, 130);
+            this.btnVida.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnVida.Font = new System.Drawing.Font("Cooper Black", 14F);
+            this.btnVida.Location = new System.Drawing.Point(372, 183);
             this.btnVida.Name = "btnVida";
-            this.btnVida.Size = new System.Drawing.Size(75, 23);
+            this.btnVida.Size = new System.Drawing.Size(85, 36);
             this.btnVida.TabIndex = 27;
             this.btnVida.Text = "10";
             this.btnVida.UseVisualStyleBackColor = true;
@@ -187,10 +198,11 @@ namespace GemoTale
             // 
             // btnVidaMaxima
             // 
-            this.btnVidaMaxima.Font = new System.Drawing.Font("Cooper Black", 10F);
-            this.btnVidaMaxima.Location = new System.Drawing.Point(214, 186);
+            this.btnVidaMaxima.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnVidaMaxima.Font = new System.Drawing.Font("Cooper Black", 14F);
+            this.btnVidaMaxima.Location = new System.Drawing.Point(372, 279);
             this.btnVidaMaxima.Name = "btnVidaMaxima";
-            this.btnVidaMaxima.Size = new System.Drawing.Size(75, 23);
+            this.btnVidaMaxima.Size = new System.Drawing.Size(85, 36);
             this.btnVidaMaxima.TabIndex = 28;
             this.btnVidaMaxima.Text = "50";
             this.btnVidaMaxima.UseVisualStyleBackColor = true;
@@ -198,10 +210,11 @@ namespace GemoTale
             // 
             // btnAtaque
             // 
-            this.btnAtaque.Font = new System.Drawing.Font("Cooper Black", 10F);
-            this.btnAtaque.Location = new System.Drawing.Point(214, 242);
+            this.btnAtaque.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnAtaque.Font = new System.Drawing.Font("Cooper Black", 14F);
+            this.btnAtaque.Location = new System.Drawing.Point(372, 375);
             this.btnAtaque.Name = "btnAtaque";
-            this.btnAtaque.Size = new System.Drawing.Size(75, 23);
+            this.btnAtaque.Size = new System.Drawing.Size(85, 36);
             this.btnAtaque.TabIndex = 29;
             this.btnAtaque.Text = "150";
             this.btnAtaque.UseVisualStyleBackColor = true;
@@ -209,10 +222,11 @@ namespace GemoTale
             // 
             // btnDefensa
             // 
-            this.btnDefensa.Font = new System.Drawing.Font("Cooper Black", 10F);
-            this.btnDefensa.Location = new System.Drawing.Point(214, 298);
+            this.btnDefensa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.btnDefensa.Font = new System.Drawing.Font("Cooper Black", 14F);
+            this.btnDefensa.Location = new System.Drawing.Point(372, 471);
             this.btnDefensa.Name = "btnDefensa";
-            this.btnDefensa.Size = new System.Drawing.Size(75, 23);
+            this.btnDefensa.Size = new System.Drawing.Size(85, 36);
             this.btnDefensa.TabIndex = 30;
             this.btnDefensa.Text = "250";
             this.btnDefensa.UseVisualStyleBackColor = true;
@@ -222,9 +236,9 @@ namespace GemoTale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::GemoTale.Properties.Backgrounds.shop1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(944, 681);
             this.ControlBox = false;
             this.Controls.Add(this.btnDefensa);
             this.Controls.Add(this.btnAtaque);

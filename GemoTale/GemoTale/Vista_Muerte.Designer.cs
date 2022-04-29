@@ -29,7 +29,6 @@ namespace GemoTale
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vista_Muerte));
             this.continuar = new System.Windows.Forms.PictureBox();
             this.salir = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.continuar)).BeginInit();
@@ -41,7 +40,7 @@ namespace GemoTale
             this.continuar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.continuar.BackColor = System.Drawing.Color.Transparent;
             this.continuar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.continuar.Image = ((System.Drawing.Image)(resources.GetObject("continuar.Image")));
+            this.continuar.Image = global::GemoTale.Properties.UI._continue;
             this.continuar.Location = new System.Drawing.Point(93, 212);
             this.continuar.Name = "continuar";
             this.continuar.Size = new System.Drawing.Size(330, 67);
@@ -55,7 +54,7 @@ namespace GemoTale
             this.salir.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.salir.BackColor = System.Drawing.Color.Transparent;
             this.salir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.salir.Image = ((System.Drawing.Image)(resources.GetObject("salir.Image")));
+            this.salir.Image = global::GemoTale.Properties.UI.exit;
             this.salir.Location = new System.Drawing.Point(651, 212);
             this.salir.Name = "salir";
             this.salir.Size = new System.Drawing.Size(180, 67);

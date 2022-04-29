@@ -53,7 +53,7 @@ namespace GemoTale
             // 
             this.player.BackColor = System.Drawing.Color.Transparent;
             this.player.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
+            this.player.Image = global::GemoTale.Properties.Characters.player_map;
             this.player.ImageLocation = "";
             this.player.Location = new System.Drawing.Point(379, 247);
             this.player.Name = "player";
@@ -70,7 +70,7 @@ namespace GemoTale
             this.arrow_top.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.arrow_top.BackColor = System.Drawing.Color.Transparent;
             this.arrow_top.Cursor = System.Windows.Forms.Cursors.PanNorth;
-            this.arrow_top.Image = ((System.Drawing.Image)(resources.GetObject("arrow_top.Image")));
+            this.arrow_top.Image = global::GemoTale.Properties.UI.arrow_up;
             this.arrow_top.Location = new System.Drawing.Point(397, 12);
             this.arrow_top.Name = "arrow_top";
             this.arrow_top.Size = new System.Drawing.Size(150, 120);
@@ -86,7 +86,7 @@ namespace GemoTale
             this.arrow_bottom.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.arrow_bottom.BackColor = System.Drawing.Color.Transparent;
             this.arrow_bottom.Cursor = System.Windows.Forms.Cursors.PanSouth;
-            this.arrow_bottom.Image = ((System.Drawing.Image)(resources.GetObject("arrow_bottom.Image")));
+            this.arrow_bottom.Image = global::GemoTale.Properties.UI.arrow_down;
             this.arrow_bottom.Location = new System.Drawing.Point(397, 549);
             this.arrow_bottom.Name = "arrow_bottom";
             this.arrow_bottom.Size = new System.Drawing.Size(150, 120);
@@ -102,7 +102,7 @@ namespace GemoTale
             this.arrow_left.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.arrow_left.BackColor = System.Drawing.Color.Transparent;
             this.arrow_left.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.arrow_left.Image = ((System.Drawing.Image)(resources.GetObject("arrow_left.Image")));
+            this.arrow_left.Image = global::GemoTale.Properties.UI.arrow_left;
             this.arrow_left.Location = new System.Drawing.Point(12, 265);
             this.arrow_left.Name = "arrow_left";
             this.arrow_left.Size = new System.Drawing.Size(120, 150);
@@ -118,7 +118,7 @@ namespace GemoTale
             this.arrow_right.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.arrow_right.BackColor = System.Drawing.Color.Transparent;
             this.arrow_right.Cursor = System.Windows.Forms.Cursors.PanEast;
-            this.arrow_right.Image = ((System.Drawing.Image)(resources.GetObject("arrow_right.Image")));
+            this.arrow_right.Image = global::GemoTale.Properties.UI.arrow_right;
             this.arrow_right.Location = new System.Drawing.Point(812, 265);
             this.arrow_right.Name = "arrow_right";
             this.arrow_right.Size = new System.Drawing.Size(120, 150);
@@ -134,7 +134,7 @@ namespace GemoTale
             this.shop_right.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.shop_right.BackColor = System.Drawing.Color.Transparent;
             this.shop_right.Cursor = System.Windows.Forms.Cursors.PanEast;
-            this.shop_right.Image = ((System.Drawing.Image)(resources.GetObject("shop_right.Image")));
+            this.shop_right.Image = global::GemoTale.Properties.UI.shop_icon;
             this.shop_right.Location = new System.Drawing.Point(812, 265);
             this.shop_right.Name = "shop_right";
             this.shop_right.Size = new System.Drawing.Size(120, 150);
@@ -150,7 +150,7 @@ namespace GemoTale
             this.shop_left.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.shop_left.BackColor = System.Drawing.Color.Transparent;
             this.shop_left.Cursor = System.Windows.Forms.Cursors.PanWest;
-            this.shop_left.Image = ((System.Drawing.Image)(resources.GetObject("shop_left.Image")));
+            this.shop_left.Image = global::GemoTale.Properties.UI.shop_icon;
             this.shop_left.Location = new System.Drawing.Point(12, 265);
             this.shop_left.Name = "shop_left";
             this.shop_left.Size = new System.Drawing.Size(120, 150);
@@ -166,7 +166,7 @@ namespace GemoTale
             this.checkpoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.checkpoint.BackColor = System.Drawing.Color.Transparent;
             this.checkpoint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.checkpoint.Image = ((System.Drawing.Image)(resources.GetObject("checkpoint.Image")));
+            this.checkpoint.Image = global::GemoTale.Properties.UI.checkpoint;
             this.checkpoint.Location = new System.Drawing.Point(787, 549);
             this.checkpoint.Name = "checkpoint";
             this.checkpoint.Size = new System.Drawing.Size(145, 120);
@@ -199,10 +199,10 @@ namespace GemoTale
             this.Controls.Add(this.arrow_bottom);
             this.Controls.Add(this.arrow_top);
             this.Controls.Add(this.player);
-            this.Controls.Add(this.shop_left);
-            this.Controls.Add(this.shop_right);
-            this.Controls.Add(this.arrow_right);
             this.Controls.Add(this.arrow_left);
+            this.Controls.Add(this.shop_left);
+            this.Controls.Add(this.arrow_right);
+            this.Controls.Add(this.shop_right);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Vista_Mapa";
