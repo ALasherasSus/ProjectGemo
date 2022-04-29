@@ -39,6 +39,9 @@ namespace GemoTale
             this.btnAtacar = new System.Windows.Forms.Button();
             this.btnEsquivar = new System.Windows.Forms.Button();
             this.go_back = new System.Windows.Forms.PictureBox();
+            this.lblDebug = new System.Windows.Forms.Label();
+            this.lblVidaEnemigo = new System.Windows.Forms.Label();
+            this.lblVidaJugador = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.player_combat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).BeginInit();
@@ -151,6 +154,40 @@ namespace GemoTale
             this.go_back.TabStop = false;
             this.go_back.Click += new System.EventHandler(this.go_back_Click);
             // 
+            // lblDebug
+            // 
+            this.lblDebug.AutoSize = true;
+            this.lblDebug.BackColor = System.Drawing.Color.Transparent;
+            this.lblDebug.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDebug.Location = new System.Drawing.Point(0, 0);
+            this.lblDebug.Name = "lblDebug";
+            this.lblDebug.Size = new System.Drawing.Size(149, 24);
+            this.lblDebug.TabIndex = 9;
+            this.lblDebug.Text = "MODO DEBUG";
+            this.lblDebug.Visible = false;
+            // 
+            // lblVidaEnemigo
+            // 
+            this.lblVidaEnemigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVidaEnemigo.Location = new System.Drawing.Point(12, 99);
+            this.lblVidaEnemigo.Name = "lblVidaEnemigo";
+            this.lblVidaEnemigo.Size = new System.Drawing.Size(290, 23);
+            this.lblVidaEnemigo.TabIndex = 10;
+            this.lblVidaEnemigo.Text = "VIDA DEL ENEMIGO";
+            this.lblVidaEnemigo.Visible = false;
+            // 
+            // lblVidaJugador
+            // 
+            this.lblVidaJugador.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblVidaJugador.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVidaJugador.Location = new System.Drawing.Point(312, 224);
+            this.lblVidaJugador.Name = "lblVidaJugador";
+            this.lblVidaJugador.Size = new System.Drawing.Size(300, 24);
+            this.lblVidaJugador.TabIndex = 11;
+            this.lblVidaJugador.Text = "VIDA DEL JUGADOR";
+            this.lblVidaJugador.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblVidaJugador.Visible = false;
+            // 
             // Vista_Combate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +196,9 @@ namespace GemoTale
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(624, 441);
             this.ControlBox = false;
+            this.Controls.Add(this.lblVidaJugador);
+            this.Controls.Add(this.lblVidaEnemigo);
+            this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.go_back);
             this.Controls.Add(this.btnEsquivar);
             this.Controls.Add(this.btnAtacar);
@@ -176,6 +216,7 @@ namespace GemoTale
             ((System.ComponentModel.ISupportInitialize)(this.enemy)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.go_back)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -190,5 +231,8 @@ namespace GemoTale
         private System.Windows.Forms.Button btnAtacar;
         private System.Windows.Forms.Button btnEsquivar;
         private System.Windows.Forms.PictureBox go_back;
+        private System.Windows.Forms.Label lblDebug;
+        private System.Windows.Forms.Label lblVidaEnemigo;
+        private System.Windows.Forms.Label lblVidaJugador;
     }
 }

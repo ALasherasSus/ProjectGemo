@@ -24,8 +24,10 @@ namespace GemoTale
             lblNombreEnemigo.Text = Globales.niveles[idNivel].Enemigo.Nombre;
             pbEnemigo.Maximum = (int)Globales.niveles[idNivel].Enemigo.Vida;
             pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
+            lblVidaEnemigo.Text = "" + (int)Globales.niveles[idNivel].Enemigo.Vida;
             pbJugador.Maximum = (int)Globales.Jugador.VidaMaxima;
             pbJugador.Value = (int)Globales.Jugador.Vida;
+            lblVidaJugador.Text = "" + (int)Globales.Jugador.Vida;
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/" + Globales.niveles[idNivel].Mundo + ".jpg");
 
             if (Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
@@ -33,6 +35,13 @@ namespace GemoTale
                 System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoIntro);
                 player.Play();
+            }
+
+            if (Globales.modoDebug == true)
+            {
+                lblDebug.Visible = true;
+                lblVidaEnemigo.Visible = true;
+                lblVidaJugador.Visible = true;
             }
 
             //BURBUJAS DE INFORMACIÓN
@@ -99,21 +108,26 @@ namespace GemoTale
                 btnEsquivar.Visible = false;
                 go_back.Image = Image.FromFile("../../Images/UI/arrow_right.png");
             }
+
             try
             {
                 pbJugador.Value = (int)Globales.Jugador.Vida;
+                lblVidaJugador.Text = "" + (int)Globales.Jugador.Vida;
             }
             catch (Exception)
             {
                 pbJugador.Value = 0;
+                lblVidaJugador.Text = "0";
             }
             try
             {
                 pbEnemigo.Value = (int)Globales.niveles[idNivel].Enemigo.Vida;
+                lblVidaEnemigo.Text = "" + (int)Globales.niveles[idNivel].Enemigo.Vida;
             }
             catch (Exception)
             {
                 pbEnemigo.Value = 0;
+                lblVidaEnemigo.Text = "0";
             }
         }
 
@@ -128,6 +142,7 @@ namespace GemoTale
             {
                 player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
             }
+            Globales.niveles[idNivel].Enemigo.Vida = pbEnemigo.Maximum;
             player.Play();
             this.Close();
         }

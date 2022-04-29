@@ -57,7 +57,5 @@ namespace GemoTale
             this.Vida = this.Vida - ataqueEnemigo;
         }
 
-
-
     }
 }
