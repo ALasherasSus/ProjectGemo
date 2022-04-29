@@ -38,12 +38,13 @@ namespace GemoTale
             // 
             // salir
             // 
+            this.salir.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.salir.BackColor = System.Drawing.Color.Transparent;
             this.salir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.salir.Image = ((System.Drawing.Image)(resources.GetObject("salir.Image")));
-            this.salir.Location = new System.Drawing.Point(479, 154);
+            this.salir.Location = new System.Drawing.Point(717, 256);
             this.salir.Name = "salir";
-            this.salir.Size = new System.Drawing.Size(120, 45);
+            this.salir.Size = new System.Drawing.Size(180, 67);
             this.salir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.salir.TabIndex = 9;
             this.salir.TabStop = false;
@@ -51,12 +52,13 @@ namespace GemoTale
             // 
             // continuar
             // 
+            this.continuar.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.continuar.BackColor = System.Drawing.Color.Transparent;
             this.continuar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.continuar.Image = ((System.Drawing.Image)(resources.GetObject("continuar.Image")));
-            this.continuar.Location = new System.Drawing.Point(379, 103);
+            this.continuar.Location = new System.Drawing.Point(567, 168);
             this.continuar.Name = "continuar";
-            this.continuar.Size = new System.Drawing.Size(220, 45);
+            this.continuar.Size = new System.Drawing.Size(330, 67);
             this.continuar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.continuar.TabIndex = 8;
             this.continuar.TabStop = false;
@@ -66,9 +68,9 @@ namespace GemoTale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::GemoTale.Properties.Backgrounds.goodEnding;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(944, 681);
             this.ControlBox = false;
             this.Controls.Add(this.salir);
             this.Controls.Add(this.continuar);

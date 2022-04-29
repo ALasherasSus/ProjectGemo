@@ -29,7 +29,6 @@ namespace GemoTale
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu_Principal));
             this.gameLogo = new System.Windows.Forms.PictureBox();
             this.btnNueva = new System.Windows.Forms.Button();
             this.btnCargar = new System.Windows.Forms.Button();
@@ -44,10 +43,10 @@ namespace GemoTale
             // gameLogo
             // 
             this.gameLogo.BackColor = System.Drawing.Color.Transparent;
-            this.gameLogo.Image = ((System.Drawing.Image)(resources.GetObject("gameLogo.Image")));
+            this.gameLogo.Image = global::GemoTale.Properties.UI.game_logo;
             this.gameLogo.Location = new System.Drawing.Point(12, 12);
             this.gameLogo.Name = "gameLogo";
-            this.gameLogo.Size = new System.Drawing.Size(600, 240);
+            this.gameLogo.Size = new System.Drawing.Size(920, 480);
             this.gameLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gameLogo.TabIndex = 0;
             this.gameLogo.TabStop = false;
@@ -60,9 +59,9 @@ namespace GemoTale
             this.btnNueva.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNueva.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNueva.ForeColor = System.Drawing.Color.Black;
-            this.btnNueva.Location = new System.Drawing.Point(12, 258);
+            this.btnNueva.Location = new System.Drawing.Point(12, 498);
             this.btnNueva.Name = "btnNueva";
-            this.btnNueva.Size = new System.Drawing.Size(600, 50);
+            this.btnNueva.Size = new System.Drawing.Size(920, 50);
             this.btnNueva.TabIndex = 1;
             this.btnNueva.Text = "Nueva Partida";
             this.btnNueva.UseVisualStyleBackColor = false;
@@ -76,9 +75,9 @@ namespace GemoTale
             this.btnCargar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCargar.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.ForeColor = System.Drawing.Color.Black;
-            this.btnCargar.Location = new System.Drawing.Point(12, 314);
+            this.btnCargar.Location = new System.Drawing.Point(12, 554);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(600, 50);
+            this.btnCargar.Size = new System.Drawing.Size(920, 50);
             this.btnCargar.TabIndex = 2;
             this.btnCargar.Text = "Cargar Partida";
             this.btnCargar.UseVisualStyleBackColor = false;
@@ -92,9 +91,9 @@ namespace GemoTale
             this.btnRanura1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRanura1.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRanura1.ForeColor = System.Drawing.Color.Black;
-            this.btnRanura1.Location = new System.Drawing.Point(12, 370);
+            this.btnRanura1.Location = new System.Drawing.Point(12, 610);
             this.btnRanura1.Name = "btnRanura1";
-            this.btnRanura1.Size = new System.Drawing.Size(190, 59);
+            this.btnRanura1.Size = new System.Drawing.Size(304, 59);
             this.btnRanura1.TabIndex = 3;
             this.btnRanura1.Text = "Ranura 1";
             this.btnRanura1.UseVisualStyleBackColor = false;
@@ -108,9 +107,9 @@ namespace GemoTale
             this.btnRanura2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRanura2.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRanura2.ForeColor = System.Drawing.Color.Black;
-            this.btnRanura2.Location = new System.Drawing.Point(217, 370);
+            this.btnRanura2.Location = new System.Drawing.Point(320, 610);
             this.btnRanura2.Name = "btnRanura2";
-            this.btnRanura2.Size = new System.Drawing.Size(190, 59);
+            this.btnRanura2.Size = new System.Drawing.Size(304, 59);
             this.btnRanura2.TabIndex = 4;
             this.btnRanura2.Text = "Ranura 2";
             this.btnRanura2.UseVisualStyleBackColor = false;
@@ -124,9 +123,9 @@ namespace GemoTale
             this.btnRanura3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRanura3.Font = new System.Drawing.Font("Cooper Black", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRanura3.ForeColor = System.Drawing.Color.Black;
-            this.btnRanura3.Location = new System.Drawing.Point(422, 370);
+            this.btnRanura3.Location = new System.Drawing.Point(628, 610);
             this.btnRanura3.Name = "btnRanura3";
-            this.btnRanura3.Size = new System.Drawing.Size(190, 59);
+            this.btnRanura3.Size = new System.Drawing.Size(304, 59);
             this.btnRanura3.TabIndex = 5;
             this.btnRanura3.Text = "Ranura 3";
             this.btnRanura3.UseVisualStyleBackColor = false;
@@ -146,7 +145,8 @@ namespace GemoTale
             // 
             // cheatBox
             // 
-            this.cheatBox.Location = new System.Drawing.Point(524, 0);
+            this.cheatBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.cheatBox.Location = new System.Drawing.Point(844, 0);
             this.cheatBox.Name = "cheatBox";
             this.cheatBox.Size = new System.Drawing.Size(100, 20);
             this.cheatBox.TabIndex = 10;
@@ -157,9 +157,9 @@ namespace GemoTale
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::GemoTale.Properties.Backgrounds.mainmenu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(624, 441);
+            this.ClientSize = new System.Drawing.Size(944, 681);
             this.Controls.Add(this.cheatBox);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.btnRanura3);

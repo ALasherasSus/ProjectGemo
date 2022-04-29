@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -64,6 +79,21 @@
     <Compile Include="Nivel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Backgrounds.Designer.cs">
+      <DependentUpon>Backgrounds.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\Characters.Designer.cs">
+      <DependentUpon>Characters.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Properties\UI.Designer.cs">
+      <DependentUpon>UI.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Vista_Combate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +139,21 @@
     <EmbeddedResource Include="Menu_Principal.resx">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Backgrounds.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Backgrounds.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Characters.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Characters.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\UI.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UI.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -117,6 +162,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Vista_Combate.resx">
       <DependentUpon>Vista_Combate.cs</DependentUpon>
@@ -152,7 +198,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="game_icon.ico" />
     <Content Include="Images\Backgrounds\alterno.jpg" />
@@ -185,6 +242,7 @@
     <Content Include="Images\Backgrounds\stats.jpg" />
     <Content Include="Images\Backgrounds\templo.jpg" />
     <Content Include="Images\Characters\boss1.png" />
+    <None Include="Images\Characters\boss2 OLD.png" />
     <Content Include="Images\Characters\boss2.png" />
     <Content Include="Images\Characters\boss3.png" />
     <Content Include="Images\Characters\boss4.png" />
@@ -211,6 +269,8 @@
     <Content Include="Images\UI\arrow_up.png" />
     <Content Include="Images\UI\arrow_up_on.png" />
     <Content Include="Images\UI\checkpoint.png" />
+    <None Include="Images\UI\continue.png" />
+    <None Include="Images\UI\exit.png" />
     <Content Include="Images\UI\game_logo.png" />
     <Content Include="Images\UI\run.png" />
     <Content Include="Images\UI\shop_icon.png" />

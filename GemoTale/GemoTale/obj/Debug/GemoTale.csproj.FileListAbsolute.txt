@@ -58,3 +58,6 @@ C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.e
 C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.pdb
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_FinalBueno.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_FinalMalo.resources
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.Characters.resources
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.Backgrounds.resources
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.UI.resources
