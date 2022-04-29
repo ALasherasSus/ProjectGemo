@@ -99,7 +99,12 @@ namespace GemoTale
                 if (Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
                 {
                     Globales.Jugador.Defensa++;
-                    if (Globales.Jugador.Defensa > 9) Globales.Jugador.Defensa = 9;
+                    if (Globales.Jugador.Defensa > 9)
+                    {
+                        //Si el nivel de defensa del jugador ya está al maximo, recibes el coste de subir el nivel de defensa
+                        Globales.Jugador.Defensa = 9;
+                        Globales.Jugador.Dinero += 250;
+                    }
                 }
                 System.Threading.Thread.Sleep(1000);
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"" + Globales.niveles[idNivel].Enemigo.SonidoDerrota);
