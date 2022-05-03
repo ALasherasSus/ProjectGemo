@@ -28,6 +28,11 @@ namespace GemoTale
                 nudAtaque.Visible = true;
                 nudDefensa.Visible = true;
                 nudDinero.Visible = true;
+
+                nudVida.Maximum = pbVida.Maximum;
+                nudVidaMaxima.Maximum = pbVidaMaxima.Maximum;
+                nudAtaque.Maximum = pbAtaque.Maximum;
+                nudDefensa.Maximum = pbDefensa.Maximum;
             }
 
             //BURBUJAS DE INFORMACIÓN
@@ -61,6 +66,7 @@ namespace GemoTale
                 tbDinero.Text = Globales.Jugador.Dinero + "$";
 
                 nudVida.Value = (int)Globales.Jugador.Vida;
+                nudVida.Maximum = pbVida.Maximum;
                 nudVidaMaxima.Value = (int)Globales.Jugador.VidaMaxima;
                 nudAtaque.Value = Globales.Jugador.Ataque;
                 nudDefensa.Value = (int)(Globales.Jugador.Defensa);
