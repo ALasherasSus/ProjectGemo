@@ -66,6 +66,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cargarGuardar.cs" />
+    <Compile Include="Manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manual.Designer.cs">
+      <DependentUpon>Manual.cs</DependentUpon>
+    </Compile>
     <Compile Include="partida.cs" />
     <Compile Include="Enemigo.cs" />
     <Compile Include="Globales.cs" />
@@ -136,6 +142,9 @@
     <Compile Include="Vista_Tienda.Designer.cs">
       <DependentUpon>Vista_Tienda.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Manual.resx">
+      <DependentUpon>Manual.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Menu_Principal.resx">
       <DependentUpon>Menu_Principal.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +269,7 @@
     <Content Include="Images\Characters\player_map_on.png" />
     <Content Include="Images\ConceptArt\Boceto_mapa.jpg" />
     <Content Include="Images\ConceptArt\Mapa.jpg" />
+    <None Include="Images\Manual\1.jpg" />
     <Content Include="Images\UI\arrow_down.png" />
     <Content Include="Images\UI\arrow_down_on.png" />
     <Content Include="Images\UI\arrow_left.png" />
