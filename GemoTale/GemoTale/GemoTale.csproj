@@ -194,6 +194,7 @@
     <EmbeddedResource Include="Vista_Tienda.resx">
       <DependentUpon>Vista_Tienda.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\GemoTale.Properties.Backgrounds.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -223,7 +224,6 @@
     <Content Include="game_icon.ico" />
     <Content Include="Images\Backgrounds\alterno.jpg" />
     <Content Include="Images\Backgrounds\badEnding.jpg" />
-    <Content Include="Images\Backgrounds\bg.gif" />
     <Content Include="Images\Backgrounds\castillo.jpg" />
     <Content Include="Images\Backgrounds\gameOver.jpg" />
     <Content Include="Images\Backgrounds\goodEnding.jpg" />
@@ -251,7 +251,6 @@
     <Content Include="Images\Backgrounds\stats.jpg" />
     <Content Include="Images\Backgrounds\templo.jpg" />
     <Content Include="Images\Characters\boss1.png" />
-    <None Include="Images\Characters\boss2 OLD.png" />
     <Content Include="Images\Characters\boss2.png" />
     <Content Include="Images\Characters\boss3.png" />
     <Content Include="Images\Characters\boss4.png" />
@@ -267,9 +266,15 @@
     <Content Include="Images\Characters\player_combat_win.png" />
     <Content Include="Images\Characters\player_map.png" />
     <Content Include="Images\Characters\player_map_on.png" />
-    <Content Include="Images\ConceptArt\Boceto_mapa.jpg" />
-    <Content Include="Images\ConceptArt\Mapa.jpg" />
     <None Include="Images\Manual\1.jpg" />
+    <Content Include="Images\Manual\2.jpg" />
+    <Content Include="Images\Manual\3.jpg" />
+    <Content Include="Images\Manual\4.jpg" />
+    <Content Include="Images\Manual\5.jpg" />
+    <Content Include="Images\Manual\6.jpg" />
+    <Content Include="Images\Manual\7.jpg" />
+    <Content Include="Images\Manual\8.jpg" />
+    <Content Include="Images\Manual\99.jpg" />
     <Content Include="Images\UI\arrow_down.png" />
     <Content Include="Images\UI\arrow_down_on.png" />
     <Content Include="Images\UI\arrow_left.png" />
@@ -282,6 +287,8 @@
     <None Include="Images\UI\continue.png" />
     <None Include="Images\UI\exit.png" />
     <Content Include="Images\UI\game_logo.png" />
+    <None Include="Images\UI\manual.png" />
+    <Content Include="Images\UI\manual_on.png" />
     <Content Include="Images\UI\run.png" />
     <Content Include="Images\UI\shop_icon.png" />
     <Content Include="Images\UI\shop_icon_on.png" />
@@ -314,6 +321,7 @@
     <Content Include="Sounds\SFX\crash_spin1.wav" />
     <Content Include="Sounds\SFX\crash_spin2.wav" />
     <Content Include="Sounds\SFX\crash_victory.wav" />
+    <Content Include="Sounds\SFX\crystal_aquire.wav" />
     <Content Include="Sounds\SFX\door_close.wav" />
     <Content Include="Sounds\SFX\door_open.wav" />
     <Content Include="Sounds\SFX\enemy_encounter.wav" />

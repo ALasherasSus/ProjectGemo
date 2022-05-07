@@ -37,7 +37,9 @@ namespace GemoTale
             this.btnRanura3 = new System.Windows.Forms.Button();
             this.lblDebug = new System.Windows.Forms.Label();
             this.cheatBox = new System.Windows.Forms.TextBox();
+            this.manual = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manual)).BeginInit();
             this.SuspendLayout();
             // 
             // gameLogo
@@ -153,6 +155,21 @@ namespace GemoTale
             this.cheatBox.Visible = false;
             this.cheatBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cheatBox_KeyDown);
             // 
+            // manual
+            // 
+            this.manual.BackColor = System.Drawing.Color.Transparent;
+            this.manual.Cursor = System.Windows.Forms.Cursors.Help;
+            this.manual.Image = global::GemoTale.Properties.UI.manual;
+            this.manual.Location = new System.Drawing.Point(12, 27);
+            this.manual.Name = "manual";
+            this.manual.Size = new System.Drawing.Size(158, 193);
+            this.manual.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.manual.TabIndex = 11;
+            this.manual.TabStop = false;
+            this.manual.Click += new System.EventHandler(this.manual_Click);
+            this.manual.MouseLeave += new System.EventHandler(this.manual_MouseLeave);
+            this.manual.MouseHover += new System.EventHandler(this.manual_MouseHover);
+            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,6 +177,7 @@ namespace GemoTale
             this.BackgroundImage = global::GemoTale.Properties.Backgrounds.mainmenu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(944, 681);
+            this.Controls.Add(this.manual);
             this.Controls.Add(this.cheatBox);
             this.Controls.Add(this.lblDebug);
             this.Controls.Add(this.btnRanura3);
@@ -175,6 +193,7 @@ namespace GemoTale
             this.Load += new System.EventHandler(this.Menu_Principal_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menu_Principal_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.gameLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.manual)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -190,6 +209,7 @@ namespace GemoTale
         private System.Windows.Forms.Button btnRanura3;
         private System.Windows.Forms.Label lblDebug;
         private System.Windows.Forms.TextBox cheatBox;
+        private System.Windows.Forms.PictureBox manual;
     }
 }
 

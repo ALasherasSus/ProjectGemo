@@ -28,6 +28,13 @@ namespace GemoTale
             {
                 lblDebug.Visible = true;
             }
+
+            //BURBUJAS DE INFORMACIÓN
+            // Create the ToolTip and associate with the Form container.
+            ToolTip toolTip1 = new ToolTip();
+
+            // Set up the ToolTip text for the Button and Checkbox.
+            toolTip1.SetToolTip(this.manual, "Abrir el Manual de Juego.");
         }
 
         private void Menu_Principal_Load(object sender, EventArgs e)
@@ -111,6 +118,27 @@ namespace GemoTale
                     lblDebug.Visible = true;
                 }
             }
+        }
+
+        private void manual_Click(object sender, EventArgs e)
+        {
+            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"../../Sounds/SFX/aku_up.wav");
+            player.Play();
+
+            manual.Visible = false;
+            Manual vistaManual = new Manual();
+            vistaManual.Closed += (s, args) => { manual.Visible = true; };
+            vistaManual.Show();
+        }
+
+        private void manual_MouseHover(object sender, EventArgs e)
+        {
+            manual.Image = Image.FromFile("../../Images/UI/manual_on.png");
+        }
+
+        private void manual_MouseLeave(object sender, EventArgs e)
+        {
+            manual.Image = Image.FromFile("../../Images/UI/manual.png");
         }
     }
 }
