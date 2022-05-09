@@ -100,6 +100,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Vista_Cinematica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista_Cinematica.Designer.cs">
+      <DependentUpon>Vista_Cinematica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista_Combate.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Vista_Cinematica.resx">
+      <DependentUpon>Vista_Cinematica.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista_Combate.resx">
       <DependentUpon>Vista_Combate.cs</DependentUpon>
     </EmbeddedResource>
@@ -225,6 +234,7 @@
     <Content Include="Images\Backgrounds\alterno.jpg" />
     <Content Include="Images\Backgrounds\badEnding.jpg" />
     <Content Include="Images\Backgrounds\castillo.jpg" />
+    <None Include="Images\Backgrounds\cutscene.gif" />
     <Content Include="Images\Backgrounds\gameOver.jpg" />
     <Content Include="Images\Backgrounds\goodEnding.jpg" />
     <Content Include="Images\Backgrounds\level1_1.jpg" />
@@ -286,6 +296,8 @@
     <Content Include="Images\UI\checkpoint.png" />
     <None Include="Images\UI\continue.png" />
     <None Include="Images\UI\exit.png" />
+    <None Include="Images\UI\control1.png" />
+    <None Include="Images\UI\control2.png" />
     <Content Include="Images\UI\game_logo.png" />
     <None Include="Images\UI\manual.png" />
     <Content Include="Images\UI\manual_on.png" />

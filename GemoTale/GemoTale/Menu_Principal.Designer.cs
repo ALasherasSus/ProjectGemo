@@ -38,6 +38,7 @@ namespace GemoTale
             this.lblDebug = new System.Windows.Forms.Label();
             this.cheatBox = new System.Windows.Forms.TextBox();
             this.manual = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gameLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.manual)).BeginInit();
             this.SuspendLayout();
@@ -170,6 +171,16 @@ namespace GemoTale
             this.manual.MouseLeave += new System.EventHandler(this.manual_MouseLeave);
             this.manual.MouseHover += new System.EventHandler(this.manual_MouseHover);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(827, 354);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Menu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +188,7 @@ namespace GemoTale
             this.BackgroundImage = global::GemoTale.Properties.Backgrounds.mainmenu;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(944, 681);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.manual);
             this.Controls.Add(this.cheatBox);
             this.Controls.Add(this.lblDebug);
@@ -210,6 +222,7 @@ namespace GemoTale
         private System.Windows.Forms.Label lblDebug;
         private System.Windows.Forms.TextBox cheatBox;
         private System.Windows.Forms.PictureBox manual;
+        private System.Windows.Forms.Button button1;
     }
 }
 

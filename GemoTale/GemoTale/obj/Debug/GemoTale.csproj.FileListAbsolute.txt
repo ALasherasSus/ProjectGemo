@@ -62,3 +62,4 @@ C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Prop
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.Backgrounds.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.UI.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Manual.resources
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Cinematica.resources

@@ -140,5 +140,11 @@ namespace GemoTale
         {
             manual.Image = Image.FromFile("../../Images/UI/manual.png");
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Vista_Cinematica VistaCinematica = new Vista_Cinematica("cutscene_cortex", "cortex_vortex1");
+            VistaCinematica.Show();
+        }
     }
 }
