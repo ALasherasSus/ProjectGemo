@@ -15,14 +15,14 @@ namespace GemoTale
     {
         Thread thread;
         System.Media.SoundPlayer player;
-        public Vista_Cinematica(string cs_bg, string cs_sound)
+        public Vista_Cinematica(Cinematica cinematica)
         {
             InitializeComponent();
             this.CenterToScreen(); // Centrar la ventana en la pantalla
 
-            this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/" + cs_bg + ".gif");
-            animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/" + cs_bg + ".gif");
-            player = new System.Media.SoundPlayer(@"../../Sounds/Cutscenes/" + cs_sound + ".wav");
+            this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/" + cinematica.Cs_bg + ".gif");
+            animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/" + cinematica.Cs_bg + ".gif");
+            player = new System.Media.SoundPlayer(@"../../Sounds/Cutscenes/" + cinematica.Cs_sound + ".wav");
             go_back.Visible = false;
 
             thread = new Thread(() =>

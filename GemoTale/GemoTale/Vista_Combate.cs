@@ -143,14 +143,39 @@ namespace GemoTale
             System.Media.SoundPlayer player = null;
             if (pbEnemigo.Value > 0)
             {
-                player = new System.Media.SoundPlayer(@"../../Sounds/SFX/enemy_encounter.wav");
+                Globales.Jugador.Huidas++;
+                if (Globales.Jugador.Huidas == 1)
+                {
+                    Vista_Cinematica VistaCinematica = new Vista_Cinematica(new Cinematica("cutscene_aku", "aku_crystals_1"));
+                    this.Hide();
+                    VistaCinematica.Closed += (s, args) => { salirCombate(); };
+                    VistaCinematica.Show();
+                }
+                else if (Globales.Jugador.Huidas == 2)
+                {
+                    Vista_Cinematica VistaCinematica = new Vista_Cinematica(new Cinematica("cutscene_akucrystal", "aku_crystals_2"));
+                    this.Hide();
+                    VistaCinematica.Closed += (s, args) => { salirCombate(); };
+                    VistaCinematica.Show();
+                }
+                else
+                {
+                    player = new System.Media.SoundPlayer(@"../../Sounds/SFX/enemy_encounter.wav");
+                    player.Play();
+                    salirCombate();
+                }
             }
             else
             {
                 player = new System.Media.SoundPlayer(@"../../Sounds/SFX/change_screen.wav");
+                player.Play();
+                salirCombate();
             }
+        }
+        private void salirCombate()
+        {
+            this.Show();
             Globales.niveles[idNivel].Enemigo.Vida = pbEnemigo.Maximum;
-            player.Play();
             this.Close();
         }
 

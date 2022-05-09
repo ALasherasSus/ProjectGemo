@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="cargarGuardar.cs" />
+    <Compile Include="Cinematica.cs" />
     <Compile Include="Manual.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,6 +305,8 @@
     <Content Include="Images\UI\run.png" />
     <Content Include="Images\UI\shop_icon.png" />
     <Content Include="Images\UI\shop_icon_on.png" />
+    <Content Include="Sounds\Cutscenes\aku_crystals_1.wav" />
+    <Content Include="Sounds\Cutscenes\aku_crystals_2.wav" />
     <Content Include="Sounds\Music\BadEndingTheme.wav" />
     <Content Include="Sounds\Music\GoodEndingTheme.wav" />
     <Content Include="Sounds\Music\StatsTheme.wav" />

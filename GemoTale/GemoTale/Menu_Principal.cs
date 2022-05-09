@@ -143,7 +143,7 @@ namespace GemoTale
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Vista_Cinematica VistaCinematica = new Vista_Cinematica("cutscene_cortex", "cortex_vortex1");
+            Vista_Cinematica VistaCinematica = new Vista_Cinematica(new Cinematica("cutscene_cortex", "cortex_vortex1"));
             VistaCinematica.Show();
         }
     }

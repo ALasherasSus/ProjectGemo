@@ -15,6 +15,7 @@ namespace GemoTale
         [DataMember] int ataque;
         [DataMember] int dinero;
         [DataMember] int defensa;
+        [DataMember] int huidas;
 
         public Jugador()
         {
@@ -27,6 +28,7 @@ namespace GemoTale
             this.Ataque = ataque;
             this.Dinero = dinero;
             this.Defensa = defensa;
+            this.Huidas = 0;
         }
 
         public double Vida { get => vida; set => vida = value; }
@@ -34,6 +36,7 @@ namespace GemoTale
         public int Ataque { get => ataque; set => ataque = value; }
         public int Dinero { get => dinero; set => dinero = value; }
         public int Defensa { get => defensa; set => defensa = value; }
+        public int Huidas { get => huidas; set => huidas = value; }
 
         public void recibirAtaque(double ataqueEnemigo)
         {
