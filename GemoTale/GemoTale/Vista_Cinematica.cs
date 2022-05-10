@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NAudio.Wave;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,14 +24,17 @@ namespace GemoTale
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/" + cinematica.Cs_bg + ".gif");
             animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/" + cinematica.Cs_bg + ".gif");
             player = new System.Media.SoundPlayer(@"../../Sounds/Cutscenes/" + cinematica.Cs_sound + ".wav");
-            go_back.Visible = false;
+
+            WaveFileReader wf = new WaveFileReader(@"../../Sounds/Cutscenes/" + cinematica.Cs_sound + ".wav");
+            TimeSpan sleepTime = wf.TotalTime;
 
             thread = new Thread(() =>
             {
-                player.PlaySync();
+                player.Play();
+                Thread.Sleep(sleepTime);
                 this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/cutscene.gif");
                 animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/cutscene.gif");
-                go_back.Invoke(new Action(delegate(){ go_back.Visible = true; }));
+                go_back.Invoke(new Action(delegate () { go_back.Visible = true; }));
             });
             thread.Start();
         }

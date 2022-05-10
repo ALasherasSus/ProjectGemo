@@ -63,3 +63,25 @@ C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Prop
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.UI.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Manual.resources
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Cinematica.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Manual.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.Backgrounds.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.Characters.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Properties.UI.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_Cinematica.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_FinalBueno.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.Vista_FinalMalo.resources
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Asio.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Core.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Midi.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Wasapi.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.WinForms.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.WinMM.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.AccessControl.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.xml
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.AccessControl.xml
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.CopyComplete
