@@ -102,8 +102,8 @@ namespace GemoTale
             lvl1_2.ImagenFondo = "../../Images/Backgrounds/level1_2.jpg";
             lvl1_2.Mundo = "selva";
             lvl1_2.EnemigoAcechante = true;
-            Enemigo enemigo1 = new Enemigo("Cangrejo", 100, 20, "../../Images/Characters/enemy1.png");
-            lvl1_2.Enemigo = enemigo1;
+            lvl1_2.Enemigo = new Enemigo("Cangrejo", 100, 20, "../../Images/Characters/enemy1.png");
+            lvl1_2.Cinematica = new Cinematica("cutscene_cortex", "cortex_vortex1");
             Globales.niveles.Add(lvl1_2);
 
             Nivel lvl1_3 = new Nivel();
@@ -127,8 +127,8 @@ namespace GemoTale
             lvl2_1.ImagenFondo = "../../Images/Backgrounds/level2_1.jpg";
             lvl2_1.Mundo = "nieve";
             lvl2_1.EnemigoAcechante = true;
-            Enemigo enemigo2 = new Enemigo("Pingüino", 150, 25, "../../Images/Characters/enemy2.png");
-            lvl2_1.Enemigo = enemigo2;
+            lvl2_1.Enemigo = new Enemigo("Pingüino", 150, 25, "../../Images/Characters/enemy2.png");
+            lvl2_1.Cinematica = new Cinematica("cutscene_dingodile", "dingodile_vortex1");
             Globales.niveles.Add(lvl2_1);
 
             Nivel lvl2_2 = new Nivel();
@@ -140,8 +140,8 @@ namespace GemoTale
             lvl2_2.ImagenFondo = "../../Images/Backgrounds/level2_2.jpg";
             lvl2_2.Mundo = "nieve";
             lvl2_2.EnemigoAcechante = true;
-            Enemigo jefe2 = new Enemigo("Dingodile", 500, 150, "../../Images/Characters/boss2.png", "../../Sounds/SFX/boss2intro.wav", "../../Sounds/SFX/boss2defeat.wav");
-            lvl2_2.Enemigo = jefe2;
+            lvl2_2.Enemigo = new Enemigo("Tiburón", 200, 30, "../../Images/Characters/enemy3.png");
+            lvl2_2.Cinematica = new Cinematica("cutscene_dingodile", "dingodile_vortex2");
             Globales.niveles.Add(lvl2_2);
 
             Nivel lvl2_3 = new Nivel();
@@ -153,8 +153,7 @@ namespace GemoTale
             lvl2_3.ImagenFondo = "../../Images/Backgrounds/level2_3.jpg";
             lvl2_3.Mundo = "nieve";
             lvl2_3.EnemigoAcechante = true;
-            Enemigo enemigo3 = new Enemigo("Tiburón", 200, 30, "../../Images/Characters/enemy3.png");
-            lvl2_3.Enemigo = enemigo3;
+            lvl2_3.Enemigo = new Enemigo("Dingodile", 500, 150, "../../Images/Characters/boss2.png", "../../Sounds/SFX/boss2intro.wav", "../../Sounds/SFX/boss2defeat.wav");
             Globales.niveles.Add(lvl2_3);
 
             Nivel lvl3_1 = new Nivel();
@@ -166,8 +165,8 @@ namespace GemoTale
             lvl3_1.ImagenFondo = "../../Images/Backgrounds/level3_1.jpg";
             lvl3_1.Mundo = "templo";
             lvl3_1.EnemigoAcechante = true;
-            Enemigo enemigo4 = new Enemigo("Planta Piraña", 250, 35, "../../Images/Characters/enemy4.png");
-            lvl3_1.Enemigo = enemigo4;
+            lvl3_1.Enemigo = new Enemigo("Planta Piraña", 250, 35, "../../Images/Characters/enemy4.png");
+            lvl3_1.Cinematica = new Cinematica("cutscene_tiny", "tiny_vortex1");
             Globales.niveles.Add(lvl3_1);
 
             Nivel lvl3_2 = new Nivel();
@@ -179,8 +178,8 @@ namespace GemoTale
             lvl3_2.ImagenFondo = "../../Images/Backgrounds/level3_2.jpg";
             lvl3_2.Mundo = "templo";
             lvl3_2.EnemigoAcechante = true;
-            Enemigo enemigo5 = new Enemigo("Indígena", 300, 40, "../../Images/Characters/enemy5.png");
-            lvl3_2.Enemigo = enemigo5;
+            lvl3_2.Enemigo = new Enemigo("Indígena", 300, 40, "../../Images/Characters/enemy5.png");
+            lvl3_2.Cinematica = new Cinematica("cutscene_tiny", "tiny_vortex2");
             Globales.niveles.Add(lvl3_2);
 
             Nivel lvl3_3 = new Nivel();
@@ -192,8 +191,7 @@ namespace GemoTale
             lvl3_3.ImagenFondo = "../../Images/Backgrounds/level3_3.jpg";
             lvl3_3.Mundo = "templo";
             lvl3_3.EnemigoAcechante = true;
-            Enemigo jefe1 = new Enemigo("Tiny Tiger", 450, 100, "../../Images/Characters/boss1.png", "../../Sounds/SFX/boss1intro.wav", "../../Sounds/SFX/boss1defeat.wav");
-            lvl3_3.Enemigo = jefe1;
+            lvl3_3.Enemigo = new Enemigo("Tiny Tiger", 450, 100, "../../Images/Characters/boss1.png", "../../Sounds/SFX/boss1intro.wav", "../../Sounds/SFX/boss1defeat.wav");
             Globales.niveles.Add(lvl3_3);
 
             Nivel lvl4_1 = new Nivel();
@@ -205,6 +203,7 @@ namespace GemoTale
             lvl4_1.TiendaDerecha = true;
             lvl4_1.ImagenFondo = "../../Images/Backgrounds/level4_1.jpg";
             lvl4_1.Mundo = "alterno";
+            lvl4_1.Cinematica = new Cinematica("cutscene_cortex", "cortex_vortex2");
             Globales.niveles.Add(lvl4_1);
 
             Nivel lvl4_2 = new Nivel();
@@ -216,8 +215,8 @@ namespace GemoTale
             lvl4_2.ImagenFondo = "../../Images/Backgrounds/level4_2.jpg";
             lvl4_2.Mundo = "alterno";
             lvl4_2.EnemigoAcechante = true;
-            Enemigo jefe3 = new Enemigo("Dr. N. Tropy", 550, 200, "../../Images/Characters/boss3.png", "../../Sounds/SFX/boss3intro.wav", "../../Sounds/SFX/boss3defeat.wav");
-            lvl4_2.Enemigo = jefe3;
+            lvl4_2.Enemigo = new Enemigo("Dr. N. Tropy", 550, 200, "../../Images/Characters/boss3.png", "../../Sounds/SFX/boss3intro.wav", "../../Sounds/SFX/boss3defeat.wav");
+            lvl4_2.Cinematica = new Cinematica("cutscene_ntropy", "ntropy_vortex1");
             Globales.niveles.Add(lvl4_2);
 
             Nivel lvl5_1 = new Nivel();
@@ -230,6 +229,7 @@ namespace GemoTale
             lvl5_1.DireccionDerecha = "lvl4_2";
             lvl5_1.ImagenFondo = "../../Images/Backgrounds/level5_1_left.jpg";
             lvl5_1.Mundo = "castillo";
+            lvl5_1.Cinematica = new Cinematica("cutscene_cortex", "cortex_vortex3");
             Globales.niveles.Add(lvl5_1);
 
             Nivel lvl5_2 = new Nivel();
@@ -241,8 +241,8 @@ namespace GemoTale
             lvl5_2.ImagenFondo = "../../Images/Backgrounds/level5_2.jpg";
             lvl5_2.Mundo = "castillo";
             lvl5_2.EnemigoAcechante = true;
-            Enemigo jefe4 = new Enemigo("Dr. N. Gin", 600, 250, "../../Images/Characters/boss4.png", "../../Sounds/SFX/boss4intro.wav", "../../Sounds/SFX/boss4defeat.wav");
-            lvl5_2.Enemigo = jefe4;
+            lvl5_2.Enemigo = new Enemigo("Dr. N. Gin", 600, 250, "../../Images/Characters/boss4.png", "../../Sounds/SFX/boss4intro.wav", "../../Sounds/SFX/boss4defeat.wav");
+            lvl5_2.Cinematica = new Cinematica("cutscene_ngin", "ngin_vortex1");
             Globales.niveles.Add(lvl5_2);
 
             Nivel lvl5_3 = new Nivel();
@@ -252,8 +252,8 @@ namespace GemoTale
             lvl5_3.ImagenFondo = "../../Images/Backgrounds/level5_3.jpg";
             lvl5_3.Mundo = "castillo";
             lvl5_3.EnemigoAcechante = true;
-            Enemigo jefe5 = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png", "../../Sounds/SFX/boss5intro.wav", "../../Sounds/SFX/boss5defeat.wav");
-            lvl5_3.Enemigo = jefe5;
+            lvl5_3.Enemigo = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png", "../../Sounds/SFX/boss5intro.wav", "../../Sounds/SFX/boss5defeat.wav");
+            lvl5_3.Cinematica = new Cinematica("cutscene_cortex", "cortex_vortex6");
             Globales.niveles.Add(lvl5_3);
         }
 
@@ -282,6 +282,14 @@ namespace GemoTale
             //Se establece el nuevo nivel como actual
             mapaActual = lvl;
 
+            //Se reproduce cinematica si el nivel la incluye
+            if (mapaActual.Cinematica != null)
+            {
+                Vista_Cinematica VistaCinematica = new Vista_Cinematica(mapaActual.Cinematica);
+                this.Hide();
+                VistaCinematica.Closed += (s, args) => { this.Show(); mapaActual.Cinematica = null; };
+                VistaCinematica.Show();
+            }
             //Se establece que flechas están disponibles y si lo están, a que dirección te dirigen
             if (lvl.FlechaAbajo == true)
             {

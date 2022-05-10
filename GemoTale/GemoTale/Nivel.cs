@@ -25,6 +25,7 @@ namespace GemoTale
         [DataMember] String direccionDerecha;
         [DataMember] Boolean enemigoAcechante;
         [DataMember] Enemigo enemigo;
+        [DataMember] Cinematica cinematica;
 
         public Nivel()
         {
@@ -46,5 +47,6 @@ namespace GemoTale
         public string DireccionDerecha { get => direccionDerecha; set => direccionDerecha = value; }
         public bool EnemigoAcechante { get => enemigoAcechante; set => enemigoAcechante = value; }
         internal Enemigo Enemigo { get => enemigo; set => enemigo = value; }
+        internal Cinematica Cinematica { get => cinematica; set => cinematica = value; }
     }
 }

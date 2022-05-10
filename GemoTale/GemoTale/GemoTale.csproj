@@ -236,6 +236,13 @@
     <Content Include="Images\Backgrounds\badEnding.jpg" />
     <Content Include="Images\Backgrounds\castillo.jpg" />
     <None Include="Images\Backgrounds\cutscene.gif" />
+    <Content Include="Images\Backgrounds\cutscene_aku.gif" />
+    <Content Include="Images\Backgrounds\cutscene_akucrystal.gif" />
+    <Content Include="Images\Backgrounds\cutscene_cortex.gif" />
+    <Content Include="Images\Backgrounds\cutscene_dingodile.gif" />
+    <Content Include="Images\Backgrounds\cutscene_ngin.gif" />
+    <Content Include="Images\Backgrounds\cutscene_ntropy.gif" />
+    <Content Include="Images\Backgrounds\cutscene_tiny.gif" />
     <Content Include="Images\Backgrounds\gameOver.jpg" />
     <Content Include="Images\Backgrounds\goodEnding.jpg" />
     <Content Include="Images\Backgrounds\level1_1.jpg" />
