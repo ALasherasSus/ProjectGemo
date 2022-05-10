@@ -314,6 +314,16 @@
     <Content Include="Images\UI\shop_icon_on.png" />
     <Content Include="Sounds\Cutscenes\aku_crystals_1.wav" />
     <Content Include="Sounds\Cutscenes\aku_crystals_2.wav" />
+    <Content Include="Sounds\Cutscenes\cortex_vortex1.wav" />
+    <Content Include="Sounds\Cutscenes\cortex_vortex2.wav" />
+    <Content Include="Sounds\Cutscenes\cortex_vortex3.wav" />
+    <Content Include="Sounds\Cutscenes\cortex_vortex6.wav" />
+    <Content Include="Sounds\Cutscenes\dingodile_vortex1.wav" />
+    <Content Include="Sounds\Cutscenes\dingodile_vortex2.wav" />
+    <Content Include="Sounds\Cutscenes\ngin_vortex1.wav" />
+    <Content Include="Sounds\Cutscenes\ntropy_vortex1.wav" />
+    <Content Include="Sounds\Cutscenes\tiny_vortex1.wav" />
+    <Content Include="Sounds\Cutscenes\tiny_vortex2.wav" />
     <Content Include="Sounds\Music\BadEndingTheme.wav" />
     <Content Include="Sounds\Music\GoodEndingTheme.wav" />
     <Content Include="Sounds\Music\StatsTheme.wav" />
