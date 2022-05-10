@@ -85,3 +85,22 @@ C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.xml
 C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.AccessControl.xml
 C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\draki\Desktop\ \TFG\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.CopyComplete
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\Microsoft.Win32.Registry.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Asio.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Core.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Midi.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.Wasapi.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.WinForms.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.WinMM.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.AccessControl.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\Microsoft.Win32.Registry.xml
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\NAudio.xml
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.AccessControl.xml
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.CopyComplete
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\GemoTale.exe.manifest
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\GemoTale.application
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.exe.manifest
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.application

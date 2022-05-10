@@ -296,7 +296,7 @@ namespace GemoTale
             mapaActual = lvl;
 
             //Se reproduce cinematica si el nivel la incluye
-            if (mapaActual.Cinematica != null && !Globales.modoDebug)
+            if (mapaActual.Cinematica != null)
             {
                 Vista_Cinematica VistaCinematica = new Vista_Cinematica(mapaActual.Cinematica);
                 this.Hide();

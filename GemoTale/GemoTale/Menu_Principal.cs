@@ -20,6 +20,7 @@ namespace GemoTale
             this.CenterToScreen(); // Centrar la ventana en la pantalla
             gameLogo.Image = Image.FromFile("../../Images/UI/game_logo.png");
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/mainmenu.jpg");
+            button1.Visible = false;
 
             this.KeyPreview = true;
             this.KeyDown += new KeyEventHandler(Menu_Principal_KeyDown);
@@ -116,6 +117,7 @@ namespace GemoTale
                 if (Globales.modoDebug == true)
                 {
                     lblDebug.Visible = true;
+                    button1.Visible = true;
                 }
             }
         }
