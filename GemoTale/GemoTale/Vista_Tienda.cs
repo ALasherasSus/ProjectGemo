@@ -17,6 +17,11 @@ namespace GemoTale
             InitializeComponent();
             this.CenterToScreen(); //Centrar la ventana en la pantalla
             cargarPantalla();
+
+            pbVidaMaxima.Maximum = Convert.ToInt32(Globales.vidaMaximaTope);
+            pbAtaque.Maximum = Globales.ataqueMaximo;
+            pbDefensa.Maximum = Globales.defensaMaxima;
+
             switch (tienda)
             {
                 case "izquierda":

@@ -29,6 +29,10 @@ namespace GemoTale
             pbJugador.Value = (int)Globales.Jugador.Vida;
             lblVidaJugador.Text = "" + (int)Globales.Jugador.Vida;
             this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/" + Globales.niveles[idNivel].Mundo + ".jpg");
+            if (Globales.niveles[idNivel].Enemigo.Nombre.Equals("Mega-Mix"))
+            {
+                go_back.Visible = false;
+            }
 
             if (Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
             {
@@ -91,18 +95,18 @@ namespace GemoTale
                     Globales.Jugador.Vida = Globales.Jugador.VidaMaxima;
                 }
                 Globales.Jugador.Ataque += 10; //El jugador sube de ataque al derrotar a un enemigo
-                if (Globales.Jugador.Ataque > 300)
+                if (Globales.Jugador.Ataque > Globales.ataqueMaximo)
                 {
-                    Globales.Jugador.Ataque = 300;
+                    Globales.Jugador.Ataque = Globales.ataqueMaximo;
                 }
                 //Si derrotas a un Jefe Supremo (que se identifican por tener diálogo inicial), subes el nivel de defensa del jugador
                 if (Globales.niveles[idNivel].Enemigo.SonidoIntro != null)
                 {
                     Globales.Jugador.Defensa++;
-                    if (Globales.Jugador.Defensa > 9)
+                    if (Globales.Jugador.Defensa > Globales.defensaMaxima)
                     {
                         //Si el nivel de defensa del jugador ya está al maximo, recibes el coste de subir el nivel de defensa
-                        Globales.Jugador.Defensa = 9;
+                        Globales.Jugador.Defensa = Globales.defensaMaxima;
                         Globales.Jugador.Dinero += 250;
                     }
                 }
@@ -113,6 +117,7 @@ namespace GemoTale
                 player.Play();
                 btnAtacar.Visible = false;
                 btnEsquivar.Visible = false;
+                go_back.Visible = true;
                 go_back.Image = Image.FromFile("../../Images/UI/arrow_right.png");
             }
 
@@ -183,6 +188,7 @@ namespace GemoTale
         {
             int sonidoAtaque = 1;
 
+            //Dependiendo de si la vida del jugador es par o impar, el ataque hace un sonido u otro
             if (Globales.Jugador.Vida % 2 == 0)
             {
                 sonidoAtaque = 1;

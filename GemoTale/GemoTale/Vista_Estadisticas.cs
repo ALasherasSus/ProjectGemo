@@ -20,6 +20,10 @@ namespace GemoTale
             player.PlayLooping();
             cargarPantalla();
 
+            pbVidaMaxima.Maximum = Convert.ToInt32(Globales.vidaMaximaTope);
+            pbAtaque.Maximum = Globales.ataqueMaximo;
+            pbDefensa.Maximum = Globales.defensaMaxima;
+
             if (Globales.modoDebug == true)
             {
                 lblDebug.Visible = true;

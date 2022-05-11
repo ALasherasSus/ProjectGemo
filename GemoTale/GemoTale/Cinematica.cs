@@ -11,6 +11,7 @@ namespace GemoTale
     public class Cinematica
     {
         [DataMember] string cs_bg, cs_sound;
+        [DataMember] Boolean special;
         public Cinematica(string cs_bg, string cs_sound)
         {
             this.cs_bg = cs_bg;
@@ -18,5 +19,6 @@ namespace GemoTale
         }
         public string Cs_sound { get => cs_sound; set => cs_sound = value; }
         public string Cs_bg { get => cs_bg; set => cs_bg = value; }
+        public bool Special { get => special; set => special = value; }
     }
 }

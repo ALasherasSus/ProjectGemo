@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -265,7 +266,7 @@ namespace GemoTale
             lvl5_3.ImagenFondo = "../../Images/Backgrounds/level5_3.jpg";
             lvl5_3.Mundo = "castillo";
             lvl5_3.EnemigoAcechante = true;
-            lvl5_3.Enemigo = new Enemigo("Dr. N. Cortex", 650, 300, "../../Images/Characters/boss5.png", "../../Sounds/SFX/boss5intro.wav", "../../Sounds/SFX/boss5defeat.wav");
+            lvl5_3.Enemigo = new Enemigo("Dr. Neo Cortex", 650, 300, "../../Images/Characters/boss5.png", "../../Sounds/SFX/boss5intro.wav", "../../Sounds/SFX/boss5defeat.wav");
             lvl5_3.Cinematica = new Cinematica("cutscene_cortex", "cortex_vortex6");
             Globales.niveles.Add(lvl5_3);
         }
@@ -399,8 +400,26 @@ namespace GemoTale
             }
             else
             {
-                Vista_FinalBueno vistaFinalBueno = new Vista_FinalBueno();
-                vistaFinalBueno.Show();
+                Cinematica cs = new Cinematica("cutscene_finals1", "secret_ending_bg");
+                cs.Special = true;
+                Vista_Cinematica vistaCinematica = new Vista_Cinematica(cs);
+                this.Hide();
+                vistaCinematica.Closed += (s, args) =>
+                {
+                    mapaActual.Mundo = "secreto";
+                    mapaActual.EnemigoAcechante = true;
+                    mapaActual.Enemigo = new Enemigo("Mega-Mix", 1000, 500, "../../Images/Characters/boss6.png", "../../Sounds/SFX/boss6intro.wav", "../../Sounds/SFX/boss6defeat.wav");
+                    Thread.Sleep(1000);
+                    Vista_Combate vistaCombate = new Vista_Combate(extraerNombreNivel(mapaActual.Nombre));
+                    vistaCombate.Closed += (s2, args2) =>
+                    {
+                        Vista_FinalBueno vistaFinalBueno = new Vista_FinalBueno();
+                        vistaFinalBueno.Show();
+                    };
+                    vistaCombate.Show();
+                };
+                vistaCinematica.Show();
+
             }
         }
 

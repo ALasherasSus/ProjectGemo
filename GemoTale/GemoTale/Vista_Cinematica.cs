@@ -31,6 +31,24 @@ namespace GemoTale
             thread = new Thread(() =>
             {
                 player.Play();
+                if (cinematica.Special)
+                {
+                    player.PlayLooping();
+                    this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/cutscene_finals1.gif");
+                    animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/cutscene_finals1.gif");
+                    Thread.Sleep(5000);
+                    this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/cutscene_finals2.gif");
+                    animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/cutscene_finals2.gif");
+                    Thread.Sleep(5000);
+                    this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/cutscene_finals3.gif");
+                    animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/cutscene_finals3.gif");
+                    Thread.Sleep(5000);
+                    this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/cutscene_finals4.gif");
+                    animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/cutscene_finals4.gif");
+                    Thread.Sleep(5000);
+                    this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/cutscene.gif");
+                    animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/cutscene.gif");
+                }
                 Thread.Sleep(sleepTime);
                 this.BackgroundImage = Image.FromFile("../../Images/Backgrounds/cutscene.gif");
                 animatedScreen.Image = Image.FromFile("../../Images/Backgrounds/cutscene.gif");

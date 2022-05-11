@@ -148,7 +148,7 @@ namespace GemoTale
             this.pbDefensa.BackColor = System.Drawing.Color.Red;
             this.pbDefensa.ForeColor = System.Drawing.Color.Lime;
             this.pbDefensa.Location = new System.Drawing.Point(34, 521);
-            this.pbDefensa.Maximum = 9;
+            this.pbDefensa.Maximum = 5;
             this.pbDefensa.Name = "pbDefensa";
             this.pbDefensa.Size = new System.Drawing.Size(424, 30);
             this.pbDefensa.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
