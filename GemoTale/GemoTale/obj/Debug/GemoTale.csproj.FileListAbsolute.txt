@@ -104,3 +104,4 @@ C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\GemoTale.exe.
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\bin\Debug\GemoTale.application
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.exe.manifest
 C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.application
+C:\Users\CRASHARKI\Desktop\ProjectGemo\GemoTale\GemoTale\obj\Debug\GemoTale.csproj.SuggestedBindingRedirects.cache

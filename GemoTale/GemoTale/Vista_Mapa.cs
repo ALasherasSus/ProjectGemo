@@ -413,8 +413,15 @@ namespace GemoTale
                     Vista_Combate vistaCombate = new Vista_Combate(extraerNombreNivel(mapaActual.Nombre));
                     vistaCombate.Closed += (s2, args2) =>
                     {
-                        Vista_FinalBueno vistaFinalBueno = new Vista_FinalBueno();
-                        vistaFinalBueno.Show();
+                        if (mapaActual.EnemigoAcechante == false)
+                        {
+                            Vista_FinalBueno vistaFinalBueno = new Vista_FinalBueno();
+                            vistaFinalBueno.Show();
+                        }
+                        else
+                        {
+                            Environment.Exit(0);
+                        }
                     };
                     vistaCombate.Show();
                 };
