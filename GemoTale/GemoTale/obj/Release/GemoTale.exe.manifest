@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GemoTale.exe" size="28668920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GemoTale.exe" size="28670968">
       <assemblyIdentity name="GemoTale" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+7o2T7d2lKtBldo7VGkSSBuz8un+shcX8pVYC1u4EtE=</dsig:DigestValue>
+        <dsig:DigestValue>4lLWbg5PYmjg2QrBJl7CncUvz4/G9U9T6JSmxX6eaF4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
