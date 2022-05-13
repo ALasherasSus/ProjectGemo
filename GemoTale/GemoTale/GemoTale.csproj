@@ -286,6 +286,10 @@
     <Content Include="Images\Backgrounds\cutscene_akucrystal.gif" />
     <Content Include="Images\Backgrounds\cutscene_cortex.gif" />
     <Content Include="Images\Backgrounds\cutscene_dingodile.gif" />
+    <Content Include="Images\Backgrounds\cutscene_finals1.gif" />
+    <Content Include="Images\Backgrounds\cutscene_finals2.gif" />
+    <Content Include="Images\Backgrounds\cutscene_finals3.gif" />
+    <Content Include="Images\Backgrounds\cutscene_finals4.gif" />
     <Content Include="Images\Backgrounds\cutscene_ngin.gif" />
     <Content Include="Images\Backgrounds\cutscene_ntropy.gif" />
     <Content Include="Images\Backgrounds\cutscene_tiny.gif" />
@@ -310,6 +314,7 @@
     <Content Include="Images\Backgrounds\level5_3.jpg" />
     <Content Include="Images\Backgrounds\mainmenu.jpg" />
     <Content Include="Images\Backgrounds\nieve.jpg" />
+    <Content Include="Images\Backgrounds\secreto.jpg" />
     <Content Include="Images\Backgrounds\selva.jpg" />
     <Content Include="Images\Backgrounds\shop1.jpg" />
     <Content Include="Images\Backgrounds\shop2.jpg" />
@@ -320,6 +325,7 @@
     <Content Include="Images\Characters\boss3.png" />
     <Content Include="Images\Characters\boss4.png" />
     <Content Include="Images\Characters\boss5.png" />
+    <Content Include="Images\Characters\boss6.png" />
     <Content Include="Images\Characters\deadEnemy.png" />
     <Content Include="Images\Characters\enemy1.png" />
     <Content Include="Images\Characters\enemy2.png" />
@@ -340,6 +346,7 @@
     <Content Include="Images\Manual\6.jpg" />
     <Content Include="Images\Manual\7.jpg" />
     <Content Include="Images\Manual\8.jpg" />
+    <Content Include="Images\Manual\9.jpg" />
     <Content Include="Images\Manual\99.jpg" />
     <Content Include="Images\UI\arrow_down.png" />
     <Content Include="Images\UI\arrow_down_on.png" />
@@ -371,6 +378,7 @@
     <Content Include="Sounds\Cutscenes\ngin_vortex1.wav" />
     <Content Include="Sounds\Cutscenes\ntropy_vortex1.wav" />
     <Content Include="Sounds\Cutscenes\ntropy_vortex3.wav" />
+    <Content Include="Sounds\Cutscenes\secret_ending_bg.wav" />
     <Content Include="Sounds\Cutscenes\tiny_vortex1.wav" />
     <Content Include="Sounds\Cutscenes\tiny_vortex2.wav" />
     <Content Include="Sounds\Music\BadEndingTheme.wav" />
@@ -390,6 +398,8 @@
     <Content Include="Sounds\SFX\boss4intro.wav" />
     <Content Include="Sounds\SFX\boss5defeat.wav" />
     <Content Include="Sounds\SFX\boss5intro.wav" />
+    <Content Include="Sounds\SFX\boss6defeat.wav" />
+    <Content Include="Sounds\SFX\boss6intro.wav" />
     <Content Include="Sounds\SFX\buy_upgrade.wav" />
     <Content Include="Sounds\SFX\change_screen.wav" />
     <Content Include="Sounds\SFX\checkpoint.wav" />
@@ -399,6 +409,7 @@
     <Content Include="Sounds\SFX\cortex_game_over_continue_no.wav" />
     <Content Include="Sounds\SFX\cortex_game_over_continue_yes.wav" />
     <Content Include="Sounds\SFX\crash_cortexthrow.wav" />
+    <Content Include="Sounds\SFX\crash_selectsound1.wav" />
     <Content Include="Sounds\SFX\crash_spin1.wav" />
     <Content Include="Sounds\SFX\crash_spin2.wav" />
     <Content Include="Sounds\SFX\crash_victory.wav" />

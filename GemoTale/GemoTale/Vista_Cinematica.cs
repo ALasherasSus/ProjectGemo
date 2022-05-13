@@ -61,7 +61,7 @@ namespace GemoTale
         {
             thread.Abort();
             player.Dispose();
-            player = new System.Media.SoundPlayer(@"../../Sounds/SFX/click2.wav");
+            player = new System.Media.SoundPlayer(@"../../Sounds/SFX/crash_selectsound1.wav");
             player.Play();
             this.Close();
         }

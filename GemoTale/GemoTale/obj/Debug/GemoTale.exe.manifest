@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+4pDfiW9Q2sb/e+PkYoOVfvjvQjPW2DSrjVLSHASPvM=</dsig:DigestValue>
+        <dsig:DigestValue>6GgzX0gH1u0pMFMyYF0yfSoL88YX8kQ7YZV4ftAiRrA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -253,6 +253,42 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>w0L1mBH23JkxUkOmzu3VzOmVfXosTQC/e0Ksj7G5viw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Backgrounds\cutscene_finals1.gif" size="969297">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Egqu0BcXEtr0nIiMl/jIhWewAeN8A9LBm0fJhd8FmsA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Backgrounds\cutscene_finals2.gif" size="823704">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BcU8ZGtQJ5I9LojUupClIubRIP9MqgAJOJgOKjzqfFM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Backgrounds\cutscene_finals3.gif" size="921365">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+BxMLCciTQdUwmJ1wJ84dhvPMZJWicBSH3FS1FhtTFQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Backgrounds\cutscene_finals4.gif" size="943739">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2XEftNSBMRL4J+ajr1q8EIhaZ60qJCCyz1OSe8zh55k=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Backgrounds\cutscene_ngin.gif" size="912582">
@@ -471,6 +507,15 @@
       <dsig:DigestValue>OCf6l0x+84iVAPDAtc4Ee4xcliMOb7vB7wJd/RCuloo=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Backgrounds\secreto.jpg" size="457645">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Eao8G5m9ynR869WNot1SKKYlElVZn3yflEtFJ7dhvQ0=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Backgrounds\selva.jpg" size="652087">
     <hash>
       <dsig:Transforms>
@@ -559,6 +604,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>pyojaV5/32U+fpLxWc5rSBr/0sJFEdF3KjlJEwTId4o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Characters\boss6.png" size="277286">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MQqfnLCmBYzA/MpIbDKAQ7WznSr1PyTa230ZgQTKvyU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Characters\deadEnemy.png" size="68608">
@@ -730,6 +784,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>mzh2/FuQHbQhDYWdn025powVBw6F+AFUkaEgY9RI79E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Manual\9.jpg" size="619299">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w2AqANwRRNLJntnQSH3ZS/csSPBYbgdQAx2gPYeCVyU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Manual\99.jpg" size="509523">
@@ -966,6 +1029,15 @@
       <dsig:DigestValue>7tXutjnPokQWx+r4XECnPcuNW9g3VBWmJ9m9Nq/bTHI=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Sounds\Cutscenes\secret_ending_bg.wav" size="25763406">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fzudeYF0/kIbZpK3lJU7+bbTvuoFotAtDQq15/zQKp4=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Sounds\Cutscenes\tiny_vortex1.wav" size="593624">
     <hash>
       <dsig:Transforms>
@@ -1137,6 +1209,24 @@
       <dsig:DigestValue>gkjtL6iyAWnmxElhmMLa9bzAbntl5fwm4avKQQai4tY=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Sounds\SFX\boss6defeat.wav" size="399416">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WE8mMcWWmp9Xa5pul060kDWvMgPShhO5yFA5TNt2d8I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\SFX\boss6intro.wav" size="238752">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AkwDNXD5WV2og0R6fPJx2v+/yNja4sFF0xz3L/bivkk=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Sounds\SFX\buy_upgrade.wav" size="62814">
     <hash>
       <dsig:Transforms>
@@ -1216,6 +1306,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>iXehmSAy0vx0KfpITo8cope7ZrckRWN9tlDgiA5qXYc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\SFX\crash_selectsound1.wav" size="4666">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>45ROxljc4Q3KRbLLv3q2X2as/2YwUhBcwFYpgKmbNCk=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sounds\SFX\crash_spin1.wav" size="29698">
